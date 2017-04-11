@@ -1,4 +1,4 @@
-# Welcome to the workshop: Webmapping for beginners!
+## Welcome to the workshop: Webmapping for beginners!
 
 ## Goal of today
 At the end of this workshop, you will have your own web page with an interactive map! Including some custom data and different background maps, zoomed in on the area you want to show! Your web page will be hosted on Github, so you can immediately share your progress of the day with all your family and friends!
