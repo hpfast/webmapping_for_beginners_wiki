@@ -104,7 +104,7 @@ For a real map you need a base layer. This is the background of your map, made o
 	* Next we add our base-layer tiles. `L.tileLayer()` graps one from the internet. 
 	* backgroundMap.addTo() adds the tile layer to the map.
 
-** Open your index.html file in your browser! **
+**Open your index.html file in your browser!**
 Do you see your map? Great! 
 If not:
 ### Open the debugger 
