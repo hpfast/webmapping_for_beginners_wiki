@@ -1,4 +1,4 @@
-## My first web-map! 
+### Setting up the basics 
 
 1. Open your text editor.
 2. Create an empty file to make your basic HTML page. Copy the following into your file:
@@ -72,43 +72,63 @@ Now you will have:
 		<body>
 			<H1>example</H1>
 			<div id="map"></div>
-		<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+			<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
 		</body>
 	</html>
 
 
-### Base layer	
+### Adding a base layer
 
 For a real map you need a base layer. This is the background of your map, made out of png tiles, which are quick to load!
 
-1. Put the following script in the body
+1. Put the following script in the body and save your index.html file. 
 
 	<script>
 		//initialize the map         
 		var map = L.map('map').setView([52.18, 5.5308], 11);
 		
 		//Create baselayer - tiles         
-		var achtergrondkaart = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
+		var backgroundMap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
 			{
 			attribution: '<a href="http://openstreetmap.org">OpenStreetMap</a>contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
 			maxZoom: 19
 			}
 		);
 		
-		achtergrondkaart.addTo(map);
+		backgroundMap.addTo(map);
 	</script>
 
-
-2. Now you have made a map.
+2. Now you have made a map!
 	* var map =  L.map("map"): initializes the "map" variable
 	* setView() centres the map (latitude, longitude, zoom level). The projection is Google Mercator. 
-	* Next we add our base-layer tiles. For example from OpenStreetMap. 
-	* addTo() adds the layer to the map
-	
+	* Next we add our base-layer tiles. `L.tileLayer()` graps one from the internet. 
+	* backgroundMap.addTo() adds the tile layer to the map.
+
+** Open your index.html file in your browser! **
+Do you see your map? Great! 
+If not:
+### Open the debugger 
+
+* Click with your right mouse button, choose : `Inspect Element`
+or 
+* Press F12
+
+The debugger shows you the content of your page. But also logs any errors or comments! 
+Go to the tab `Web Console` to see if it reports anything useful for you.
+
+Do you get:
+
+	ReferenceError: L is not defined
+
+Then shuffle around the order in your script. Put the `leaflet.js script` above your custom script!
+
+
+### Customizing
+
+5. Practice with different tiles, coordinates and zoom levels to make your own base map. For example, try to zoom in to the place where you live or work! 
 
 3. Looking for a specific place to centre on? Find your coordinates here:
-http://www.mapcoordinates.net/en		
-
+http://www.mapcoordinates.net/en
 
 4. Another free tile provider is maps.stamen.com. These even provide 3 varieties:
 
@@ -119,7 +139,5 @@ http://www.mapcoordinates.net/en
 Or have a look at https://leaflet-extras.github.io/leaflet-providers/preview/ 
 There are many different tiles to use! Just copy the code given at the top, replacing your own code starting from `L.tileLayer (... );`
 
-
-5. Practice with different tiles, coordinates and zoom levels to make your own base map. For example, try to zoom in to the place where you live or work! 
 
 Continue to [[Leaflet Step 2]]
