@@ -23,12 +23,12 @@ Your laptop with:
 * internet
 
 
-## Preperation
+## Preparation
 
 On your computer create a directory for yourself, where we can work in today. For example:
 
 	/home/niene/Documents/MyFirstWebMap
 
-In this directory we save everything we make and download today. 
+In this directory we save everything we make and download today. In the workshop it is referred to as `YourDirectory`.
 
 ## Let's start!
