@@ -29,6 +29,6 @@ On your computer create a directory for yourself, where we can work in today. Fo
 
 	/home/niene/Documents/MyFirstWebMap
 
-In this directory we save everything we make and download today. In the workshop it is referred to as `yourDirectory`.
+In this directory we save everything we make and download today. During this workshop it is referred to as `yourDirectory`.
 
-## Let's start!
+## Let's start!  [[Leaflet step 1]]
