@@ -2,9 +2,14 @@
 
 [[Home]]
 
-1. [[Introduction]]
-1. [[Making a web page]]
+[[Introduction]]
+
+[[Making a web page]]
+
 1. [[Leaflet step 1]]
-1. [[D3 step 1]]
+1. [[Leaflet step 2]]
+1. [[Leaflet step 3]]
+
+[[Hosting on Github]]
 
 [[Tips & Tricks]]
