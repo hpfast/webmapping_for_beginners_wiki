@@ -31,4 +31,5 @@ On your computer create a directory for yourself, where we can work in today. Fo
 
 In this directory we save everything we make and download today. During this workshop it is referred to as `yourDirectory`.
 
-## Let's start!  [[Leaflet step 1]]
+## Let's start!  
+[[Leaflet step 1]]
