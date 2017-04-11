@@ -31,12 +31,12 @@
 7. Place the `leaflet.js script` library in the `<body>`. 
 	* JavaScript libraries are often placed in the head. Though, it is best to place them as far as possible to the bottom of the body. This is much quicker while loading! 
 
-8. Open a new file and save this as ‘main.css’ in a new folder in `yourDirectory` called: `yourDirectory/style’. 
-9. You can also create the following folders here: ‘images’ and ‘js’. Now you have:
+8. Open a new file and save this as `main.css` in a new folder in `yourDirectory` called: `yourDirectory/style`. 
+9. You can also create the following folders here: `images` and `js`. Now you have:
 	* /yourDirectory/index.html
 	* /yourDirectory/style/main.css
 	* /yourDirectory/images/
-	* /YourDirectory/js/
+	* /yourDirectory/js/
 
 10. Open your ‘index.html’ file and put the link to your CSS file in the `<head>`.
 
@@ -61,7 +61,7 @@
 
 Now you will have:
 
-	~~~~
+
 	<!doctype html>
 	<html>
 		<head>
@@ -75,7 +75,7 @@ Now you will have:
 		<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
 		</body>
 	</html>
-	~~~~
+
 
 ### Base layer	
 
@@ -83,22 +83,21 @@ For a real map you need a base layer. This is the background of your map, made o
 
 1. Put the following script in the body
 
-	~~~~
-		<script>
-			//initialize the map         
-			var map = L.map('map').setView([52.18, 5.5308], 11);
-			
-			//Create baselayer - tiles         
-			var achtergrondkaart = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
-			 	{
-	    		attribution: '<a href="http://openstreetmap.org">OpenStreetMap</a>contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
-	    		maxZoom: 19
-				}
-			);
-			
-			achtergrondkaart.addTo(map);
-		</script>       
-	~~~~
+	<script>
+		//initialize the map         
+		var map = L.map('map').setView([52.18, 5.5308], 11);
+		
+		//Create baselayer - tiles         
+		var achtergrondkaart = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
+			{
+			attribution: '<a href="http://openstreetmap.org">OpenStreetMap</a>contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+			maxZoom: 19
+			}
+		);
+		
+		achtergrondkaart.addTo(map);
+	</script>
+
 
 2. Now you have made a map.
 	* var map =  L.map("map"): initializes the "map" variable
@@ -112,10 +111,15 @@ http://www.mapcoordinates.net/en
 
 
 4. Another free tile provider is maps.stamen.com. These even provide 3 varieties:
-Or have a look at https://leaflet-extras.github.io/leaflet-providers/preview/ 
 
 	* http://tile.stamen.com/toner/{z}/{x}/{y}.png
 	* http://tile.stamen.com/terrain/{z}/{x}/{y}.jpg
 	* http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg
 
-5. Practice with different tiles, coordinates and zoom levels to make your own base map.
+Or have a look at https://leaflet-extras.github.io/leaflet-providers/preview/ 
+There are many different tiles to use! Just copy the code given at the top, replacing your own code starting from `L.tileLayer (... );`
+
+
+5. Practice with different tiles, coordinates and zoom levels to make your own base map. For example, try to zoom in to the place where you live or work! 
+
+Continue to [[Leaflet Step 2]]
