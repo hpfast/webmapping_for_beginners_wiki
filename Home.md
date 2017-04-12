@@ -6,7 +6,7 @@ Maptime is hands on!
 
 The team from Webmapper developed this workshop in the context of Maptime to share their hands-on experience in web cartography and geographic web application development. 
 
-![webmapper](img/)
+![webmapper](img/maptime-logo.png)
 
 JavaScript powers most on-line maps these days. During this workshop we'll cover the two primary mapping libraries D3.js and Leaflet.js.
 
