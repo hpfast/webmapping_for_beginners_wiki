@@ -1,6 +1,14 @@
 ## Welcome to the workshop: Webmapping for beginners!
 
-The team from Webmapper developed this workshop to share their hands-on experience in web cartography and geographic web application development. JavaScript powers most on-line maps these days. During this workshop we'll cover the two primary mapping libraries D3.js and Leaflet.js.
+Maptime is hands on! 
+
+![maptime.io](img/maptime-lgog.png)
+
+The team from Webmapper developed this workshop in the context of Maptime to share their hands-on experience in web cartography and geographic web application development. 
+
+![webmapper](img/)
+
+JavaScript powers most on-line maps these days. During this workshop we'll cover the two primary mapping libraries D3.js and Leaflet.js.
 
 We'll start off with an overview of some of the best maps of 2016 made with JavaScript, to give you an insight into the versatility of JavaScript for maps. Followed by a brief introduction into making web pages. To eventually spend most of our time on learning the tools of the trade.
 
