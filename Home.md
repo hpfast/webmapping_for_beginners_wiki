@@ -2,7 +2,7 @@
 
 Maptime is hands on! 
 
-![maptime.io](img/maptime-lgog.png)
+![maptime.io](img/maptime-logo.png)
 
 The team from Webmapper developed this workshop in the context of Maptime to share their hands-on experience in web cartography and geographic web application development. 
 
