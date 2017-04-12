@@ -2,31 +2,25 @@
 
 1. Open your text editor.
 2. Create an empty file to make your basic HTML page. Copy the following into your file:
-
-	~~~~
-	<!DOCTYPE html>
-	<html>
-		<head>
-			<title> My title </title>
-		</head>
-		<body>
-			<H1>Example</H1>
-		</body>
-	</html>
-	~~~~
+``` html
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title> My title </title>
+    </head>
+  <body>
+    <H1>Example</H1>
+  </body>
+</html>
+```
 
 3. Save the file in `yourDirectory` and call the file `index.html`.
-
-
 4. Go to http://leafletjs.com/download.html to use the Hosted Version of Leaflet.
 5. Scroll down and copy the newest leaflet library release:
-
-	~~~~
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
-	
-	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-	~~~~
-
+``` html
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+```
 6. Place the `leaflet.css Link` in the `<head>` of your html file.
 7. Place the `leaflet.js script` library in the `<body>`. 
 	* JavaScript libraries are often placed in the head. Though, it is best to place them as far as possible to the bottom of the body. This is much quicker while loading! 
@@ -39,29 +33,26 @@
 	* /yourDirectory/js/
 
 10. Open your ‘index.html’ file and put the link to your CSS file in the `<head>`.
-
-	~~~~
-	<link rel="stylesheet" href=“style/main.css"/>
-	~~~~
+``` html
+<link rel="stylesheet" href=“style/main.css"/>
+```
 
 11. Change the title to “My first Leaflet map".
 12. Place a ‘div’ in the `<body>` 
-
-	~~~~
-	<div id="map"></div>
-	~~~~
+``` html
+<div id="map"></div>
+```
 
 13. The basics are done! Provide your "map" always with a height(and optional width). This you do in the main.css.
-
-	~~~~
-	#map { height: 300px; width:100%;} 
-	~~~~
+``` css
+#map { height: 300px; width:100%;} 
+``` 
 
 14. Change the amount of pixels and/or % to the map size you prefer.
 
 Now you will have:
 
-
+``` html
 	<!doctype html>
 	<html>
 		<head>
@@ -75,7 +66,7 @@ Now you will have:
 			<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
 		</body>
 	</html>
-
+```
 
 ### Adding a base layer
 
@@ -83,6 +74,7 @@ For a real map you need a base layer. This is the background of your map, made o
 
 1. Put the following script in the body and save your index.html file. 
 
+``` js
 	<script>
 		//initialize the map         
 		var map = L.map('map').setView([52.18, 5.5308], 11);
@@ -97,7 +89,7 @@ For a real map you need a base layer. This is the background of your map, made o
 		
 		backgroundMap.addTo(map);
 	</script>
-
+``` 
 2. Now you have made a map!
 	* var map =  L.map("map"): initializes the "map" variable
 	* setView() centres the map (latitude, longitude, zoom level). The projection is Google Mercator. 
