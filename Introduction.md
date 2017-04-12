@@ -23,8 +23,8 @@ On your computer create a directory for yourself, where we can work in today. Fo
 In these directories we save everything we make and download today. During this workshop it is referred to as `yourDirectory`.
 
 ### Let's start!  
-If you already know some HTML, CSS and JavaScript, you can start immediately with the tutorial at [[Leaflet step 1 ]] and read through the HTML explanations. 
+If you already know some HTML, CSS and JavaScript, you can start immediately with the tutorial at **[[Leaflet step 1 ]]** and read through the HTML explanations. 
 
-If you are not that comfortable with it yet, this [[Making a web page ]] tutorial will help you along!
+If you are not that comfortable with it yet, this **[[Making a web page ]]** tutorial will help you along!
 
 

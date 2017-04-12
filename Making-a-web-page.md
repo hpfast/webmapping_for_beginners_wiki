@@ -109,3 +109,7 @@ Here’s a little circle that I just coded into this page:
 You’re not required to use SVG with D3, but you’ll soon find that SVG provides a range of visual opportunities that aren’t possible with regular HTML elements.
 
 ### GeoJSON
+
+
+
+**Continue to [[Leaflet Step 1]]**
