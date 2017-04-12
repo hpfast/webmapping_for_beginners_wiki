@@ -2,7 +2,7 @@
 
 Maptime is hands on! 
 
-![maptime.io](img/maptime-logo.png)
+![maptime](img/maptime-logo.png)
 
 The team from Webmapper developed this workshop in the context of Maptime to share their hands-on experience in web cartography and geographic web application development. 
 
@@ -30,7 +30,7 @@ At the end of this workshop, you will have your own web page with an interactive
 Your laptop with:
 
 * a web browser, like Firefox, Chrome or Safari.
-* a text editor, like [SublimeText](http://www.sublimetext.com/) or [Brackets](http://brackets.io/).
+* a proper text editor, like [SublimeText](http://www.sublimetext.com/) or [Brackets](http://brackets.io/) with Syntax Hightlighting.
 * a Github account. Create one at [www.github.com](www.github.com).
 * internet.
 
