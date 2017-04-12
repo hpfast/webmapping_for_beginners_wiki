@@ -1,1 +1,1 @@
-Workshop developed by: Niene Boeijen. - Webmapper & Maptime Amsterdam -
+Workshop developed by: Niene Boeijen - Webmapper & Maptime Amsterdam -
