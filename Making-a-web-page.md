@@ -2,37 +2,87 @@
 
 Hypertext Markup Language is used to structure content for web browsers. The simplest HTML page looks like this:
 
+    ~~~~
+    <!DOCTYPE html>
     <html>
         <head>
-            <title>Page Title</title>
+            <title> My First HTML </title>
         </head>
         <body>
-            <h1>Page Title</h1>
+            <H1>Example</H1>
             <p>This is a really interesting paragraph.</p>
         </body>
     </html>
+    ~~~~
+
+
+**Let's try this!**
+
+1. Open your text editor.
+2. Copy the previous code into an empty file to make your basic HTML page.
+3. Save the file in `yourDirectory` and call the file `index.html`.
+4. Open your index.html file with your browser.
+
+[This](https://nieneb.github.io/html_example/) is what it should look like!
+
+Some basic elements to know and recognize are:
+    
+    <head> The <head> element is a container for all the head elements.
+    The <head> element can include a title for the document, scripts, styles, meta information, and more.
+
+    <body> The <body> tag defines the document's body.
+    The <body> element contains all the contents of an HTML document, such as text, hyperlinks, images, tables, lists, etc.
+    
+    <h1></h1> to <h6></h6>  <h1> defines the most important heading. <h6> defines the least important heading. 
+    <p></p> The             <p> tag defines a paragraph.
+    <div></div>             The <div> tag defines a division or a section in an HTML document.
+    <a href=""></a>         The <a> tag defines a hyperlink, which is used to link from one page to another.
+
+5. Try to add some more headers and text to your first HTML.
+
+### Developer Tools
+
+That sounds scary! But do not be afraid. The browser web inspector is going to be your best friend! Let's explore this. 
+
+1. In your browser when you opened your html 
+* Click with your right mouse button, choose : `Inspect Element`
+
+or 
+
+* Press F12
+
+The web inspector shows you the content of your page and the current state of the DOM. 
+
+2. Do you see the same content as we just made in our text editor?
+3. Just have a look around. Nothing can happen!
+
+The web inspector is also great for debuggin. It can logs errors or comments! We will show this later!
 
 ### DOM
 
-The Document Object Model refers to the hierarchical structure of HTML. Each bracketed tag is an element, and we refer to elements’ relative relationships to each other in human terms: parent, child, sibling, ancestor, and descendant. In the HTML above, body is the parent element to both of its children, h1 and p (which are siblings to each other). All elements on the page are descendants of html.
+The Document Object Model refers to the hierarchical structure of HTML. Web browsers parse the DOM in order to make sense of a page’s content.
 
-Web browsers parse the DOM in order to make sense of a page’s content.
+**But this webpage looks really boring!!**
+True, so let´s continue with CSS. 
 
 ### CSS
 
-Cascading Style Sheets are used to style the visual presentation of HTML pages. A simple CSS stylesheet looks like this:
+Cascading Style Sheets are used to style the visual presentation of HTML pages. Every element of your HTML can be styled with CSS.
+
+A simple CSS stylesheet looks like this:
 
     body {
-        background-color: white;
-        color: black;
+        background-color: blue;
+        color: white;
     }
 
-CSS styles consist of selectors and rules. Selectors identify specific elements to which styles will be applied:
+CSS styles consist of selectors and rules. Selectors identify the specific elements of your HTML to which styles will be applied:
 
     h1          /* Selects level 1 headings              */
+    h2          /* Selects level 2 headings              */
     p           /* Selects paragraphs                    */
-    .caption    /* Selects elements with class "caption" */
-    #subnav     /* Selects element with ID "subnav"      */
+    div         /* Selects div elements                  */
+
 
 Rules are properties that, cumulatively, form the styles:
 
@@ -41,15 +91,14 @@ Rules are properties that, cumulatively, form the styles:
     margin: 10px;
     padding: 25px;
 
+
 We connect selectors and rules using curly brackets:
 
     p {
         font-size: 12px;
         line-height: 14px;
-        color: black;
+        color: white;
     }
-
-D3 uses CSS-style selectors to identify elements on which to operate, so it’s important to understand how to use them.
 
 CSS rules can be included directly within the head of a document, like so
 
@@ -67,6 +116,25 @@ or saved in an external file with a .css suffix, and then referenced in the docu
     <head>
         <link rel="stylesheet" href="style.css">
     </head>
+
+**We will try this!**
+
+1. Copy this style code into your index.html page.
+
+    <style type="text/css">
+        body {
+            background-color: blue;
+            color: white;
+        },
+        p {
+            font-family: sans-serif;
+            color: lime;
+        }
+    </style>
+
+2. Refresh your browser.
+3. Play around with the CSS and HTML. Make yourself a nice page! 
+
 
 ### JavaScript
 
@@ -87,29 +155,6 @@ or stored in a separate file, and then referenced somewhere the HTML (commonly i
         <script type="text/javascript" src="myscript.js"></script>
     </head>
 
-### Developer Tools
-
-Be familiar with your browser’s developer tools. In a WebKit browser (like Safari or Chrome), you can open the web inspector, which looks something like this:
-
-![web_inspector]()
-
-While “View Source” shows you the original HTML source of the page, the web inspector shows you the current state of the DOM. This is useful because your code will modify DOM elements dynamically. In the web inspector, you can watch elements as they change. You’ll also use the JavaScript console for debugging. See more on debugging HTML, CSS, and JavaScript with the web inspector and console.
-
-### SVG
-
-D3 is at its best when rendering visuals as Scalable Vector Graphics. SVG is a text-based image format. Meaning, you can specify what an SVG image should look like by writing simple markup code, sort of like HTML tags. In fact, SVG code can be included directly within any HTML document. Web browsers have supported the SVG format for years (except for Internet Explorer), but it never quite caught on, until now.
-
-Here’s a little circle that I just coded into this page:
-
-    <svg width="50" height="50">
-        <circle cx="25" cy="25" r="22"
-         fill="blue" stroke="gray" stroke-width="2"/>
-    </svg>
-
-You’re not required to use SVG with D3, but you’ll soon find that SVG provides a range of visual opportunities that aren’t possible with regular HTML elements.
-
-### GeoJSON
-
-
+We will explain the JavaScript part, immediatly with Leaflet. Because we all came here to make interactive maps!
 
 **Continue to [[Leaflet Step 1]]**

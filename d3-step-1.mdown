@@ -1,0 +1,12 @@
+
+### SVG
+D3 is at its best when rendering visuals as Scalable Vector Graphics. SVG is a text-based image format. Meaning, you can specify what an SVG image should look like by writing simple markup code, sort of like HTML tags. In fact, SVG code can be included directly within any HTML document. Web browsers have supported the SVG format for years (except for Internet Explorer), but it never quite caught on, until now.
+
+Here’s a little circle that I just coded into this page:
+
+    <svg width="50" height="50">
+        <circle cx="25" cy="25" r="22"
+         fill="blue" stroke="gray" stroke-width="2"/>
+    </svg>
+
+You’re not required to use SVG with D3, but you’ll soon find that SVG provides a range of visual opportunities that aren’t possible with regular HTML elements.

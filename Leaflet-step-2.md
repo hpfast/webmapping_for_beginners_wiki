@@ -100,11 +100,43 @@ Add custom markers, circles and polygons to your map. (for example your home add
 	</script>
 	~~~~
 
-### geoJson-tilelayer
-geoJson is the standard data type to create web maps with. You can add this data as another map layer.
+
+
+### Vector Data
+
+What we just added are vector data layers.
+
+
+### GeoJSON
+
+JSON stands for JavaScript Object Notation. 
+GeoJSON is a format for encoding a variety of geographic data structures.
+This is how it looks like:
+
+	{
+	  "type": "Feature",
+	  "geometry": {
+	    "type": "Point",
+	    "coordinates": [125.6, 10.1]
+	  },
+	  "properties": {
+	    "name": "Dinagat Islands"
+	  }
+	}
+
+GeoJSON supports the following geometry types: `Point, LineString, Polygon, MultiPoint, MultiLineString, and MultiPolygon`. Geometric objects with additional properties are Feature objects. Sets of features are contained by FeatureCollection objects.
+
+It uses the World Geodetic System 1984, and units of decimal degrees.
+
+More links and info can be found in [[Tips & Tricks]]
 
 * Do you want to know more about geojson have a look at https://en.wikipedia.org/wiki/GeoJSON
 * ! geoJson mostly works on a 'local webserver', check: https://github.com/mrdoob/three.js/wiki/How-to-run-things-locally
+* http://www.macwright.org/2015/03/23/geojson-second-bite.html 
+
+
+### geoJson-tilelayer
+geoJson is the standard data type to create web maps with. You can add this data as another map layer.
 
 1. Place the vd.geojson file in your js folder
 2. Plave vd.png in your img folder
