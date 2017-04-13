@@ -2,7 +2,7 @@
 
 Hypertext Markup Language is used to structure content for web browsers. The simplest HTML page looks like this:
 
-    ~~~~
+``` html
     <!DOCTYPE html>
     <html>
         <head>
@@ -13,8 +13,7 @@ Hypertext Markup Language is used to structure content for web browsers. The sim
             <p>This is a really interesting paragraph.</p>
         </body>
     </html>
-    ~~~~
-
+```
 
 **Let's try this!**
 
@@ -27,16 +26,16 @@ Hypertext Markup Language is used to structure content for web browsers. The sim
 
 Some basic elements to know and recognize are:
     
-    <head> The <head> element is a container for all the head elements.
-    The <head> element can include a title for the document, scripts, styles, meta information, and more.
+`<head>` The `<head>` element is a container for all the head elements.
+The `<head>` element can include a title for the document, scripts, styles, meta information, and more.
 
-    <body> The <body> tag defines the document's body.
-    The <body> element contains all the contents of an HTML document, such as text, hyperlinks, images, tables, lists, etc.
+`<body>` The `<body>` tag defines the document's body.
+The `<body>` element contains all the contents of an HTML document, such as text, hyperlinks, images, tables, lists, etc.
     
-    <h1></h1> to <h6></h6>  <h1> defines the most important heading. <h6> defines the least important heading. 
-    <p></p> The             <p> tag defines a paragraph.
-    <div></div>             The <div> tag defines a division or a section in an HTML document.
-    <a href=""></a>         The <a> tag defines a hyperlink, which is used to link from one page to another.
+`<h1></h1>` to `<h6></h6>` are headings. `<h1>` defines the most important heading. `<h6>` defines the least important heading. 
+`<p></p>` The `<p>` tag defines a paragraph.
+`<div></div>` The `<div>` tag defines a division or a section in an HTML document.
+`<a href=""></a>` The `<a>` tag defines a hyperlink, which is used to link from one page to another.
 
 5. Try to add some more headers and text to your first HTML.
 
@@ -56,7 +55,6 @@ The web inspector shows you the content of your page and the current state of th
 2. Do you see the same content as we just made in our text editor?
 3. Just have a look around. Nothing can happen!
 
-The web inspector is also great for debuggin. It can logs errors or comments! We will show this later!
 
 ### DOM
 
@@ -71,37 +69,33 @@ Cascading Style Sheets are used to style the visual presentation of HTML pages. 
 
 A simple CSS stylesheet looks like this:
 
+```css
     body {
         background-color: blue;
         color: white;
     }
+```
 
-CSS styles consist of selectors and rules. Selectors identify the specific elements of your HTML to which styles will be applied:
-
-    h1          /* Selects level 1 headings              */
-    h2          /* Selects level 2 headings              */
-    p           /* Selects paragraphs                    */
-    div         /* Selects div elements                  */
-
-
-Rules are properties that, cumulatively, form the styles:
+CSS styles consist of selectors and rules. Selectors identify the specific elements of your HTML to which styles will be applied. Examples of some rules:
 
     color: pink;
     background-color: yellow;
     margin: 10px;
     padding: 25px;
 
-
 We connect selectors and rules using curly brackets:
 
+```css
     p {
         font-size: 12px;
         line-height: 14px;
         color: white;
     }
+```
 
 CSS rules can be included directly within the head of a document, like so
 
+```html
     <head>
         <style type="text/css">
             p {
@@ -110,17 +104,21 @@ CSS rules can be included directly within the head of a document, like so
             }
         </style>
     </head>
+```
 
 or saved in an external file with a .css suffix, and then referenced in the document’s head:
 
+```html
     <head>
         <link rel="stylesheet" href="style.css">
     </head>
+```
 
 **We will try this!**
 
 1. Copy this style code into your index.html page.
 
+```html
     <style type="text/css">
         body {
             background-color: blue;
@@ -131,10 +129,13 @@ or saved in an external file with a .css suffix, and then referenced in the docu
             color: lime;
         }
     </style>
+```
 
 2. Refresh your browser.
-3. Play around with the CSS and HTML. Make yourself a nice page! 
+[This](https://nieneb.github.io/css_example/) is how it should look like.
 
+3. Play around with the CSS and HTML. Make yourself a nice page! 
+On https://www.w3schools.com/css/ you can find a great overview of all the possibilities with CSS.
 
 ### JavaScript
 
@@ -142,18 +143,22 @@ JavaScript is a dynamic scripting language that can instruct the browser to make
 
 Scripts can be included directly in HTML, between two script tags
 
+```html
     <body>
         <script type="text/javascript">
             alert("Hello, world!");
         </script>
     </body>
+```
 
 or stored in a separate file, and then referenced somewhere the HTML (commonly in the head):
 
+```html
     <head>
         <title>Page Title</title>
         <script type="text/javascript" src="myscript.js"></script>
     </head>
+```
 
 We will explain the JavaScript part, immediatly with Leaflet. Because we all came here to make interactive maps!
 

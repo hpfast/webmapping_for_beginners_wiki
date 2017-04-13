@@ -101,11 +101,10 @@ Add custom markers, circles and polygons to your map. (for example your home add
 	~~~~
 
 
-
 ### Vector Data
 
 What we just added are vector data layers.
-
+Difference between raster and vector. 
 
 ### GeoJSON
 
@@ -129,10 +128,6 @@ GeoJSON supports the following geometry types: `Point, LineString, Polygon, Mult
 It uses the World Geodetic System 1984, and units of decimal degrees.
 
 More links and info can be found in [[Tips & Tricks]]
-
-* Do you want to know more about geojson have a look at https://en.wikipedia.org/wiki/GeoJSON
-* ! geoJson mostly works on a 'local webserver', check: https://github.com/mrdoob/three.js/wiki/How-to-run-things-locally
-* http://www.macwright.org/2015/03/23/geojson-second-bite.html 
 
 
 ### geoJson-tilelayer

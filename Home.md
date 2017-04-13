@@ -32,7 +32,7 @@ Your laptop with:
 
 * a web browser, like Firefox, Chrome or Safari.
 * a proper text editor, like [SublimeText](http://www.sublimetext.com/) or [Brackets](http://brackets.io/) with Syntax Hightlighting.
-* a Github account. Create one at [www.github.com](www.github.com).
+* a Github account. Create one at [www.github.com](https://github.com/join?source=header-home).
 * internet.
 
 **Start with reading the [[Introduction]]**
