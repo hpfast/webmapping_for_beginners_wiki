@@ -26,16 +26,16 @@ Hypertext Markup Language is used to structure content for web browsers. The sim
 
 Some basic elements to know and recognize are:
     
-`<head>` The `<head>` element is a container for all the head elements.
+The `<head>` element is a container for all the head elements.
 The `<head>` element can include a title for the document, scripts, styles, meta information, and more.
 
-`<body>` The `<body>` tag defines the document's body.
+The `<body>` tag defines the document's body.
 The `<body>` element contains all the contents of an HTML document, such as text, hyperlinks, images, tables, lists, etc.
     
 `<h1></h1>` to `<h6></h6>` are headings. `<h1>` defines the most important heading. `<h6>` defines the least important heading. 
-`<p></p>` The `<p>` tag defines a paragraph.
-`<div></div>` The `<div>` tag defines a division or a section in an HTML document.
-`<a href=""></a>` The `<a>` tag defines a hyperlink, which is used to link from one page to another.
+The `<p></p>` tag defines a paragraph.
+The`<div></div>` tag defines a division or a section in an HTML document.
+ The `<a href=""></a>`tag defines a hyperlink, which is used to link from one page to another.
 
 5. Try to add some more headers and text to your first HTML.
 
