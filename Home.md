@@ -1,8 +1,10 @@
 ## Welcome to the workshop: Webmapping for beginners!
 
-Maptime is hands on! 
 
+<img align="center" src="https://raw.githubusercontent.com/wiki/NieneB/Webmapping_for_beginners/img/maptime-logo.png" alt="Maptime-AMS">
 ![maptime](https://raw.githubusercontent.com/wiki/NieneB/Webmapping_for_beginners/img/maptime-logo.png)
+*Maptime, time for making maps!*
+
 
 
 The team from Webmapper developed this workshop in the context of Maptime to share their hands-on experience in web cartography and geographic web application development. 
