@@ -30,9 +30,12 @@ HTML stands for Hyper Text Markup Language. It is used to give websites structur
 **Let's try this!**
 
 :white_check_mark: Open your text editor.
+
 :white_check_mark: Copy the previous code into an empty file to make your basic HTML page.
- :white_check_mark: Save the file in `yourDirectory` and call the file `index.html`.
- :white_check_mark: Open your index.html file with your browser.
+
+:white_check_mark: Save the file in `yourDirectory` and call the file `index.html`.
+
+:white_check_mark: Open your index.html file with your browser.
 
 [This](https://nieneb.github.io/html_example/) is what it should look like!
 
@@ -121,9 +124,11 @@ or saved in an external file with a .css suffix, and then referenced in the docu
 ```
 
 :white_check_mark: Refresh your browser.
+
 [This](https://nieneb.github.io/css_example/) is how it should look like.
 
 :white_check_mark: Play around with the CSS and HTML. Make yourself a nice page! 
+
 On https://www.w3schools.com/css/ you can find a great overview of all the possibilities with CSS.
 
 > *** 
@@ -131,14 +136,16 @@ On https://www.w3schools.com/css/ you can find a great overview of all the possi
 > 
 > That sounds scary! But do not be afraid. The browser web inspector is going to be your best friend! Let's explore this. 
 > 
-> 1. In your browser when you opened your html 
+> :white_check_mark: In your browser when you opened your html 
+>
 > * Click with your right mouse button, choose : `Inspect Element`
 > * Or Press F12
 > 
 > The web inspector shows you the content of your page and the current state of the DOM. *DOM stands for Document Object Model and refers to the hierarchical > structure of HTML. Web browsers parse the DOM in order to make sense of a page’s content.*
 > 
-> 2. Do you see the same content as we just made in our text editor?
-> 3. Just have a look around. Nothing can happen!
+> :white_check_mark: Do you see the same content as we just made in our text editor?
+>
+> :white_check_mark: Just have a look around. Nothing can happen!
 > 
 > We will use the web inspector later again as a debugger, when your web-page doesn't show what you wanted it to! For now, you can close it again.
 > *** 
