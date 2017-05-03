@@ -73,7 +73,7 @@ Now you will have:
   </body>
 </html>
 ```
-The basics are done! 
+- [ ] The basics are done! 
 
 ### Adding a base layer
 
@@ -111,7 +111,7 @@ Do you see your map? Great!
 
 > ***
 > ### If Not: Open the debugger 
-> 
+>
 > * Click with your right mouse button, choose : `Inspect Element`
 > * Or Press F12
 > 
