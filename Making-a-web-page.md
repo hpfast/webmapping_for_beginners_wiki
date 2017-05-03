@@ -1,6 +1,20 @@
-### HTML
 
-Hypertext Markup Language is used to structure content for web browsers. The simplest HTML page looks like this:
+### Why learn HTML, CSS and JavaScript?
+
+The 3 languages all web developers must learn:
+
+   1. HTML to define the content of web pages
+
+   2. CSS to specify the layout of web pages
+
+   3. JavaScript to program the behaviour of web pages
+
+Everything you see in a website is a result of the combination of HTML and CSS. With these two languages, you will have the skills you need to bring your website design to life!In order to make interactive web pages we will need to use JavaScript.
+
+This tutorial is about the basics of HTML and CSS. JavaScript we will use immediately when implementing Leaflet! 
+
+### HTML
+HTML stands for Hyper Text Markup Language. It is used to give websites structure with text, links, images, and other fundamental elements. The simplest HTML page looks like this:
 
 ``` html
     <!DOCTYPE html>
@@ -39,33 +53,12 @@ The`<div></div>` tag defines a division or a section in an HTML document.
 
 5. Try to add some more headers and text to your first HTML.
 
-### Developer Tools
-
-That sounds scary! But do not be afraid. The browser web inspector is going to be your best friend! Let's explore this. 
-
-1. In your browser when you opened your html 
-* Click with your right mouse button, choose : `Inspect Element`
-
-or 
-
-* Press F12
-
-The web inspector shows you the content of your page and the current state of the DOM. 
-
-2. Do you see the same content as we just made in our text editor?
-3. Just have a look around. Nothing can happen!
-
-
-### DOM
-
-The Document Object Model refers to the hierarchical structure of HTML. Web browsers parse the DOM in order to make sense of a page’s content.
-
 **But this webpage looks really boring!!**
 True, so let´s continue with CSS. 
 
 ### CSS
 
-Cascading Style Sheets are used to style the visual presentation of HTML pages. Every element of your HTML can be styled with CSS.
+CSS stands for Cascading Style Sheets. It is used to style the visual appearance of HTML elements. Every element of your HTML can be styled with CSS.
 
 A simple CSS stylesheet looks like this:
 
@@ -137,6 +130,27 @@ or saved in an external file with a .css suffix, and then referenced in the docu
 3. Play around with the CSS and HTML. Make yourself a nice page! 
 On https://www.w3schools.com/css/ you can find a great overview of all the possibilities with CSS.
 
+
+### Developer Tools
+
+That sounds scary! But do not be afraid. The browser web inspector is going to be your best friend! Let's explore this. 
+
+1. In your browser when you opened your html 
+* Click with your right mouse button, choose : `Inspect Element`
+
+or 
+
+* Press F12
+
+The web inspector shows you the content of your page and the current state of the DOM. 
+
+2. Do you see the same content as we just made in our text editor?
+3. Just have a look around. Nothing can happen!
+
+DOM stands for Document Object Model and refers to the hierarchical structure of HTML. Web browsers parse the DOM in order to make sense of a page’s content.
+
+We will use the web inspector later again as a debugger, when your webpage doesn't show what you wanted it to! For now, you can close it again.
+
 ### JavaScript
 
 JavaScript is a dynamic scripting language that can instruct the browser to make changes to a page after it has already loaded.
@@ -160,6 +174,6 @@ or stored in a separate file, and then referenced somewhere the HTML (commonly i
     </head>
 ```
 
-We will explain the JavaScript part, immediatly with Leaflet. Because we all came here to make interactive maps!
+We will learn JavaScript immediately when implementing Leaflet. Because we all came here to make interactive maps!
 
 **Continue to [[Leaflet Step 1]]**
