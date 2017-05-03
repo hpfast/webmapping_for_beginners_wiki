@@ -175,4 +175,4 @@ if (xhr.status === 200) {
 xhr.send();
 ```
 
-Continue to [[Leaflet step 3]]
+:arrow_right: Continue to [[Leaflet step 3]]

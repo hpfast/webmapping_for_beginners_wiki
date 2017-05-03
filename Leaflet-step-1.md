@@ -113,17 +113,14 @@ Do you see your map? Great!
 > ### If Not: Open the debugger 
 > 
 > * Click with your right mouse button, choose : `Inspect Element`
-> 
-> or 
-> 
-> * Press F12
+> * Or Press F12
 > 
 > The debugger shows you the content of your page. But also logs any errors or comments! 
 > Go to the tab `Web Console` to see if it reports anything useful for you.
 > 
 > Do you get:
 > 
-  > ReferenceError: L is not defined
+> `ReferenceError: L is not defined`
 > 
 > Then shuffle around the order in your script. Put the `leaflet.js script` above your custom script!
 > ***
@@ -148,4 +145,4 @@ Practice with different tiles, coordinates and zoom levels to make your own base
 
 
 
-Continue to [[Leaflet Step 2]]
+:arrow_right: Continue to [[Leaflet Step 2]]

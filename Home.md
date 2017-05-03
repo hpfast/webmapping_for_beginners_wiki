@@ -37,4 +37,4 @@ Your laptop with:
 * a Github account. Create one at [www.github.com](https://github.com/join?source=header-home).
 * internet.
 
-**Start with reading the [[Introduction Leaflet]]**
+:arrow_right: **Start with reading the [[Introduction Leaflet]]**

@@ -185,4 +185,4 @@ Do you get:
 
   ...
 
-Continue to [[D3 Step 2]]
+:arrow_right: Continue to [[D3 Step 2]]
