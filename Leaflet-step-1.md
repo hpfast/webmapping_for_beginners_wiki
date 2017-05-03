@@ -111,7 +111,7 @@ Do you see your map? Great!
 
 > ***
 > ### If Not: Open the debugger 
-> 
+> ► /play noooo
 > * Click with your right mouse button, choose : `Inspect Element`
 > 
 > or 
