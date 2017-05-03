@@ -3,9 +3,9 @@
 
 The 3 languages all web developers must learn:
 
-1. **HTML to define the content of web pages**
-2. **CSS to specify the layout of web pages**
-3. **JavaScript to program the behaviour of web pages**
+1. HTML to define the content of web pages.
+2. CSS to specify the layout of web pages.
+3. JavaScript to program the behaviour of web pages.
 
 Everything you see in a website is a result of the combination of HTML and CSS. With these two languages, you will have the skills you need to bring your website design to life! In order to make interactive web pages we will need to use JavaScript.
 
@@ -59,8 +59,7 @@ HTML stands for Hyper Text Markup Language. It is used to give websites structur
 
 :white_check_mark: Try to add some more headers and text to your first HTML.
 
-**But this webpage looks really boring!!**
-True, so let´s continue with CSS. 
+**But this webpage looks really boring!!** True, so let´s continue with CSS. 
 
 ### CSS
 
@@ -85,7 +84,7 @@ CSS styles consist of selectors and rules. Selectors identify the specific eleme
     }
 ```
 
-CSS rules can be included directly within the head of a document, like so
+CSS rules can be included directly within the head of a document, like so:
 
 ```html
     <head>
@@ -154,7 +153,7 @@ On https://www.w3schools.com/css/ you can find a great overview of all the possi
 
 JavaScript is a dynamic scripting language that can instruct the browser to make changes to a page after it has already loaded.
 
-Scripts can be included directly in HTML, between two script tags
+Scripts can be included directly in HTML, between two script tags:
 
 ```html
     <body>
@@ -164,7 +163,7 @@ Scripts can be included directly in HTML, between two script tags
     </body>
 ```
 
-or stored in a separate file, and then referenced somewhere the HTML (commonly in the head):
+Or stored in a separate file, and then referenced somewhere the HTML (commonly in the head):
 
 ```html
     <head>
