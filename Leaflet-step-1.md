@@ -30,8 +30,8 @@ This is where our map will come!
 
 ``` css
 #map { 
-	height: 300px; 
-	width:100%;
+  height: 300px; 
+  width:100%;
 } 
 ```
 8. Change the amount of pixels and/or percentage to the map size you prefer.
@@ -59,16 +59,16 @@ Now you will have:
 ``` html
 <!doctype html>
 <html>
-	<head>
-		<title>My first Leaflet map</title>  
-		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
-		<link rel="stylesheet" href="main.css"/>
-	</head>   
-	<body>
-		<H1>example</H1>
-		<div id="map"></div>
-		<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-	</body>
+  <head>
+    <title>My first Leaflet map</title>  
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+    <link rel="stylesheet" href="main.css"/>
+  </head>   
+  <body>
+    <H1>example</H1>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+  </body>
 </html>
 ```
 The basics are done! 
@@ -81,18 +81,18 @@ For a real map you need a base layer. This is the background of your map made ou
 
 ``` js
 <script>
-	//initialize the map         
-	var map = L.map('map').setView([52.18, 5.5308], 11);
-	
-	//Create baselayer - tiles         
-	var backgroundMap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
-		{
-		attribution: '<a href="http://openstreetmap.org">OpenStreetMap</a>contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
-		maxZoom: 19
-		}
-	);
-	
-	backgroundMap.addTo(map);
+  //initialize the map         
+  var map = L.map('map').setView([52.18, 5.5308], 11);
+  
+  //Create baselayer - tiles         
+  var backgroundMap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
+    {
+    attribution: '<a href="http://openstreetmap.org">OpenStreetMap</a>contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+    maxZoom: 19
+    }
+  );
+  
+  backgroundMap.addTo(map);
 </script>
 ``` 
 
@@ -121,7 +121,7 @@ Go to the tab `Web Console` to see if it reports anything useful for you.
 
 Do you get:
 
-	ReferenceError: L is not defined
+  ReferenceError: L is not defined
 
 Then shuffle around the order in your script. Put the `leaflet.js script` above your custom script!
 
@@ -134,9 +134,9 @@ Then shuffle around the order in your script. Put the `leaflet.js script` above 
 
 3. Another free tile provider is [maps.stamen.com](maps.stamen.com). These even provide 3 varieties:
 
-	* http://tile.stamen.com/toner/{z}/{x}/{y}.png
-	* http://tile.stamen.com/terrain/{z}/{x}/{y}.jpg
-	* http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg
+  * http://tile.stamen.com/toner/{z}/{x}/{y}.png
+  * http://tile.stamen.com/terrain/{z}/{x}/{y}.jpg
+  * http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg
 
 Or have a look at https://leaflet-extras.github.io/leaflet-providers/preview/ 
 

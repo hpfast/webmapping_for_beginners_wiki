@@ -12,7 +12,7 @@
 		<title>basic HTML</title> 
 	</head>
 	<body>
-		<H1>Example</H1>
+		<h1>Example</h1>
 	</body>
 </html>
 ```
@@ -43,11 +43,11 @@ Now your file will look like:
 	<head>
 		<meta charset="utf-8">
 		<title>My first map in D3</title> 
-		<link rel="stylesheet" href="style/main.css"/> 
+		<link rel="stylesheet" href="main.css"/> 
 	</head>
 	<body>
 		<H1>Example</H1>
-		<script src="//d3js.org/d3.v3.min.js"></script> 
+		<script src="//d3js.org/d3.v4.min.js"></script> 
 		<script> your code goes here </script>
 	</body>
 </html>
@@ -66,13 +66,13 @@ The basics are done!
 	var h = 300;
 
 	//Define map projection
-	var projection = d3.geo.mercator()
+	var projection = d3.geoMercator()
 		.center([ 30, 40 ])
 		.translate([ w/2, h/2 ])
 		.scale([ w/4 ]);
 
 	//Define path generator
-	var path = d3.geo.path()
+	var path = d3.geoPath()
 		.projection(projection);
 
 	//Create SVG
@@ -107,17 +107,17 @@ var h = 300;
 
 ``` js
 //Define map projection
-var projection = d3.geo.mercator()
+var projection = d3.geoMercator()
 	.center([30, 40])
 	.translate([ w/2, h/2 ])
 	.scale([ w/7 ]);
 ```
 				
-* When the projection is created we can transform our geographic data to SVG with the help of `D3.geo.path` 
+* When the projection is created we can transform our geographic data to SVG with the help of `D3.geoPath` 
 	
 ``` js
 //Define path generator
-var path = d3.geo.path()
+var path = d3.geoPath()
 	.projection(projection);
 ``` 
 
@@ -146,7 +146,7 @@ To 'bind' your data to the DOM is the next step. With D3 you can connect data li
 var layerLanden = svg.append('g');
 
 //Load in GeoJSON data
-d3.json("/landen.json", function(json) {
+d3.json("landen.json", function(json) {
 	//Bind data and create one path per GeoJSON feature
 	layerLanden.selectAll("path")
 		 .data(json.features)
@@ -162,7 +162,7 @@ d3.json("/landen.json", function(json) {
 6. For example, try to zoom in on the Netherlands!
 
 ``` js
-var projection = d3.geo.mercator()
+var projection = d3.geoMercator()
 	.center([4, 52])
 	.translate([ w/2, h/2 ]
 	.scale(1000);

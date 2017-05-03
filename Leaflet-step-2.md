@@ -28,9 +28,9 @@ monique.bindPopup(popup);
 
 ``` js
 var circle = L.circle([51.508, -0.11], 500, {
-	color: 'red',
-	fillColor: '#f03',
-	fillOpacity: 0.5
+  color: 'red',
+  fillColor: '#f03',
+  fillOpacity: 0.5
 }).addTo(map);
 ``` 
 
@@ -38,9 +38,9 @@ var circle = L.circle([51.508, -0.11], 500, {
 
 ``` js
 var polygon = L.polygon([
-	 [51.509, -0.08],
-	 [51.503, -0.06],
-	 [51.51, -0.047]
+  [51.509, -0.08],
+  [51.503, -0.06],
+  [51.51, -0.047]
 ]).addTo(map);
 ```
 
@@ -49,57 +49,57 @@ var polygon = L.polygon([
 
 ``` js
 <script>
-	//initialize the map
-	var map = L.map('map').setView([52.18, 5.5308], 11);
-	
-	//Create baselayer - tiles
-	var backgroundMap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
-		attribution: '<a href="http://openstreetmap.org">OpenStreetMap</a>contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
-		maxZoom: 19
-	});
-	
-	backgroundMap.addTo(map);
-	
-	//Add markers
-	var monique = L.marker([52.070, 4.300]);
-	monique.addTo(map);
-	
-	var miranda = L.marker([53.201, 5.799]);
-	miranda.addTo(map);
-	
-	var barbel = L.marker([52.351, 4.620]);
-	barbel.addTo(map);
-	
-	var bea = L.marker([51.560, 5.091]);
-	bea.addTo(map);
-	
-	//Add pop-ups
-	var popup = "Monique lives in Den Haag.";
-	monique.bindPopup(popup);
-	
-	var popup1 = "Barbel lives in Heemstede.";
-	barbel.bindPopup(popup1)
-	
-	var popup2 = "Miranda lives in Leeuwarden.";
-	miranda.bindPopup(popup2);
-	
-	var popup3 = "Bea lives in Tilburg.";
-	bea.bindPopup(popup3);
-	
-	//add a circle
-	var circle = L.circle([52.156, 5.387], 4500, {
-		color: 'red',
-		fillColor: '#f03',
-		fillOpacity: 0.5
-	}).addTo(map);  
-	
-	//add a polygon   
-	var polygon = L.polygon([
-		[53.201, 5.799],
-		[52.351, 4.620],
-		[52.070, 4.300],
-		[51.560, 5.091]
-	]).addTo(map);
+  //initialize the map
+  var map = L.map('map').setView([52.18, 5.5308], 11);
+  
+  //Create baselayer - tiles
+  var backgroundMap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+    attribution: '<a href="http://openstreetmap.org">OpenStreetMap</a>contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+    maxZoom: 19
+  });
+  
+  backgroundMap.addTo(map);
+  
+  //Add markers
+  var monique = L.marker([52.070, 4.300]);
+  monique.addTo(map);
+  
+  var miranda = L.marker([53.201, 5.799]);
+  miranda.addTo(map);
+  
+  var barbel = L.marker([52.351, 4.620]);
+  barbel.addTo(map);
+  
+  var bea = L.marker([51.560, 5.091]);
+  bea.addTo(map);
+  
+  //Add pop-ups
+  var popup = "Monique lives in Den Haag.";
+  monique.bindPopup(popup);
+  
+  var popup1 = "Barbel lives in Heemstede.";
+  barbel.bindPopup(popup1)
+  
+  var popup2 = "Miranda lives in Leeuwarden.";
+  miranda.bindPopup(popup2);
+  
+  var popup3 = "Bea lives in Tilburg.";
+  bea.bindPopup(popup3);
+  
+  //add a circle
+  var circle = L.circle([52.156, 5.387], 4500, {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5
+  }).addTo(map);  
+  
+  //add a polygon   
+  var polygon = L.polygon([
+    [53.201, 5.799],
+    [52.351, 4.620],
+    [52.070, 4.300],
+    [51.560, 5.091]
+  ]).addTo(map);
 </script>
 ```
 
@@ -122,11 +122,11 @@ This is how it looks like:
 {
   "type": "Feature",
   "geometry": {
-    "type": "Point",
-    "coordinates": [125.6, 10.1]
+   "type": "Point",
+   "coordinates": [125.6, 10.1]
   },
   "properties": {
-    "name": "Dinagat Islands"
+   "name": "Dinagat Islands"
   }
 }
 ```
@@ -149,16 +149,16 @@ geoJson is the standard data type to create web maps with. You can add this data
 //geojson without jQuery with xhr define icon first
 
 var vdIcon = L.icon({
-	iconUrl: "images/vd.png",
-	iconSize: [20,20]
+  iconUrl: "images/vd.png",
+  iconSize: [20,20]
 });
 
 //create the geojson layer
 
 var geojson = L.geoJson(null,{
-	pointToLayer: function(feature,latlng){
-		return L.marker(latlng, {icon: vdIcon});
-	}
+  pointToLayer: function(feature,latlng){
+    return L.marker(latlng, {icon: vdIcon});
+  }
 }).addTo(map);
 
 //add your geojson data to the layer
@@ -167,10 +167,10 @@ var xhr = new XMLHttpRequest();
 xhr.open('GET', encodeURI("js/vd.geojson"));
 xhr.onload = function() {
 if (xhr.status === 200) {
-		geojson.addData(JSON.parse(xhr.responseText));
-	} else {
-		alert('Request failed.  Returned status of ' + xhr.status);
-	}
+    geojson.addData(JSON.parse(xhr.responseText));
+  } else {
+    alert('Request failed.  Returned status of ' + xhr.status);
+  }
 };
 xhr.send();
 ```
