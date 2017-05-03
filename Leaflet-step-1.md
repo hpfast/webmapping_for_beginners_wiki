@@ -73,7 +73,7 @@ Now you will have:
   </body>
 </html>
 ```
-The basics are done! 
+- [ ] The basics are done! 
 
 ### Adding a base layer
 
