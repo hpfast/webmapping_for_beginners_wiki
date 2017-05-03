@@ -57,4 +57,6 @@ Some background information, extra information or debug tips are shown in grey :
 > or
 > Some extra explanation
 
+So:
+
 :arrow_right: **Start with reading the [[Introduction Leaflet]]**

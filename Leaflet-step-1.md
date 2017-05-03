@@ -104,8 +104,6 @@ For a real map you need a base layer. This is the background of your map made ou
 </script>
 ``` 
 
-**Now you have made a map!**
-
 :information_source: `var map =  L.map("map")` initializes the `map` variable and links it to our `<div id="map"></div>`.
 
 :information_source: `setView()` centres the map `([latitude, longitude], zoom level)`. The projection is Google Mercator. 
@@ -114,12 +112,16 @@ For a real map you need a base layer. This is the background of your map made ou
 
 :information_source: `backgroundMap.addTo()` adds the tile layer to the map.
 
+
+Now you have made your first web map!
+
 :white_check_mark: Open your index.html file in your browser!
 
 Do you see your map? Great! 
 
 
-> ###  :bangbang: If Not: Open the debugger 
+> ###  :bangbang: you do not see a map? 
+> Open the debugger 
 >
 > * Click with your right mouse button, choose : `Inspect Element`
 > * Or Press F12
@@ -142,7 +144,7 @@ Practice with different tiles, coordinates and zoom levels to make your own base
 
 :white_check_mark: Looking for a specific place to centre on? Find your coordinates here: [http://www.mapcoordinates.net/en](http://www.mapcoordinates.net/en)
 
-:white_check_mark: There are many different tile providers! Just copy their code given, replacing your own code starting from `L.tileLayer (... );`
+:white_check_mark: There are many different tile providers! Just copy their code given, replacing your own code starting from `L.tileLayer (... );` Try out some different styles. 
 
 Another free tile provider is [maps.stamen.com](maps.stamen.com). These even provide 3 varieties:
  

@@ -139,7 +139,7 @@ On https://www.w3schools.com/css/ you can find a great overview of all the possi
 > * Click with your right mouse button, choose : `Inspect Element`
 > * Or Press F12
 > 
-> The web inspector shows you the content of your page and the current state of the DOM. *DOM stands for Document Object Model and refers to the hierarchical > structure of HTML. Web browsers parse the DOM in order to make sense of a page’s content.*
+> The web inspector shows you the content of your page and the current state of the DOM. DOM stands for Document Object Model and refers to the hierarchical structure of HTML. Web browsers parse the DOM in order to make sense of a page’s content.
 > 
 > :white_check_mark: Do you see the same content as we just made in our text editor?
 >
@@ -173,4 +173,4 @@ Or stored in a separate file, and then referenced somewhere the HTML (commonly i
 
 We will learn JavaScript immediately when implementing Leaflet. Because we all came here to make interactive maps!
 
-**Continue to [[Leaflet Step 1]]**
+:arrow_right: **Continue to [[Leaflet Step 1]]**
