@@ -144,14 +144,13 @@ Practice with different tiles, coordinates and zoom levels to make your own base
 
 :white_check_mark: There are many different tile providers! Just copy their code given, replacing your own code starting from `L.tileLayer (... );`
 
+Another free tile provider is [maps.stamen.com](maps.stamen.com). These even provide 3 varieties:
+ 
+   * http://tile.stamen.com/toner/{z}/{x}/{y}.png
+   * http://tile.stamen.com/terrain/{z}/{x}/{y}.jpg
+   * http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg
 
-> Another free tile provider is [maps.stamen.com](maps.stamen.com). These even provide 3 varieties:
-> 
-  > * http://tile.stamen.com/toner/{z}/{x}/{y}.png
-  > * http://tile.stamen.com/terrain/{z}/{x}/{y}.jpg
-  > * http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg
-> 
-> Or have a look at https://leaflet-extras.github.io/leaflet-providers/preview/ 
+Or have a look at https://leaflet-extras.github.io/leaflet-providers/preview/ 
 
 
 :arrow_right: Continue to [[Leaflet Step 2]]

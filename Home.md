@@ -37,4 +37,24 @@ Your laptop with:
 * a Github account. Create one at [www.github.com](https://github.com/join?source=header-home).
 * internet.
 
+## How does this tutorial work?
+Just follow the links. At the bottom of each step is the link to the next step.
+
+:arrow_right: Takes you to the next step
+
+The things that you should do, start with a :white_check_mark:
+
+Code is shown in code blocks or in-line. `this is in-line code` 
+
+``` html
+<h1> This is block code </h1>
+```
+Explanation about the code starts with :information_source:
+
+Some background information, extra information or debug tips are shown in grey :
+
+> This is some additional information
+> or
+> Some extra explanation
+
 :arrow_right: **Start with reading the [[Introduction Leaflet]]**

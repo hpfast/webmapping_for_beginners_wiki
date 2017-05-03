@@ -6,10 +6,10 @@ Leaflet is an open-source JavaScript library for interactive web maps. It's ligh
 
 Leaflet creates "Slippy" maps with raster tiled base layers, user interaction like panning and zooming, and feature layers that you supply. It handles various basic tasks like converting data to map layers and mouse interactions, and it's easy to extend with plug-ins. It will also work well across most types of devices. 
 
-> ***
+
 > ### JavaScript Library 
 > Including a JavaScript library in your code is like copying and pasting someone else's code into yours. You have access to everything in that library. In our case, it's a bunch of cool tools to make web maps and give them familiar functionality.
-> ***
+
 
 ### Web maps
 
