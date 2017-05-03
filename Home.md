@@ -1,28 +1,28 @@
 ## Welcome to the workshop: Webmapping for beginners!
 
-
 <p align="center"> <img align="center" src="https://raw.githubusercontent.com/wiki/NieneB/Webmapping_for_beginners/img/maptime-logo.png" alt="Maptime-AMS"> </p>
 
 <p align="center"> <i> Maptime, time for making maps! </i></p>
 
+The team from [Webmapper](http://webmapper.net/) developed this workshop in the context of [Maptime](maptime.io) to share their hands-on experience in web cartography and geographic web application development. 
 
+![webmapper](https://raw.githubusercontent.com/wiki/NieneB/Webmapping_for_beginners/img/webmapperlogo.png)
 
-The team from Webmapper developed this workshop in the context of Maptime to share their hands-on experience in web cartography and geographic web application development. 
-
-![webmapper](img/maptime-logo.png)
-
-JavaScript powers most on-line maps these days. During this workshop we'll cover the two primary mapping libraries D3.js and Leaflet.js.
-
-We'll start off with an overview of some of the best maps of 2016 made with JavaScript, to give you an insight into the versatility of JavaScript for maps. Followed by a brief introduction into making web pages. To eventually spend most of our time on learning the tools of the trade.
+Webmapper is a cartographic development and consultancy company based in Utrecht, the Netherlands. -They make geographic applications for the web with special attention for web-cartography. 
 
 ## Short outline
 
-1. HTML, CSS and JS
-2. Leaflet.js Basics
-2. Leaflet.js Advanced
-2. D3.js Basics
-2. D3.js Advanced
-3. Hosting on Github
+JavaScript powers most on-line maps these days. During this workshop we'll cover the two primary mapping libraries D3.js and Leaflet.js.
+We'll start off with a brief introduction into making web pages. To eventually spend most of our time on learning the tools of the trade.
+
+1. [[Introduction Leaflet]]
+1. HTML, CSS and JS [[Making a web page]]
+2. Leaflet.js Basics [[Leaflet step 1]] [[Leaflet step 2]]
+2. Leaflet.js Advanced [[Leaflet step 3]]
+2. [[Introduction D3]]
+2. D3.js Basics [[D3 step 1]]
+2. D3.js Advanced [[D3 step 2]]
+3. [[Hosting on Github]]
 
 ## Goal 
 
@@ -37,4 +37,4 @@ Your laptop with:
 * a Github account. Create one at [www.github.com](https://github.com/join?source=header-home).
 * internet.
 
-**Start with reading the [[Introduction]]**
+**Start with reading the [[Introduction Leaflet]]**
