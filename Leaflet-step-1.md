@@ -26,19 +26,17 @@
 
 6. Place the `leaflet.css Link` in the `<head>` of your html file.
 7. Place the `leaflet.js script` library in the `<body>`. 
-	* JavaScript libraries are often placed in the head. Though, it is best to place them as far as possible to the bottom of the body. This is much quicker while loading! 
+	*JavaScript libraries are often placed in the head. Though, it is best to place them as far as possible to the bottom of the body. This is much quicker while loading!*
 
-8. Open a new file and save this as `main.css` in a new folder in `yourDirectory` called: `yourDirectory/style`. 
-9. You can also create the following folders here: `images` and `js`. Now you have:
+8. Open a new file and save this as `main.css` in `yourDirectory` called. 
+9. Now you have:
 	* /yourDirectory/index.html
-	* /yourDirectory/style/main.css
-	* /yourDirectory/images/
-	* /yourDirectory/js/
+	* /yourDirectory/main.css
 
 10. Open your index.html file and put the link to your CSS file in the `<head>`.
 
 ``` html
-<link rel="stylesheet" href=“style/main.css"/>
+<link rel="stylesheet" href="main.css"/>
 ```
 
 11. Change the title to “My first Leaflet map".
@@ -64,7 +62,7 @@ Now you will have:
 	<head>
 		<title>My first Leaflet map</title>  
 		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
-		<link rel="stylesheet" href="style/main.css"/>
+		<link rel="stylesheet" href="main.css"/>
 	</head>   
 	<body>
 		<H1>example</H1>
@@ -129,10 +127,9 @@ Then shuffle around the order in your script. Put the `leaflet.js script` above 
 
 5. Practice with different tiles, coordinates and zoom levels to make your own base map. For example, try to zoom in to the place where you live or work! 
 
-3. Looking for a specific place to centre on? Find your coordinates here:
-http://www.mapcoordinates.net/en
+3. Looking for a specific place to centre on? Find your coordinates here: [http://www.mapcoordinates.net/en](http://www.mapcoordinates.net/en)
 
-4. Another free tile provider is maps.stamen.com. These even provide 3 varieties:
+4. Another free tile provider is [maps.stamen.com](maps.stamen.com). These even provide 3 varieties:
 
 	* http://tile.stamen.com/toner/{z}/{x}/{y}.png
 	* http://tile.stamen.com/terrain/{z}/{x}/{y}.jpg

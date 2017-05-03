@@ -7,6 +7,9 @@ Add custom markers, circles and polygons to your map. (for example your home add
 	var marker = L.marker([51.5, -0.09]).addTo(map);
 	~~~~
 
+`var` stands for variable. Variables store data so that they can be used later on in the program.
+Here the keyword `var` creates a new variable named `marker`. The value stored is a Leaflet marker which is immediatly added to our map. 
+
 2. Add another 4 markers. (friends, places you lived or visited?). Note: do give the ‘var’ another name every time. Example:
 
 	~~~~
@@ -20,6 +23,7 @@ Add custom markers, circles and polygons to your map. (for example your home add
 	monique.bindPopup(popup); 
 	~~~~
 
+Did you notice a `;` at the end of every statement? The semicolon tells the computer that the statement has ended.
 
 4. How to place a circle on the map, use your own coordinates:
 
