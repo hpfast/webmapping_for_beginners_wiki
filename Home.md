@@ -1,9 +1,9 @@
 ## Welcome to the workshop: Webmapping for beginners!
 
 
-<img align="center" src="https://raw.githubusercontent.com/wiki/NieneB/Webmapping_for_beginners/img/maptime-logo.png" alt="Maptime-AMS">
-![maptime](https://raw.githubusercontent.com/wiki/NieneB/Webmapping_for_beginners/img/maptime-logo.png)
-*Maptime, time for making maps!*
+<p align="center"> <img align="center" src="https://raw.githubusercontent.com/wiki/NieneB/Webmapping_for_beginners/img/maptime-logo.png" alt="Maptime-AMS"> </p>
+
+<p align="center"> <i> Maptime, time for making maps! </i></p>
 
 
 
