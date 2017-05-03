@@ -97,12 +97,13 @@ For a real map you need a base layer. This is the background of your map made ou
 ``` 
 
 **Now you have made a map!**
-	* `var map =  L.map("map")` initializes the `map` variable and links it to our `<div id="map"></div>`.
-	* `setView()` centres the map `([latitude, longitude], zoom level)`. The projection is Google Mercator. 
-	* Next we add our base-layer tiles. `L.tileLayer('http://...')` graps one from the internet. 
-	* `backgroundMap.addTo()` adds the tile layer to the map.
 
-**Open your index.html file in your browser!**
+* `var map =  L.map("map")` initializes the `map` variable and links it to our `<div id="map"></div>`.
+* `setView()` centres the map `([latitude, longitude], zoom level)`. The projection is Google Mercator. 
+* Next we add our base-layer tiles. `L.tileLayer('http://...')` graps one from the internet. 
+* `backgroundMap.addTo()` adds the tile layer to the map.
+
+2. **Open your index.html file in your browser!**
 
 Do you see your map? Great! 
 
@@ -127,18 +128,19 @@ Then shuffle around the order in your script. Put the `leaflet.js script` above 
 
 ### Customizing
 
-5. Practice with different tiles, coordinates and zoom levels to make your own base map. For example, try to zoom in to the place where you live or work! 
+1. Practice with different tiles, coordinates and zoom levels to make your own base map. For example, try to zoom in to the place where you live or work! 
 
-3. Looking for a specific place to centre on? Find your coordinates here: [http://www.mapcoordinates.net/en](http://www.mapcoordinates.net/en)
+2. Looking for a specific place to centre on? Find your coordinates here: [http://www.mapcoordinates.net/en](http://www.mapcoordinates.net/en)
 
-4. Another free tile provider is [maps.stamen.com](maps.stamen.com). These even provide 3 varieties:
+3. Another free tile provider is [maps.stamen.com](maps.stamen.com). These even provide 3 varieties:
 
 	* http://tile.stamen.com/toner/{z}/{x}/{y}.png
 	* http://tile.stamen.com/terrain/{z}/{x}/{y}.jpg
 	* http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg
 
 Or have a look at https://leaflet-extras.github.io/leaflet-providers/preview/ 
-There are many different tiles to use! Just copy the code given at the top, replacing your own code starting from `L.tileLayer (... );`
+
+4. There are many different tiles to use! Just copy the code given at the top, replacing your own code starting from `L.tileLayer (... );`
 
 
 Continue to [[Leaflet Step 2]]
