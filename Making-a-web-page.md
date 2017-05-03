@@ -36,9 +36,8 @@ HTML stands for Hyper Text Markup Language. It is used to give websites structur
 
 [This](https://nieneb.github.io/html_example/) is what it should look like!
 
-*** 
-
-> Some basic elements to know and recognize are:
+> *** 
+> ### Some basic elements to know and recognize are:
 > 
 > The `<head>` element is a container for all the head elements.
 > The `<head>` element can include a title for the document, scripts, styles, meta information, and more.
@@ -53,8 +52,7 @@ HTML stands for Hyper Text Markup Language. It is used to give websites structur
 > The`<div></div>` tag defines a division or a section in an HTML document.
 > 
 > The `<a href=""></a>`tag defines a hyperlink, which is used to link from one page to another.
-
-***
+> ***
 
 5. Try to add some more headers and text to your first HTML.
 
@@ -128,8 +126,8 @@ or saved in an external file with a .css suffix, and then referenced in the docu
 3. Play around with the CSS and HTML. Make yourself a nice page! 
 On https://www.w3schools.com/css/ you can find a great overview of all the possibilities with CSS.
 
-*** 
-### Developer Tools
+> *** 
+> ### Developer Tools
 > 
 > That sounds scary! But do not be afraid. The browser web inspector is going to be your best friend! Let's explore this. 
 > 
@@ -140,14 +138,14 @@ On https://www.w3schools.com/css/ you can find a great overview of all the possi
 > 
 > * Press F12
 > 
-The web inspector shows you the content of your page and the current state of the DOM. *DOM stands for Document Object Model and refers to the hierarchical > structure of HTML. Web browsers parse the DOM in order to make sense of a page’s content.*
+> The web inspector shows you the content of your page and the current state of the DOM. *DOM stands for Document Object Model and refers to the hierarchical > structure of HTML. Web browsers parse the DOM in order to make sense of a page’s content.*
 > 
 > 2. Do you see the same content as we just made in our text editor?
 > 3. Just have a look around. Nothing can happen!
 > 
 > We will use the web inspector later again as a debugger, when your web-page doesn't show what you wanted it to! For now, you can close it again.
+> *** 
 
-*** 
 ### JavaScript
 
 JavaScript is a dynamic scripting language that can instruct the browser to make changes to a page after it has already loaded.
