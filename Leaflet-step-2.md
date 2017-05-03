@@ -1,30 +1,30 @@
 ### Markers, circles and polygons
 Add custom markers, circles and polygons to your map. (for example your home address). At least, choose coordinates which are on your map.
 
-1. Add the following to your map:
+:white_check_mark: Add the following to your map:
 
 ``` js
 var marker = L.marker([51.5, -0.09]).addTo(map);
 ```
-**JS** *`var` stands for variable. Variables store data so that they can be used later on in the program.
-Here the keyword `var` creates a new variable named `marker`. The value stored is a Leaflet marker which is immediatly added to our map.*
+> **JS** *`var` stands for variable. Variables store data so that they can be used later on in the program.
+> Here the keyword `var` creates a new variable named `marker`. The value stored is a Leaflet marker which is immediatly added to our map.*
 
-2. Add another 4 markers. (friends, places you lived or visited?). Note: do give the ‘var’ another name every time. Example:
+:white_check_mark: Add another 4 markers. (friends, places you lived or visited?). Note: do give the ‘var’ another name every time. Example:
 
 ``` js
 var monique = L.marker([52.070, 4.300]).addTo(map);
 ```
 
-3. Provide the markers with a pop-up. For monique we add the following pop-up:
+:white_check_mark: Provide the markers with a pop-up. For monique we add the following pop-up:
 
 ``` js
 var popup = "Write your pop up text here";
 monique.bindPopup(popup); 
 ``` 
 
-**JS** *Did you notice a `;` at the end of every statement? The semicolon tells the computer that the statement has ended.*
+> **JS** *Did you notice a `;` at the end of every statement? The semicolon tells the computer that the statement has ended.*
 
-4. How to place a circle on the map, use your own coordinates:
+:white_check_mark: Now place a circle on the map, use your own coordinates:
 
 ``` js
 var circle = L.circle([51.508, -0.11], 500, {
@@ -34,7 +34,7 @@ var circle = L.circle([51.508, -0.11], 500, {
 }).addTo(map);
 ``` 
 
-5. Connect all previous markers with a polygon. Use all previous coordinates and combine them in the right order.
+:white_check_mark: Connect all previous markers with a polygon. Use all previous coordinates and combine them in the right order.
 
 ``` js
 var polygon = L.polygon([
@@ -44,8 +44,7 @@ var polygon = L.polygon([
 ]).addTo(map);
 ```
 
-
-6. Your script should look like the following. Also check the debugger in the browser if everything is correct: F12
+:white_check_mark: Your script should look like the following. Also check the debugger in the browser if everything is correct: `F12`
 
 ``` js
 <script>
@@ -103,14 +102,16 @@ var polygon = L.polygon([
 </script>
 ```
 
-
-**JS** *The double slashes `//` mark a Single line comment. Any text between `//` and the end of the line will be ignored by JavaScript (will not be executed). JavaScript comments can be used to explain JavaScript code, and to make it more readable.*
+> **JS** *The double slashes `//` mark a Single line comment. Any text between `//` and the end of the line will be ignored by JavaScript (will not be executed). JavaScript comments can be used to explain JavaScript code, and to make it more readable.*
 
 
 ### Vector Data
 
 What we just added are vector data layers.
 Difference between raster and vector. 
+
+[vector](img/vector_data.png)
+[raster](img/raster_data.png)
 
 ### GeoJSON
 
@@ -141,20 +142,20 @@ More links and info can be found in [[Tips & Tricks]]
 ### GeoJSON-tilelayer
 geoJson is the standard data type to create web maps with. You can add this data as another map layer.
 
-1. Place the vd.geojson file in your js folder
-2. Plave vd.png in your img folder
-3. Copy the following script and have a look at your map
+:white_check_mark: Place the vd.geojson file in `yourDirectory`.
+
+:white_check_mark: Plave vd.png in `yourDirectory`.
+
+:white_check_mark: Copy the following script and have a look at your map.
 
 ``` js
 //geojson without jQuery with xhr define icon first
-
 var vdIcon = L.icon({
-  iconUrl: "images/vd.png",
+  iconUrl: "vd.png",
   iconSize: [20,20]
 });
 
 //create the geojson layer
-
 var geojson = L.geoJson(null,{
   pointToLayer: function(feature,latlng){
     return L.marker(latlng, {icon: vdIcon});
@@ -162,9 +163,8 @@ var geojson = L.geoJson(null,{
 }).addTo(map);
 
 //add your geojson data to the layer
-
 var xhr = new XMLHttpRequest();
-xhr.open('GET', encodeURI("js/vd.geojson"));
+xhr.open('GET', encodeURI("vd.geojson"));
 xhr.onload = function() {
 if (xhr.status === 200) {
     geojson.addData(JSON.parse(xhr.responseText));
