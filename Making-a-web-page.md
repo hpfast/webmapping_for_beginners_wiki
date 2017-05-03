@@ -3,9 +3,9 @@
 
 The 3 languages all web developers must learn:
 
-**1. HTML to define the content of web pages**
-**2. CSS to specify the layout of web pages**
-**3. JavaScript to program the behaviour of web pages**
+1. **HTML to define the content of web pages**
+2. **CSS to specify the layout of web pages**
+3. **JavaScript to program the behaviour of web pages**
 
 Everything you see in a website is a result of the combination of HTML and CSS. With these two languages, you will have the skills you need to bring your website design to life! In order to make interactive web pages we will need to use JavaScript.
 

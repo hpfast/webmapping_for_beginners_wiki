@@ -82,13 +82,13 @@ The basics are done!
     .attr("height", h);
 </script>
 ```
-2. Some Javascript explenation:
+2. Some JavaScript explanation:
 
 *The double slashes `//` mark a Single line comment. Any text between `//` and the end of the line will be ignored by JavaScript (will not be executed). JavaScript comments can be used to explain JavaScript code, and to make it more readable.*
 
 *The `;` at the end of every statement tells the computer that the statement has ended.*
 
-*`var` stands for variable. Variables store data so that they can be used later on in the program.
+`var` *stands for variable. Variables store data so that they can be used later on in the program.
 
 3. What did you do?
 
