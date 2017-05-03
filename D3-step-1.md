@@ -24,11 +24,11 @@
 <link rel="stylesheet" href="main.css"/>
 ```
 
-4. Go to d3js.org. Scroll down and download the newest release (`d3.v4.min.js`). Or use the snippet provided below. Because we already have utf-8 stated in the `<head>` we do not have to specify it in the script. (utf-8 makes sure all diacritical marks are placed right)
+6. Go to [d3js.org](https://d3js.org/). Scroll down and download the newest release (`d3.v4.min.js`). Or use the snippet provided below. Because we already have utf-8 stated in the `<head>` we do not have to specify it in the script. (utf-8 makes sure all diacritical marks are placed right)
 
 ``` html
 <script src="https://d3js.org/d3.v4.min.js"></script>
-``
+```
 
 **JS** *JavaScript libraries are often placed in the head. Though, it is best to place them as far as possible to the bottom of the body. This is much quicker while loading!*
 
@@ -60,33 +60,35 @@ The basics are done!
 1. Replace “your code goes here” with:
 
 ``` js
-	<script> 
-		//Width and height
-		var w = 500;
-		var h = 300;
+<script> 
+	//Width and height
+	var w = 500;
+	var h = 300;
 
-		//Define map projection
-		var projection = d3.geo.mercator()
-					.center([ 30, 40 ])
-					.translate([ w/2, h/2 ])
-					.scale([ w/4 ]);
+	//Define map projection
+	var projection = d3.geo.mercator()
+		.center([ 30, 40 ])
+		.translate([ w/2, h/2 ])
+		.scale([ w/4 ]);
 
-		//Define path generator
-		var path = d3.geo.path()
-					.projection(projection);
+	//Define path generator
+	var path = d3.geo.path()
+		.projection(projection);
 
-		//Create SVG
-		var svg = d3.select("body")
-					.append("svg")
-					.attr("width", w)
-					.attr("height", h);
-	</script>
+	//Create SVG
+	var svg = d3.select("body")
+		.append("svg")
+		.attr("width", w)
+		.attr("height", h);
+</script>
 ```
 2. Some Javascript explenation:
 
-**JS** *The double slashes `//` mark a Single line comment. Any text between `//` and the end of the line will be ignored by JavaScript (will not be executed). JavaScript comments can be used to explain JavaScript code, and to make it more readable.*
-**JS** *The `;` at the end of every statement tells the computer that the statement has ended.*
-**JS** *`var` stands for variable. Variables store data so that they can be used later on in the program.
+*The double slashes `//` mark a Single line comment. Any text between `//` and the end of the line will be ignored by JavaScript (will not be executed). JavaScript comments can be used to explain JavaScript code, and to make it more readable.*
+
+*The `;` at the end of every statement tells the computer that the statement has ended.*
+
+*`var` stands for variable. Variables store data so that they can be used later on in the program.
 
 3. What did you do?
 
@@ -144,13 +146,13 @@ To 'bind' your data to the DOM is the next step. With D3 you can connect data li
 var layerLanden = svg.append('g');
 
 //Load in GeoJSON data
-d3.json("/js/landen.json", function(json) {
+d3.json("/landen.json", function(json) {
 	//Bind data and create one path per GeoJSON feature
 	layerLanden.selectAll("path")
-		   .data(json.features)
-		   .enter()
-		   .append("path")
-		   .attr("d", path);
+		 .data(json.features)
+		 .enter()
+		 .append("path")
+		 .attr("d", path);
 }); 
 ```
 
@@ -166,11 +168,8 @@ var projection = d3.geo.mercator()
 	.scale(1000);
 ```
 
-7. **Open your index.html file in your browser!**
 
-Do you see your map? Great! 
-
-If not:
+If you do not see anything:
 ### Open the debugger 
 
 * Click with your right mouse button, choose : `Inspect Element`
@@ -185,9 +184,5 @@ Go to the tab `Web Console` to see if it reports anything useful for you.
 Do you get:
 
 	...
-
-
-### Customizing
-
 
 Continue to [[D3 Step 2]]
