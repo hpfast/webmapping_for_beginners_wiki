@@ -97,10 +97,11 @@ For a real map you need a base layer. This is the background of your map made ou
 ``` 
 
 **Now you have made a map!**
-	* `var map =  L.map("map")` initializes the `map` variable and links it to our `<div id="map"></div>`.
-	* `setView()` centres the map `([latitude, longitude], zoom level)`. The projection is Google Mercator. 
-	* Next we add our base-layer tiles. `L.tileLayer('http://...')` graps one from the internet. 
-	* `backgroundMap.addTo()` adds the tile layer to the map.
+
+* `var map =  L.map("map")` initializes the `map` variable and links it to our `<div id="map"></div>`.
+* `setView()` centres the map `([latitude, longitude], zoom level)`. The projection is Google Mercator. 
+* Next we add our base-layer tiles. `L.tileLayer('http://...')` graps one from the internet. 
+* `backgroundMap.addTo()` adds the tile layer to the map.
 
 **Open your index.html file in your browser!**
 
