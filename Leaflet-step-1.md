@@ -1,7 +1,8 @@
 ### Setting up the basics 
 
-1. Open your text editor.
-2. Create an empty file to make your basic HTML page. Copy the following into your file:
+:white_check_mark: Open your text editor.
+
+:white_check_mark: Create an empty file to make your basic HTML page. Copy the following into your file:
 
 ``` html
 <!DOCTYPE html>
@@ -15,18 +16,20 @@
 </html>
 ```
 
-3. Save the file in `yourDirectory` and call the file `index.html`.
+:white_check_mark: Save the file in `yourDirectory` and call the file `index.html`.
 
-4. Change the title to “My first Leaflet map".
-5. Place a ‘div’ in the `<body>` 
+:white_check_mark: Change the title to “My first Leaflet map".
+
+:white_check_mark: Place a ‘div’ in the `<body>` 
 
 ``` html
 <div id="map"></div>
 ```
 This is where our map will come!
 
-6. Open a new file and save this as `main.css` in `yourDirectory`. 
-7. In the `main.css` we will provide your "map" with a height(and optional width). Copy this in your CSS file:
+:white_check_mark: Open a new file and save this as `main.css` in `yourDirectory`.
+
+:white_check_mark: In the `main.css` we will provide your "map" with a height(and optional width). Copy this in your CSS file:
 
 ``` css
 #map { 
@@ -34,27 +37,29 @@ This is where our map will come!
   width:100%;
 } 
 ```
-8. Change the amount of pixels and/or percentage to the map size you prefer.
+:white_check_mark: Change the amount of pixels and/or percentage to the map size you prefer.
 
-9. Go back to your index.html file and put the link to your CSS file in the `<head>`.
+:white_check_mark: Go back to your index.html file and put the link to your CSS file in the `<head>`.
 
 ``` html
 <link rel="stylesheet" href="main.css"/>
 ```
 
-10. Go to http://leafletjs.com/download.html to use the Hosted Version of Leaflet.
-11. Scroll down and copy the newest leaflet library release:
+:white_check_mark: Go to http://leafletjs.com/download.html to use the Hosted Version of Leaflet.
+
+:white_check_mark: Scroll down and copy the newest leaflet library release:
 
 ``` html
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
 ```
-12. Place the `leaflet.css Link` in the `<head>` of your html file.
-13. Place the `leaflet.js script` library in the `<body>`. 
+:white_check_mark: Place the `leaflet.css Link` in the `<head>` of your html file.
 
-> ***
+:white_check_mark: Place the `leaflet.js script` library in the `<body>`. 
+
+
 > **JS** *JavaScript libraries are often placed in the head. Though, it is best to place them as far as possible to the bottom of the body. This is much quicker while loading!*
-> ***
+
 
 Now you will have:
 
@@ -73,13 +78,14 @@ Now you will have:
   </body>
 </html>
 ```
-- [ ] The basics are done! 
+
+The basics are done! 
 
 ### Adding a base layer
 
 For a real map you need a base layer. This is the background of your map made out of png tiles, which are quick to load!
 
-1. Put the following script in the body and save your index.html file. 
+:white_check_mark: Put the following script in the body and save your index.html file. 
 
 ``` js
 <script>
@@ -100,17 +106,20 @@ For a real map you need a base layer. This is the background of your map made ou
 
 **Now you have made a map!**
 
-* `var map =  L.map("map")` initializes the `map` variable and links it to our `<div id="map"></div>`.
-* `setView()` centres the map `([latitude, longitude], zoom level)`. The projection is Google Mercator. 
-* Next we add our base-layer tiles. `L.tileLayer('http://...')` graps one from the internet. 
-* `backgroundMap.addTo()` adds the tile layer to the map.
+:information_source: `var map =  L.map("map")` initializes the `map` variable and links it to our `<div id="map"></div>`.
 
-2. **Open your index.html file in your browser!**
+:information_source: `setView()` centres the map `([latitude, longitude], zoom level)`. The projection is Google Mercator. 
+
+:information_source: Next we add our base-layer tiles. `L.tileLayer('http://...')` graps one from the internet. 
+
+:information_source: `backgroundMap.addTo()` adds the tile layer to the map.
+
+:white_check_mark: Open your index.html file in your browser!
 
 Do you see your map? Great! 
 
-> ***
-> ### If Not: Open the debugger 
+
+> ###  :bangbang: If Not: Open the debugger 
 >
 > * Click with your right mouse button, choose : `Inspect Element`
 > * Or Press F12
@@ -123,17 +132,19 @@ Do you see your map? Great!
 > `ReferenceError: L is not defined`
 > 
 > Then shuffle around the order in your script. Put the `leaflet.js script` above your custom script!
-> ***
+
 
 ### Customizing
 
 Practice with different tiles, coordinates and zoom levels to make your own base map. 
 
-1. Try to zoom your map to the place where you live or work! 
-2. Looking for a specific place to centre on? Find your coordinates here: [http://www.mapcoordinates.net/en](http://www.mapcoordinates.net/en)
-3. There are many different tile providers! Just copy their code given, replacing your own code starting from `L.tileLayer (... );`
+:white_check_mark: Try to zoom your map to the place where you live or work! 
 
-> ***
+:white_check_mark: Looking for a specific place to centre on? Find your coordinates here: [http://www.mapcoordinates.net/en](http://www.mapcoordinates.net/en)
+
+:white_check_mark: There are many different tile providers! Just copy their code given, replacing your own code starting from `L.tileLayer (... );`
+
+
 > Another free tile provider is [maps.stamen.com](maps.stamen.com). These even provide 3 varieties:
 > 
   > * http://tile.stamen.com/toner/{z}/{x}/{y}.png
@@ -141,8 +152,6 @@ Practice with different tiles, coordinates and zoom levels to make your own base
   > * http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg
 > 
 > Or have a look at https://leaflet-extras.github.io/leaflet-providers/preview/ 
-> *** 
-
 
 
 :arrow_right: Continue to [[Leaflet Step 2]]

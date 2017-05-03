@@ -39,7 +39,7 @@ HTML stands for Hyper Text Markup Language. It is used to give websites structur
 
 [This](https://nieneb.github.io/html_example/) is what it should look like!
 
-> *** 
+
 > ### Some basic elements to know and recognize are:
 > 
 > The `<head>` element is a container for all the head elements.
@@ -55,7 +55,6 @@ HTML stands for Hyper Text Markup Language. It is used to give websites structur
 > The`<div></div>` tag defines a division or a section in an HTML document.
 > 
 > The `<a href=""></a>`tag defines a hyperlink, which is used to link from one page to another.
-> ***
 
 :white_check_mark: Try to add some more headers and text to your first HTML.
 
@@ -130,7 +129,7 @@ or saved in an external file with a .css suffix, and then referenced in the docu
 
 On https://www.w3schools.com/css/ you can find a great overview of all the possibilities with CSS.
 
-> *** 
+
 > ### Developer Tools
 > 
 > That sounds scary! But do not be afraid. The browser web inspector is going to be your best friend! Let's explore this. 
@@ -147,7 +146,7 @@ On https://www.w3schools.com/css/ you can find a great overview of all the possi
 > :white_check_mark: Just have a look around. Nothing can happen!
 > 
 > We will use the web inspector later again as a debugger, when your web-page doesn't show what you wanted it to! For now, you can close it again.
-> *** 
+
 
 ### JavaScript
 
