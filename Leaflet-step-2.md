@@ -6,8 +6,8 @@ Add custom markers, circles and polygons to your map. (for example your home add
 ``` js
 var marker = L.marker([51.5, -0.09]).addTo(map);
 ```
-**JS** `var` stands for variable. Variables store data so that they can be used later on in the program.
-Here the keyword `var` creates a new variable named `marker`. The value stored is a Leaflet marker which is immediatly added to our map. 
+**JS** *`var` stands for variable. Variables store data so that they can be used later on in the program.
+Here the keyword `var` creates a new variable named `marker`. The value stored is a Leaflet marker which is immediatly added to our map.*
 
 2. Add another 4 markers. (friends, places you lived or visited?). Note: do give the ‘var’ another name every time. Example:
 
@@ -22,7 +22,7 @@ var popup = "Write your pop up text here";
 monique.bindPopup(popup); 
 ``` 
 
-**JS** Did you notice a `;` at the end of every statement? The semicolon tells the computer that the statement has ended.
+**JS** *Did you notice a `;` at the end of every statement? The semicolon tells the computer that the statement has ended.*
 
 4. How to place a circle on the map, use your own coordinates:
 
@@ -104,7 +104,7 @@ var polygon = L.polygon([
 ```
 
 
-**JS** The double slashes `//` mark a Single line comment. Any text between // and the end of the line will be ignored by JavaScript (will not be executed). JavaScript comments can be used to explain JavaScript code, and to make it more readable.
+**JS** *The double slashes `//` mark a Single line comment. Any text between `//` and the end of the line will be ignored by JavaScript (will not be executed). JavaScript comments can be used to explain JavaScript code, and to make it more readable.*
 
 
 ### Vector Data
@@ -138,7 +138,7 @@ It uses the World Geodetic System 1984, and units of decimal degrees.
 More links and info can be found in [[Tips & Tricks]]
 
 
-### geoJson-tilelayer
+### GeoJSON-tilelayer
 geoJson is the standard data type to create web maps with. You can add this data as another map layer.
 
 1. Place the vd.geojson file in your js folder

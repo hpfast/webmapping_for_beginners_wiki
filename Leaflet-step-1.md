@@ -16,23 +16,7 @@
 ```
 
 3. Save the file in `yourDirectory` and call the file `index.html`.
-4. Go to http://leafletjs.com/download.html to use the Hosted Version of Leaflet.
-5. Scroll down and copy the newest leaflet library release:
-
-``` html
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-```
-
-6. Place the `leaflet.css Link` in the `<head>` of your html file.
-7. Place the `leaflet.js script` library in the `<body>`. 
-	*JavaScript libraries are often placed in the head. Though, it is best to place them as far as possible to the bottom of the body. This is much quicker while loading!*
-
 8. Open a new file and save this as `main.css` in `yourDirectory` called. 
-9. Now you have:
-	* /yourDirectory/index.html
-	* /yourDirectory/main.css
-
 10. Open your index.html file and put the link to your CSS file in the `<head>`.
 
 ``` html
@@ -46,13 +30,28 @@
 <div id="map"></div>
 ```
 
-13. The basics are done! Provide your "map" always with a height(and optional width). This you do in the main.css.
+4. Go to http://leafletjs.com/download.html to use the Hosted Version of Leaflet.
+5. Scroll down and copy the newest leaflet library release:
+
+``` html
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+```
+6. Place the `leaflet.css Link` in the `<head>` of your html file.
+7. Place the `leaflet.js script` library in the `<body>`. 
+
+**JS** *JavaScript libraries are often placed in the head. Though, it is best to place them as far as possible to the bottom of the body. This is much quicker while loading!*
+
+13. Provide your "map" always with a height(and optional width). This you do in the `main.css`.
 
 ``` css
-#map { height: 300px; width:100%;} 
-``` 
+#map { 
+	height: 300px; 
+	width:100%;
+} 
+```
 
-14. Change the amount of pixels and/or % to the map size you prefer.
+14. Change the amount of pixels and/or percentage to the map size you prefer.
 
 Now you will have:
 
@@ -71,10 +70,11 @@ Now you will have:
 	</body>
 </html>
 ```
+The basics are done! 
 
 ### Adding a base layer
 
-For a real map you need a base layer. This is the background of your map, made out of png tiles, which are quick to load!
+For a real map you need a base layer. This is the background of your map made out of png tiles, which are quick to load!
 
 1. Put the following script in the body and save your index.html file. 
 
@@ -95,13 +95,15 @@ For a real map you need a base layer. This is the background of your map, made o
 </script>
 ``` 
 
-2. Now you have made a map!
-	* var map =  L.map("map"): initializes the "map" variable
-	* setView() centres the map (latitude, longitude, zoom level). The projection is Google Mercator. 
-	* Next we add our base-layer tiles. `L.tileLayer()` graps one from the internet. 
-	* backgroundMap.addTo() adds the tile layer to the map.
+**Now you have made a map!**
+
+	* `var map =  L.map("map")` initializes the `map` variable and links it to our `<div id="map"></div>`.
+	* `setView()` centres the map `([latitude, longitude], zoom level)`. The projection is Google Mercator. 
+	* Next we add our base-layer tiles. `L.tileLayer('http://...')` graps one from the internet. 
+	* `backgroundMap.addTo()` adds the tile layer to the map.
 
 **Open your index.html file in your browser!**
+
 Do you see your map? Great! 
 
 If not:
