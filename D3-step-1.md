@@ -7,13 +7,13 @@
 ``` html
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>basic HTML</title> 
-	</head>
-	<body>
-		<h1>Example</h1>
-	</body>
+  <head>
+    <meta charset="utf-8">
+    <title>basic HTML</title> 
+  </head>
+  <body>
+    <h1>Example</h1>
+  </body>
 </html>
 ```
 
@@ -40,16 +40,16 @@ Now your file will look like:
 <!doctype html>
 <html lang="nl">
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>My first map in D3</title> 
-		<link rel="stylesheet" href="main.css"/> 
-	</head>
-	<body>
-		<H1>Example</H1>
-		<script src="//d3js.org/d3.v4.min.js"></script> 
-		<script> your code goes here </script>
-	</body>
+  <head>
+    <meta charset="utf-8">
+    <title>My first map in D3</title> 
+    <link rel="stylesheet" href="main.css"/> 
+  </head>
+  <body>
+    <H1>Example</H1>
+    <script src="//d3js.org/d3.v4.min.js"></script> 
+    <script> your code goes here </script>
+  </body>
 </html>
 ```
 The basics are done! 
@@ -61,25 +61,25 @@ The basics are done!
 
 ``` js
 <script> 
-	//Width and height
-	var w = 500;
-	var h = 300;
+  //Width and height
+  var w = 500;
+  var h = 300;
 
-	//Define map projection
-	var projection = d3.geoMercator()
-		.center([ 30, 40 ])
-		.translate([ w/2, h/2 ])
-		.scale([ w/4 ]);
+  //Define map projection
+  var projection = d3.geoMercator()
+    .center([ 30, 40 ])
+    .translate([ w/2, h/2 ])
+    .scale([ w/4 ]);
 
-	//Define path generator
-	var path = d3.geoPath()
-		.projection(projection);
+  //Define path generator
+  var path = d3.geoPath()
+    .projection(projection);
 
-	//Create SVG
-	var svg = d3.select("body")
-		.append("svg")
-		.attr("width", w)
-		.attr("height", h);
+  //Create SVG
+  var svg = d3.select("body")
+    .append("svg")
+    .attr("width", w)
+    .attr("height", h);
 </script>
 ```
 2. Some Javascript explenation:
@@ -108,17 +108,17 @@ var h = 300;
 ``` js
 //Define map projection
 var projection = d3.geoMercator()
-	.center([30, 40])
-	.translate([ w/2, h/2 ])
-	.scale([ w/7 ]);
+  .center([30, 40])
+  .translate([ w/2, h/2 ])
+  .scale([ w/7 ]);
 ```
-				
+        
 * When the projection is created we can transform our geographic data to SVG with the help of `D3.geoPath` 
-	
+  
 ``` js
 //Define path generator
 var path = d3.geoPath()
-	.projection(projection);
+  .projection(projection);
 ``` 
 
 * Next, we create our 'canvas' where we will display our map. You create a variable and give it a name, for example *svg*. 
@@ -126,13 +126,13 @@ var path = d3.geoPath()
 * `select`, selects one element of the DOM, in this case the `<body>`. 
 * `append`, appends a SVG to the 'canvas' called *svg* 
 * next we also provide the `attr` (attributes), width and height.
-	
+  
 ``` js
 //Create SVG
 var svg = d3.select("body")
-	.append("svg")
-	.attr("width", w)
-	.attr("height", h);
+  .append("svg")
+  .attr("width", w)
+  .attr("height", h);
 ``` 
 
 ### Data
@@ -147,12 +147,12 @@ var layerLanden = svg.append('g');
 
 //Load in GeoJSON data
 d3.json("landen.json", function(json) {
-	//Bind data and create one path per GeoJSON feature
-	layerLanden.selectAll("path")
-		 .data(json.features)
-		 .enter()
-		 .append("path")
-		 .attr("d", path);
+  //Bind data and create one path per GeoJSON feature
+  layerLanden.selectAll("path")
+     .data(json.features)
+     .enter()
+     .append("path")
+     .attr("d", path);
 }); 
 ```
 
@@ -163,9 +163,9 @@ d3.json("landen.json", function(json) {
 
 ``` js
 var projection = d3.geoMercator()
-	.center([4, 52])
-	.translate([ w/2, h/2 ]
-	.scale(1000);
+  .center([4, 52])
+  .translate([ w/2, h/2 ]
+  .scale(1000);
 ```
 
 
@@ -183,6 +183,6 @@ Go to the tab `Web Console` to see if it reports anything useful for you.
 
 Do you get:
 
-	...
+  ...
 
 Continue to [[D3 Step 2]]
