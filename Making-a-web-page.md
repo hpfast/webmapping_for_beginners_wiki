@@ -29,10 +29,10 @@ HTML stands for Hyper Text Markup Language. It is used to give websites structur
 
 **Let's try this!**
 
-1. Open your text editor.
-2. Copy the previous code into an empty file to make your basic HTML page.
-3. Save the file in `yourDirectory` and call the file `index.html`.
-4. Open your index.html file with your browser.
+:white_check_mark: Open your text editor.
+:white_check_mark: Copy the previous code into an empty file to make your basic HTML page.
+ :white_check_mark: Save the file in `yourDirectory` and call the file `index.html`.
+ :white_check_mark: Open your index.html file with your browser.
 
 [This](https://nieneb.github.io/html_example/) is what it should look like!
 
@@ -54,7 +54,7 @@ HTML stands for Hyper Text Markup Language. It is used to give websites structur
 > The `<a href=""></a>`tag defines a hyperlink, which is used to link from one page to another.
 > ***
 
-5. Try to add some more headers and text to your first HTML.
+:white_check_mark: Try to add some more headers and text to your first HTML.
 
 **But this webpage looks really boring!!**
 True, so let´s continue with CSS. 
@@ -105,7 +105,7 @@ or saved in an external file with a .css suffix, and then referenced in the docu
 
 **We will try this!**
 
-1. Copy this style code into your index.html page.
+:white_check_mark: Copy this style code into your index.html page.
 
 ```html
     <style type="text/css">
@@ -120,10 +120,10 @@ or saved in an external file with a .css suffix, and then referenced in the docu
     </style>
 ```
 
-2. Refresh your browser.
+:white_check_mark: Refresh your browser.
 [This](https://nieneb.github.io/css_example/) is how it should look like.
 
-3. Play around with the CSS and HTML. Make yourself a nice page! 
+:white_check_mark: Play around with the CSS and HTML. Make yourself a nice page! 
 On https://www.w3schools.com/css/ you can find a great overview of all the possibilities with CSS.
 
 > *** 
