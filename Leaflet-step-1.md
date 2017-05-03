@@ -52,7 +52,9 @@ This is where our map will come!
 12. Place the `leaflet.css Link` in the `<head>` of your html file.
 13. Place the `leaflet.js script` library in the `<body>`. 
 
-**JS** *JavaScript libraries are often placed in the head. Though, it is best to place them as far as possible to the bottom of the body. This is much quicker while loading!*
+***
+> **JS** *JavaScript libraries are often placed in the head. Though, it is best to place them as far as possible to the bottom of the body. This is much quicker while loading!*
+***
 
 Now you will have:
 
@@ -107,24 +109,24 @@ For a real map you need a base layer. This is the background of your map made ou
 
 Do you see your map? Great! 
 
-If not:
-### Open the debugger 
-
-* Click with your right mouse button, choose : `Inspect Element`
-
-or 
-
-* Press F12
-
-The debugger shows you the content of your page. But also logs any errors or comments! 
-Go to the tab `Web Console` to see if it reports anything useful for you.
-
-Do you get:
-
-  ReferenceError: L is not defined
-
-Then shuffle around the order in your script. Put the `leaflet.js script` above your custom script!
-
+***
+> ### If Not: Open the debugger 
+> 
+> * Click with your right mouse button, choose : `Inspect Element`
+> 
+> or 
+> 
+> * Press F12
+> 
+> The debugger shows you the content of your page. But also logs any errors or comments! 
+> Go to the tab `Web Console` to see if it reports anything useful for you.
+> 
+> Do you get:
+> 
+  > ReferenceError: L is not defined
+> 
+> Then shuffle around the order in your script. Put the `leaflet.js script` above your custom script!
+***
 
 ### Customizing
 
@@ -132,14 +134,16 @@ Then shuffle around the order in your script. Put the `leaflet.js script` above 
 
 2. Looking for a specific place to centre on? Find your coordinates here: [http://www.mapcoordinates.net/en](http://www.mapcoordinates.net/en)
 
-3. Another free tile provider is [maps.stamen.com](maps.stamen.com). These even provide 3 varieties:
+***
 
-  * http://tile.stamen.com/toner/{z}/{x}/{y}.png
-  * http://tile.stamen.com/terrain/{z}/{x}/{y}.jpg
-  * http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg
-
-Or have a look at https://leaflet-extras.github.io/leaflet-providers/preview/ 
-
+Another free tile provider is [maps.stamen.com](maps.stamen.com). These even provide 3 varieties:
+> 
+  > * http://tile.stamen.com/toner/{z}/{x}/{y}.png
+  > * http://tile.stamen.com/terrain/{z}/{x}/{y}.jpg
+  > * http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg
+> 
+> Or have a look at https://leaflet-extras.github.io/leaflet-providers/preview/ 
+*** 
 4. There are many different tiles to use! Just copy the code given at the top, replacing your own code starting from `L.tileLayer (... );`
 
 
