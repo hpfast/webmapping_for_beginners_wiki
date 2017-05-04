@@ -6,14 +6,14 @@
 
 The team from [Webmapper](http://webmapper.net/) developed this workshop in the context of [Maptime](maptime.io) to share their hands-on experience in web cartography and geographic web application development. 
 
-![webmapper](https://raw.githubusercontent.com/wiki/NieneB/Webmapping_for_beginners/img/webmapperlogo.png)
+![webmapper](https://raw.githubusercontent.com/wiki/NieneB/Webmapping_for_beginners/img/webmapper_logo_tekst.png)
 
 Webmapper is a cartographic development and consultancy company based in Utrecht, the Netherlands. -They make geographic applications for the web with special attention for web-cartography. 
 
 ## Short outline
 
-JavaScript powers most on-line maps these days. During this workshop we'll cover the two primary mapping libraries D3.js and Leaflet.js.
-We'll start off with a brief introduction into making web pages. To eventually spend most of our time on learning the tools of the trade.
+JavaScript powers most on-line maps these days. During this workshop we'll cover the two primary mapping libraries D3.js and Leaflet.js. This workshop will start from the very beginning! Never written a line of code before? Don't worry! This workshop will help get you started. 
+Therefore we'll start off with a brief introduction into making web pages in general. To eventually spend most of our time on learning the tools of the trade.
 
 1. [[Introduction Leaflet]]
 1. HTML, CSS and JS [[Making a web page]]
@@ -33,9 +33,13 @@ At the end of this workshop, you will have your own web page with an interactive
 Your laptop with:
 
 * a web browser, like Firefox, Chrome or Safari.
-* a proper text editor, like [SublimeText](http://www.sublimetext.com/) or [Brackets](http://brackets.io/) with Syntax Hightlighting.
+* a proper text editor, like [SublimeText](http://www.sublimetext.com/) or [Brackets](http://brackets.io/) with [Syntax Highlighting](https://en.wikipedia.org/wiki/Syntax_highlighting).
 * a Github account. Create one at [www.github.com](https://github.com/join?source=header-home).
 * internet.
+
+>### Syntax Highlighting
+>
+> Syntax highlighting is a feature of text editors that are used for programming, scripting, or mark-up languages, such as HTML. The feature displays text, especially source code, in different colours and fonts according to the category of terms. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.
 
 ## How does this tutorial work?
 Just follow the links. At the bottom of each step is the link to the next step.

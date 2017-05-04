@@ -6,7 +6,6 @@ Leaflet is an open-source JavaScript library for interactive web maps. It's ligh
 
 Leaflet creates "Slippy" maps with raster tiled base layers, user interaction like panning and zooming, and feature layers that you supply. It handles various basic tasks like converting data to map layers and mouse interactions, and it's easy to extend with plug-ins. It will also work well across most types of devices. 
 
-
 > ### JavaScript Library 
 > Including a JavaScript library in your code is like copying and pasting someone else's code into yours. You have access to everything in that library. In our case, it's a bunch of cool tools to make web maps and give them familiar functionality.
 
@@ -24,16 +23,16 @@ As you can see, map tiles are static raster images on the web. These tiles need 
 
 ### Preparation
 
-On your computer create a directory for yourself, where we can work in today. For example:
+:white_check_mark: On your computer create a directory for yourself, where we can work in today. For example:
 
 	/home/niene/Documents/MyFirstWebMap_Leaflet
 
 In these directories we save everything we make and download today. During this workshop it is referred to as `yourDirectory`.
 
 ### Let's start!  
-If you are not that comfortable with HTML, CSS and JavaScript yet, this **[[Making a web page ]]** tutorial will help you along!
+:arrow_right: If you are not that comfortable with HTML, CSS and JavaScript yet, this **[[Making a web page ]]** tutorial will help you along!
 
-If you already know some HTML, CSS and JavaScript, you can start immediately with the tutorial at **[[Leaflet step 1 ]]** and read through the HTML explanations. 
+:arrow_right: If you already know some HTML, CSS and JavaScript, you can start immediately with the tutorial at **[[Leaflet step 1 ]]** and read through the HTML explanations. 
 
 
 

@@ -4,7 +4,7 @@ Add custom markers, circles and polygons to your map. (for example your home add
 :white_check_mark: Add the following to your map:
 
 ``` js
-var marker = L.marker([51.5, -0.09]).addTo(map);
+var marker = L.marker([42.349239, -71.041342]).addTo(map);
 ```
 > **JS** *`var` stands for variable. Variables store data so that they can be used later on in the program.
 > Here the keyword `var` creates a new variable named `marker`. The value stored is a Leaflet marker which is immediatly added to our map.*
@@ -12,14 +12,14 @@ var marker = L.marker([51.5, -0.09]).addTo(map);
 :white_check_mark: Add another 4 markers. (friends, places you lived or visited?). Note: do give the ‘var’ another name every time. Example:
 
 ``` js
-var monique = L.marker([52.070, 4.300]).addTo(map);
+var brewery = L.marker([42.346868, -71.034396]).addTo(map);
 ```
 
-:white_check_mark: Provide the markers with a pop-up. For monique we add the following pop-up:
+:white_check_mark: Provide the markers with a pop-up. For the Harpoon Brewery we add the following pop-up:
 
 ``` js
 var popup = "Write your pop up text here";
-monique.bindPopup(popup); 
+brewery.bindPopup(popup); 
 ``` 
 
 > **JS** *Did you notice a `;` at the end of every statement? The semicolon tells the computer that the statement has ended.*
@@ -27,7 +27,7 @@ monique.bindPopup(popup);
 :white_check_mark: Now place a circle on the map, use your own coordinates:
 
 ``` js
-var circle = L.circle([51.508, -0.11], 500, {
+var circle = L.circle([42.359116, -71.049592], 500, {
   color: 'red',
   fillColor: '#f03',
   fillOpacity: 0.5
@@ -38,9 +38,9 @@ var circle = L.circle([51.508, -0.11], 500, {
 
 ``` js
 var polygon = L.polygon([
-  [51.509, -0.08],
-  [51.503, -0.06],
-  [51.51, -0.047]
+  [42.349239, -71.041342],
+  [42.346868, -71.034396],
+  [42.359116, -71.049592]
 ]).addTo(map);
 ```
 
@@ -49,7 +49,7 @@ var polygon = L.polygon([
 ``` js
 <script>
   //initialize the map
-  var map = L.map('map').setView([52.18, 5.5308], 11);
+  var map = L.map('map').setView([42.3600825, -71.0588801], 12);
   
   //Create baselayer - tiles
   var backgroundMap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
@@ -60,33 +60,33 @@ var polygon = L.polygon([
   backgroundMap.addTo(map);
   
   //Add markers
-  var monique = L.marker([52.070, 4.300]);
-  monique.addTo(map);
+  var brewery = L.marker([42.346868, -71.034396]).addTo(map);
+  brewery.addTo(map);
   
-  var miranda = L.marker([53.201, 5.799]);
-  miranda.addTo(map);
+  var aquarium = L.marker([42.359116, -71.049592]);
+  aquarium.addTo(map);
   
-  var barbel = L.marker([52.351, 4.620]);
-  barbel.addTo(map);
+  var hotel = L.marker([42.351340, -71.040495]);
+  hotel.addTo(map);
   
-  var bea = L.marker([51.560, 5.091]);
-  bea.addTo(map);
+  var harvard = L.marker([42.376979, -71.116617]);
+  harvard.addTo(map);
   
   //Add pop-ups
-  var popup = "Monique lives in Den Haag.";
-  monique.bindPopup(popup);
+  var popup = "The Harpoon Brewery.";
+  brewery.bindPopup(popup);
   
-  var popup1 = "Barbel lives in Heemstede.";
-  barbel.bindPopup(popup1)
+  var popup1 = "Do you sleep in the SeaPort Hotel?";
+  hotel.bindPopup(popup1)
   
-  var popup2 = "Miranda lives in Leeuwarden.";
-  miranda.bindPopup(popup2);
+  var popup2 = "The New England Aquarium.";
+  aquarium.bindPopup(popup2);
   
-  var popup3 = "Bea lives in Tilburg.";
-  bea.bindPopup(popup3);
+  var popup3 = "The Harvard University.";
+  harvard.bindPopup(popup3);
   
   //add a circle
-  var circle = L.circle([52.156, 5.387], 4500, {
+  var circle = L.circle([42.359116, -71.049592], 4500, {
     color: 'red',
     fillColor: '#f03',
     fillOpacity: 0.5
@@ -94,10 +94,10 @@ var polygon = L.polygon([
   
   //add a polygon   
   var polygon = L.polygon([
-    [53.201, 5.799],
-    [52.351, 4.620],
-    [52.070, 4.300],
-    [51.560, 5.091]
+    [42.346868, -71.034396],
+    [42.351340, -71.040495],
+    [42.359116, -71.049592],
+    [42.376979, -71.116617]
   ]).addTo(map);
 </script>
 ```

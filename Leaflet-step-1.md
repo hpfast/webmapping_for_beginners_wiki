@@ -33,7 +33,7 @@ This is where our map will come!
 
 ``` css
 #map { 
-  height: 300px; 
+  height: 500px; 
   width:100%;
 } 
 ```
@@ -90,7 +90,7 @@ For a real map you need a base layer. This is the background of your map made ou
 ``` js
 <script>
   //initialize the map         
-  var map = L.map('map').setView([52.18, 5.5308], 11);
+  var map = L.map('map').setView([42.3600825, -71.0588801], 12);
   
   //Create baselayer - tiles         
   var backgroundMap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
@@ -153,6 +153,5 @@ Another free tile provider is [maps.stamen.com](maps.stamen.com). These even pro
    * http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg
 
 Or have a look at https://leaflet-extras.github.io/leaflet-providers/preview/ 
-
 
 :arrow_right: Continue to [[Leaflet Step 2]]
