@@ -9,7 +9,7 @@ var marker = L.marker([42.349239, -71.041342]).addTo(map);
 > **JS** *`var` stands for variable. Variables store data so that they can be used later on in the program.
 > Here the keyword `var` creates a new variable named `marker`. The value stored is a Leaflet marker which is immediatly added to our map.*
 
-:white_check_mark: Add another 4 markers. (friends, places you lived or visited?). Note: do give the ‘var’ another name every time. Example:
+:white_check_mark: Add another 4 markers. (friends, places you lived or visited?). **Note: give the `var` another name every time.** Example:
 
 ``` js
 var brewery = L.marker([42.346868, -71.034396]).addTo(map);
@@ -43,8 +43,7 @@ var polygon = L.polygon([
   [42.359116, -71.049592]
 ]).addTo(map);
 ```
-
-:white_check_mark: Your script should look like the following. Also check the debugger in the browser if everything is correct: `F12`
+Your script should look like the following:
 
 ``` js
 <script>
@@ -104,14 +103,14 @@ var polygon = L.polygon([
 
 > **JS** *The double slashes `//` mark a Single line comment. Any text between `//` and the end of the line will be ignored by JavaScript (will not be executed). JavaScript comments can be used to explain JavaScript code, and to make it more readable.*
 
+:white_check_mark: Have a look in your browser to see if you see all your markers and circles are on the map! If not, adjust the zoom and/or centre settings or change your coordinates! 
 
-### Vector Data
+:white_check_mark: Also check the debugger in the browser if everything is correct: `F12`
 
-What we just added are vector data layers.
-Difference between raster and vector. 
+This is how my example looks like:
 
-[vector](img/vector_data.png)
-[raster](img/raster_data.png)
+[img](leaflet_step2.png)
+
 
 ### GeoJSON
 
@@ -137,6 +136,16 @@ GeoJSON supports the following geometry types: `Point, LineString, Polygon, Mult
 It uses the World Geodetic System 1984, and units of decimal degrees.
 
 More links and info can be found in [[Tips & Tricks]]
+
+
+### Vector Data
+
+What we just added are vector data layers.
+Difference between raster and vector. 
+
+[vector](img/vector_data.png)
+[raster](img/raster_data.png)
+
 
 
 ### GeoJSON-tilelayer

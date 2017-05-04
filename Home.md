@@ -6,7 +6,8 @@
 
 The team from [Webmapper](http://webmapper.net/) developed this workshop in the context of [Maptime](maptime.io) to share their hands-on experience in web cartography and geographic web application development. 
 
-![webmapper](https://raw.githubusercontent.com/wiki/NieneB/Webmapping_for_beginners/img/webmapper_logo_tekst.png)
+<p align="center"> <img align="center" src="https://raw.githubusercontent.com/wiki/NieneB/Webmapping_for_beginners/img/webmapper_logo_tekst.png" alt="webmapper"> </p>
+
 
 Webmapper is a cartographic development and consultancy company based in Utrecht, the Netherlands. -They make geographic applications for the web with special attention for web-cartography. 
 
@@ -39,21 +40,22 @@ Your laptop with:
 
 >### Syntax Highlighting
 >
-> Syntax highlighting is a feature of text editors that are used for programming, scripting, or mark-up languages, such as HTML. The feature displays text, especially source code, in different colours and fonts according to the category of terms. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.
+> Syntax highlighting is a feature of text editors that are used for programming, scripting, or mark-up languages, such as HTML. It displays text, especially source code, in different colours and fonts according to the category of terms to make them more visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.
 
 ## How does this tutorial work?
 Just follow the links. At the bottom of each step is the link to the next step.
 
 :arrow_right: Takes you to the next step
 
-The things that you should do, start with a :white_check_mark:
+:white_check_mark: This are the things that you should do, execute, get working! Hands on! 
+
+:information_source: Indicates an explanation about the code blocks. 
 
 Code is shown in code blocks or in-line. `this is in-line code` 
 
 ``` html
 <h1> This is block code </h1>
 ```
-Explanation about the code starts with :information_source:
 
 Some background information, extra information or debug tips are shown in grey :
 

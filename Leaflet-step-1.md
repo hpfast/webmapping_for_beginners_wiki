@@ -25,11 +25,13 @@
 ``` html
 <div id="map"></div>
 ```
-This is where our map will come!
+The `<div>` is a kind of frame where our map will come! 
 
 :white_check_mark: Open a new file and save this as `main.css` in `yourDirectory`.
 
-:white_check_mark: In the `main.css` we will provide your "map" with a height(and optional width). Copy this in your CSS file:
+With CSS we will style our `<div>` object. In the `main.css` we will provide our "#map" selector with the rule height(and optional width).
+
+:white_check_mark: Copy this in your CSS file:
 
 ``` css
 #map { 
@@ -39,11 +41,15 @@ This is where our map will come!
 ```
 :white_check_mark: Change the amount of pixels and/or percentage to the map size you prefer.
 
+To link our CSS file with our HTML objects we will have to put a link in our HTML file. 
+
 :white_check_mark: Go back to your index.html file and put the link to your CSS file in the `<head>`.
 
 ``` html
 <link rel="stylesheet" href="main.css"/>
 ```
+
+Now we will add the JavaScrip Library Leaflet.js.
 
 :white_check_mark: Go to http://leafletjs.com/download.html to use the Hosted Version of Leaflet.
 
