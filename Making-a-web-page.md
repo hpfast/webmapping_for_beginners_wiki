@@ -39,7 +39,7 @@ HTML stands for Hyper Text Markup Language. It is used to give websites structur
 
 [This](https://nieneb.github.io/html_example/) is what it should look like!
 
-[html_example](img/example_html.png)
+![html_example](img/example_html.png)
 
 > ### Some basic elements to know and recognize are:
 > 
@@ -126,7 +126,7 @@ or saved in an external file with a .css suffix, and then referenced in the docu
 
 [This](https://nieneb.github.io/css_example/) is how it should look like.
 
-[html_example](img/example_css.png)
+![html_example](img/example_css.png)
 
 :white_check_mark: Play around with the CSS and HTML. Make yourself a nice page! 
 
