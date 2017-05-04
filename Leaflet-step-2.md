@@ -109,7 +109,7 @@ Your script should look like the following:
 
 This is how my example looks like:
 
-[img](leaflet_step2.png)
+![img](leaflet_step2.png)
 
 
 ### GeoJSON
