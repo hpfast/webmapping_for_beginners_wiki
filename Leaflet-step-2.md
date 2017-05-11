@@ -109,79 +109,8 @@ Your script should look like the following:
 
 This is how my example looks like:
 
-![img](leaflet_step2.png)
+![img](img/leaflet_step2.png)
 
 
-### GeoJSON
-
-JSON stands for JavaScript Object Notation. 
-GeoJSON is a format for encoding a variety of geographic data structures.
-This is how it looks like:
-
-``` JSON
-{
-  "type": "Feature",
-  "geometry": {
-   "type": "Point",
-   "coordinates": [125.6, 10.1]
-  },
-  "properties": {
-   "name": "Dinagat Islands"
-  }
-}
-```
-
-GeoJSON supports the following geometry types: `Point, LineString, Polygon, MultiPoint, MultiLineString, and MultiPolygon`. Geometric objects with additional properties are Feature objects. Sets of features are contained by FeatureCollection objects.
-
-It uses the World Geodetic System 1984, and units of decimal degrees.
-
-More links and info can be found in [[Tips & Tricks]]
-
-
-### Vector Data
-
-What we just added are vector data layers.
-Difference between raster and vector. 
-
-[vector](img/vector_data.png)
-[raster](img/raster_data.png)
-
-
-
-### GeoJSON-tilelayer
-geoJson is the standard data type to create web maps with. You can add this data as another map layer.
-
-:white_check_mark: Place the vd.geojson file in `yourDirectory`.
-
-:white_check_mark: Plave vd.png in `yourDirectory`.
-
-:white_check_mark: Copy the following script and have a look at your map.
-
-``` js
-//geojson without jQuery with xhr define icon first
-var vdIcon = L.icon({
-  iconUrl: "vd.png",
-  iconSize: [20,20]
-});
-
-//create the geojson layer
-var geojson = L.geoJson(null,{
-  pointToLayer: function(feature,latlng){
-    return L.marker(latlng, {icon: vdIcon});
-  }
-}).addTo(map);
-
-//add your geojson data to the layer
-var xhr = new XMLHttpRequest();
-xhr.open('GET', encodeURI("vd.geojson"));
-xhr.onload = function() {
-if (xhr.status === 200) {
-    geojson.addData(JSON.parse(xhr.responseText));
-  } else {
-    alert('Request failed.  Returned status of ' + xhr.status);
-  }
-};
-xhr.send();
-```
 
 :arrow_right: Continue to [[Leaflet step 3]]
