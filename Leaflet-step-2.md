@@ -1,7 +1,7 @@
 ### Markers, circles and polygons
 Add custom markers, circles and polygons to your map. (for example your home address). At least, choose coordinates which are on your map.
 
-:white_check_mark: Add the following to your map:
+ :arrow_forward: Add the following to your map:
 
 ``` js
 var marker = L.marker([42.349239, -71.041342]).addTo(map);
@@ -9,13 +9,13 @@ var marker = L.marker([42.349239, -71.041342]).addTo(map);
 > **JS** *`var` stands for variable. Variables store data so that they can be used later on in the program.
 > Here the keyword `var` creates a new variable named `marker`. The value stored is a Leaflet marker which is immediatly added to our map.*
 
-:white_check_mark: Add another 4 markers. (friends, places you lived or visited?). **Note: give the `var` another name every time.** Example:
+ :arrow_forward: Add another 4 markers. (friends, places you lived or visited?). **Note: give the `var` another name every time.** Example:
 
 ``` js
 var brewery = L.marker([42.346868, -71.034396]).addTo(map);
 ```
 
-:white_check_mark: Provide the markers with a pop-up. For the Harpoon Brewery we add the following pop-up:
+ :arrow_forward: Provide the markers with a pop-up. For the Harpoon Brewery we add the following pop-up:
 
 ``` js
 var popup = "Write your pop up text here";
@@ -24,7 +24,7 @@ brewery.bindPopup(popup);
 
 > **JS** *Did you notice a `;` at the end of every statement? The semicolon tells the computer that the statement has ended.*
 
-:white_check_mark: Now place a circle on the map, use your own coordinates:
+ :arrow_forward: Now place a circle on the map, use your own coordinates:
 
 ``` js
 var circle = L.circle([42.359116, -71.049592], 500, {
@@ -34,7 +34,7 @@ var circle = L.circle([42.359116, -71.049592], 500, {
 }).addTo(map);
 ``` 
 
-:white_check_mark: Connect all previous markers with a polygon. Use all previous coordinates and combine them in the right order.
+ :arrow_forward: Connect all previous markers with a polygon. Use all previous coordinates and combine them in the right order.
 
 ``` js
 var polygon = L.polygon([
@@ -103,9 +103,9 @@ Your script should look like the following:
 
 > **JS** *The double slashes `//` mark a Single line comment. Any text between `//` and the end of the line will be ignored by JavaScript (will not be executed). JavaScript comments can be used to explain JavaScript code, and to make it more readable.*
 
-:white_check_mark: Have a look in your browser to see if you see all your markers and circles are on the map! If not, adjust the zoom and/or centre settings or change your coordinates! 
+ :arrow_forward: Have a look in your browser to see if you see all your markers and circles are on the map! If not, adjust the zoom and/or centre settings or change your coordinates! 
 
-:white_check_mark: Also check the debugger in the browser if everything is correct: `F12`
+ :arrow_forward: Also check the debugger in the browser if everything is correct: `F12`
 
 This is how my example looks like:
 

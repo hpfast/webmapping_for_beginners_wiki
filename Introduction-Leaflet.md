@@ -23,7 +23,7 @@ As you can see, map tiles are static raster images on the web. These tiles need 
 
 ### Preparation
 
-:white_check_mark: On your computer create a directory for yourself, where we can work in today. For example:
+ :arrow_forward: On your computer create a directory for yourself, where we can work in today. For example:
 
 	/home/niene/Documents/MyFirstWebMap_Leaflet
 

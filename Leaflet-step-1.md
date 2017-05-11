@@ -1,8 +1,8 @@
 ### Setting up the basics 
 
-:white_check_mark: Open your text editor.
+ :arrow_forward: Open your text editor.
 
-:white_check_mark: Create an empty file to make your basic HTML page. Copy the following into your file:
+ :arrow_forward: Create an empty file to make your basic HTML page. Copy the following into your file:
 
 ``` html
 <!DOCTYPE html>
@@ -16,22 +16,22 @@
 </html>
 ```
 
-:white_check_mark: Save the file in `yourDirectory` and call the file `index.html`.
+ :arrow_forward: Save the file in `yourDirectory` and call the file `index.html`.
 
-:white_check_mark: Change the title to “My first Leaflet map".
+ :arrow_forward: Change the title to “My first Leaflet map".
 
-:white_check_mark: Place a ‘div’ in the `<body>` 
+ :arrow_forward: Place a ‘div’ in the `<body>` 
 
 ``` html
 <div id="map"></div>
 ```
 The `<div>` is a kind of frame where our map will come! 
 
-:white_check_mark: Open a new file and save this as `main.css` in `yourDirectory`.
+ :arrow_forward: Open a new file and save this as `main.css` in `yourDirectory`.
 
 With CSS we will style our `<div>` object. In the `main.css` we will provide our "#map" selector with the rule height(and optional width).
 
-:white_check_mark: Copy this in your CSS file:
+ :arrow_forward: Copy this in your CSS file:
 
 ``` css
 #map { 
@@ -39,11 +39,11 @@ With CSS we will style our `<div>` object. In the `main.css` we will provide our
   width:100%;
 } 
 ```
-:white_check_mark: Change the amount of pixels and/or percentage to the map size you prefer.
+ :arrow_forward: Change the amount of pixels and/or percentage to the map size you prefer.
 
 To link our CSS file with our HTML objects we will have to put a link in our HTML file. 
 
-:white_check_mark: Go back to your index.html file and put the link to your CSS file in the `<head>`.
+ :arrow_forward: Go back to your index.html file and put the link to your CSS file in the `<head>`.
 
 ``` html
 <link rel="stylesheet" href="main.css"/>
@@ -51,17 +51,17 @@ To link our CSS file with our HTML objects we will have to put a link in our HTM
 
 Now we will add the JavaScrip Library Leaflet.js.
 
-:white_check_mark: Go to http://leafletjs.com/download.html to use the Hosted Version of Leaflet.
+ :arrow_forward: Go to http://leafletjs.com/download.html to use the Hosted Version of Leaflet.
 
-:white_check_mark: Scroll down and copy the newest leaflet library release:
+ :arrow_forward: Scroll down and copy the newest leaflet library release:
 
 ``` html
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
 ```
-:white_check_mark: Place the `leaflet.css Link` in the `<head>` of your html file.
+ :arrow_forward: Place the `leaflet.css Link` in the `<head>` of your html file.
 
-:white_check_mark: Place the `leaflet.js script` library in the `<body>`. 
+ :arrow_forward: Place the `leaflet.js script` library in the `<body>`. 
 
 
 > **JS** *JavaScript libraries are often placed in the head. Though, it is best to place them as far as possible to the bottom of the body. This is much quicker while loading!*
@@ -91,7 +91,7 @@ The basics are done!
 
 For a real map you need a base layer. This is the background of your map made out of png tiles, which are quick to load!
 
-:white_check_mark: Put the following script in the body and save your index.html file. 
+ :arrow_forward: Put the following script in the body and save your index.html file. 
 
 ``` js
 <script>
@@ -121,7 +121,7 @@ For a real map you need a base layer. This is the background of your map made ou
 
 Now you have made your first web map!
 
-:white_check_mark: Open your index.html file in your browser!
+ :arrow_forward: Open your index.html file in your browser!
 
 Do you see your map? Great! 
 
@@ -146,11 +146,11 @@ Do you see your map? Great!
 
 Practice with different tiles, coordinates and zoom levels to make your own base map. 
 
-:white_check_mark: Try to zoom your map to the place where you live or work! 
+ :arrow_forward: Try to zoom your map to the place where you live or work! 
 
-:white_check_mark: Looking for a specific place to centre on? Find your coordinates here: [http://www.mapcoordinates.net/en](http://www.mapcoordinates.net/en)
+ :arrow_forward: Looking for a specific place to centre on? Find your coordinates here: [http://www.mapcoordinates.net/en](http://www.mapcoordinates.net/en)
 
-:white_check_mark: There are many different tile providers! Just copy their code given, replacing your own code starting from `L.tileLayer (... );` Try out some different styles. 
+ :arrow_forward: There are many different tile providers! Just copy their code given, replacing your own code starting from `L.tileLayer (... );` Try out some different styles. 
 
 Another free tile provider is [maps.stamen.com](maps.stamen.com). These even provide 3 varieties:
  

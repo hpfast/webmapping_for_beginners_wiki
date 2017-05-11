@@ -1,10 +1,10 @@
 ### Setting up the basics 
 
-:white_check_mark: Open your text editor.
+ :arrow_forward: Open your text editor.
 
-:white_check_mark: Start with a basic HTML page.
+ :arrow_forward: Start with a basic HTML page.
 
-:white_check_mark: Save the file in a `yourDirectory` and call the file `index.html`.
+ :arrow_forward: Save the file in a `yourDirectory` and call the file `index.html`.
 
 ``` html
 <!doctype html>
@@ -19,15 +19,15 @@
 </html>
 ```
 
-:white_check_mark: Open a new file and save this as `main.css` in `yourDirectory`. 
+ :arrow_forward: Open a new file and save this as `main.css` in `yourDirectory`. 
 
-:white_check_mark: Go back to your index.html file and put the link to your CSS file in the `<head>`.
+ :arrow_forward: Go back to your index.html file and put the link to your CSS file in the `<head>`.
 
 ``` html
 <link rel="stylesheet" href="main.css"/>
 ```
 
-:white_check_mark: Go to [d3js.org](https://d3js.org/). Scroll down and download the newest release (`d3.v4.min.js`). Or use the snippet provided below. 
+ :arrow_forward: Go to [d3js.org](https://d3js.org/). Scroll down and download the newest release (`d3.v4.min.js`). Or use the snippet provided below. 
 
 > Because we already have utf-8 stated in the `<head>` we do not have to specify it in the script. (utf-8 makes sure all diacritical marks are placed right)
 
@@ -37,7 +37,7 @@
 
 > **JS** *JavaScript libraries are often placed in the head. Though, it is best to place them as far as possible to the bottom of the body. This is much quicker while loading!*
 
-:white_check_mark: Change the title to “My first map in D3”. 
+ :arrow_forward: Change the title to “My first map in D3”. 
 
 Now your file will look like:
 
@@ -62,7 +62,7 @@ The basics are done!
 
 ### Setting up the map canvas
 
-:white_check_mark: Replace “your code goes here” with:
+ :arrow_forward: Replace “your code goes here” with:
 
 ``` js
 <script> 
@@ -151,9 +151,9 @@ var svg = d3.select("body")
 ### Data
 To 'bind' your data to the DOM is the next step. With D3 you can connect data like .csv or in our case .json files.
 
-:white_check_mark: Place the file landen.json in `yourDirectory`.
+ :arrow_forward: Place the file landen.json in `yourDirectory`.
 
-:white_check_mark: Copy the following script, below the previous script (index.html).
+ :arrow_forward: Copy the following script, below the previous script (index.html).
 
 ``` js
 // create a new SVG group element
@@ -170,9 +170,9 @@ d3.json("landen.json", function(json) {
 }); 
 ```
 
-:white_check_mark: Check in your browser if you see a world map.
+ :arrow_forward: Check in your browser if you see a world map.
 
-:white_check_mark: Have a look at https://github.com/d3/d3-3.x-api-reference/blob/master/Geo-Projections.md for different projections.
+ :arrow_forward: Have a look at https://github.com/d3/d3-3.x-api-reference/blob/master/Geo-Projections.md for different projections.
 
 > Projection
 > 
@@ -181,9 +181,9 @@ d3.json("landen.json", function(json) {
 > [projection](img/projections.jpg)
 >
 
-:white_check_mark: You can also play around with the projection, centre and zoom level.
+ :arrow_forward: You can also play around with the projection, centre and zoom level.
 
-:white_check_mark: For example, try to zoom in on the Netherlands!
+ :arrow_forward: For example, try to zoom in on the Netherlands!
 
 ``` js
 var projection = d3.geoMercator()

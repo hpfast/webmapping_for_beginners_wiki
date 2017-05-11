@@ -65,11 +65,11 @@ http://thumbnails.visually.netdna-cdn.com/SquatchWatch92YearsofBigfootSightingsi
 ### GeoJSON-tilelayer
 GeoJSON is the standard data type to create web maps with. You can add this data as another map layer.
 
-:white_check_mark: Download the dataset from https://github.com/NieneB/Webmapping_for_beginners/tree/gh-pages/data
+ :arrow_forward: Download the dataset from https://github.com/NieneB/Webmapping_for_beginners/tree/gh-pages/data
 
-:white_check_mark: Place the BFRO_bigfootA.geojson or BFRO_bigfootb.geojson file in `yourDirectory`.
+ :arrow_forward: Place the BFRO_bigfootA.geojson or BFRO_bigfootb.geojson file in `yourDirectory`.
 
-:white_check_mark: Copy the following script and have a look at your map.
+ :arrow_forward: Copy the following script and have a look at your map.
 
 ``` js
 // Create a marker first

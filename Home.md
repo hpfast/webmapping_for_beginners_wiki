@@ -47,7 +47,7 @@ Just follow the links. At the bottom of each step is the link to the next step.
 
 :arrow_right: Takes you to the next step
 
-:white_check_mark: This are the things that you should do, execute, get working! Hands on! 
+ :arrow_forward: This are the things that you should do, execute, get working! Hands on! 
 
 :information_source: Indicates an explanation about the code blocks. 
 

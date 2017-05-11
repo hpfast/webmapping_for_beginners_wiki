@@ -29,13 +29,13 @@ HTML stands for Hyper Text Markup Language. It is used to give websites structur
 
 **Let's try this!**
 
-:white_check_mark: Open your text editor.
+ :arrow_forward: Open your text editor.
 
-:white_check_mark: Copy the previous code into an empty file to make your basic HTML page.
+ :arrow_forward: Copy the previous code into an empty file to make your basic HTML page.
 
-:white_check_mark: Save the file in `yourDirectory` and call the file `index.html`.
+ :arrow_forward: Save the file in `yourDirectory` and call the file `index.html`.
 
-:white_check_mark: Open your index.html file with your browser.
+ :arrow_forward: Open your index.html file with your browser.
 
 [This](https://nieneb.github.io/html_example/) is what it should look like!
 
@@ -57,7 +57,7 @@ HTML stands for Hyper Text Markup Language. It is used to give websites structur
 > 
 > The `<a href=""></a>`tag defines a hyperlink, which is used to link from one page to another.
 
-:white_check_mark: Try to add some more headers and text to your first HTML.
+ :arrow_forward: Try to add some more headers and text to your first HTML.
 
 **But this webpage looks really boring!!** True, so let´s continue with CSS. 
 
@@ -107,7 +107,7 @@ or saved in an external file with a .css suffix, and then referenced in the docu
 
 **We will try this!**
 
-:white_check_mark: Copy this style code into your index.html page.
+ :arrow_forward: Copy this style code into your index.html page.
 
 ```html
     <style type="text/css">
@@ -122,13 +122,13 @@ or saved in an external file with a .css suffix, and then referenced in the docu
     </style>
 ```
 
-:white_check_mark: Refresh your browser.
+ :arrow_forward: Refresh your browser.
 
 [This](https://nieneb.github.io/css_example/) is how it should look like.
 
 ![html_example](img/example_css.png)
 
-:white_check_mark: Play around with the CSS and HTML. Make yourself a nice page! 
+ :arrow_forward: Play around with the CSS and HTML. Make yourself a nice page! 
 
 On https://www.w3schools.com/css/ you can find a great overview of all the possibilities with CSS.
 
@@ -137,16 +137,16 @@ On https://www.w3schools.com/css/ you can find a great overview of all the possi
 > 
 > That sounds scary! But do not be afraid. The browser web inspector is going to be your best friend! Let's explore this. 
 > 
-> :white_check_mark: In your browser when you opened your html 
+>  :arrow_forward: In your browser when you opened your html 
 >
 > * Click with your right mouse button, choose : `Inspect Element`
 > * Or Press F12
 > 
 > The web inspector shows you the content of your page and the current state of the DOM. DOM stands for Document Object Model and refers to the hierarchical structure of HTML. Web browsers parse the DOM in order to make sense of a page’s content.
 > 
-> :white_check_mark: Do you see the same content as we just made in our text editor?
+>  :arrow_forward: Do you see the same content as we just made in our text editor?
 >
-> :white_check_mark: Just have a look around. Nothing can happen!
+>  :arrow_forward: Just have a look around. Nothing can happen!
 > 
 > We will use the web inspector later again as a debugger, when your web-page doesn't show what you wanted it to! For now, you can close it again.
 
