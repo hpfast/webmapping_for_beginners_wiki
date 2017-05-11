@@ -30,11 +30,11 @@ Our background map tiles are static raster images. The markers, cirles and polyg
 
 **Raster** data is like a picture that you would take with a digital camera: at the lowest level of abstraction, it is a list of pixels with values. When you ‘zoom in’ and look closer at raster data, at some point you’ll see these discrete pixels, and it will look pixelated.
 
-[raster](img/raster_data.png)
+![raster](img/raster_data.png)
 
 **Vector data** stores basic geometries rather than pixel data. No matter how much you ‘zoom in’ on vector data, you won’t see pixels: the data stored is composed of geometric points and lines, and only converted into an image when necessary.
 
-[vector](img/vector_data.png)
+![vector](img/vector_data.png)
 
 ### GeoJSON
 GeoJSON is the standard data type to create web maps with. You can add this data as another map layer.
