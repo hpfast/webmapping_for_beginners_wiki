@@ -27,7 +27,7 @@ As you can see, map tiles are static raster images on the web. These tiles need 
 
 	/home/niene/Documents/MyFirstWebMap_Leaflet
 
-In these directories we save everything we make and download today. During this workshop it is referred to as `yourDirectory`.
+We'll save everything we make and download today in this directory. During this workshop it is referred to as `yourDirectory`.
 
 ### Let's start!  
 :arrow_right: If you are not that comfortable with HTML, CSS and JavaScript yet, this **[[Making a web page ]]** tutorial will help you along!
