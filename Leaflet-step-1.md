@@ -70,7 +70,7 @@ Now we will add the JavaScrip Library Leaflet.js.
 
 :arrow_forward: Place the `leaflet.js script` library in the `<body>`. 
 
-> **JS** *JavaScript libraries are often placed in the head. Though, it is best to place them as far as possible to the bottom of the body. This is much quicker while loading!*
+> **JS** *JavaScript libraries are often placed in the head. However, it is best to place them as far as possible to the bottom of the body. This results in a faster page load because parsing the script doesn't block the loading of the rest of the page.*
 
 Now you will have:
 
