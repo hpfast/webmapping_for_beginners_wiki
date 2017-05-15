@@ -11,8 +11,7 @@ Leaflet creates "Slippy" maps with raster tiled base layers, user interaction li
 
 ## Web maps
 
-Web maps are made up of many small, square images called tiles. These tiles are typically 256x256 pixels and are placed side-by-side in order to create the illusion of a very large seamless image. A big advantage: All these little tiles load way faster than one big map! 
-This kind of map is  called a "Slippy" map. 
+Web maps are made up of many small, square images called tiles. These tiles are typically 256x256 pixels and are placed side-by-side in order to create the illusion of a very large seamless image. A big advantage: all these little tiles load way faster than one big map! This kind of map is  called a "Slippy" map. 
 
 ![slippy map](http://maptime.io/anatomy-of-a-web-map/images/tiles-loading.gif)
 
