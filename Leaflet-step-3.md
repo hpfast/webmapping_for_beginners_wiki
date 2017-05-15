@@ -1,11 +1,18 @@
 In Leaflet step 3 we will add a GeoJSON file containing geo-spatial data to our map.
+### Running a local server
+
+When developing a website, a web designer needs to be able to see his webpages the same way the end user would. Sometimes simply clicking on and viewing your HTML files in the web browser is enough, but if you want to test dynamic content, you will need to set up a local web server. Doing this is quite simple and can easily be accomplished on Windows, Mac, and Linux. There are many types of web servers available, but we will be using Python's SimpleHTTPServer as it is very easy to set up.
+
+http://www.pythonforbeginners.com/modules-in-python/how-to-use-simplehttpserver/
+https://www.maketecheasier.com/setup-local-web-server-all-platforms/
+
 
 ### GeoJSON
 
 [GeoJSON](http://geojson.org/) is the standard data type to create web maps with. You can add this data as another map layer.
 The geodata that we want to add will be a GeoJSON file. JSON stands for JavaScript Object Notation. GeoJSON is a format for encoding a variety of geographic data structures.
 
-This is how it looks like:
+This is what it looks like:
 
 ``` JSON
 {
@@ -44,6 +51,7 @@ For inspiration: the following map is was also made from this dataset.
 
 :arrow_forward: Place the All_BFRO_Reports_points.geojson file in `yourDirectory`.
 
+This is what it looks like:
 
 ```json
 {
@@ -160,3 +168,4 @@ Explain code here!
 
 :arrow_right: Continue to [[Introduction D3]] or do the [[Leaflet Advanced assignments]]
 
+:arrow_right: Continue to [[Introduction D3]]
