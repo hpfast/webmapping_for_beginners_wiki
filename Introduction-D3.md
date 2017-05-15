@@ -1,5 +1,5 @@
 ### Making maps and graphs with d3
-D3 is a open JavaScript library for manipulating documents based on data. D3 stands for Data Driven Documents. The data you provide yourself. D3 makes the connection between your data and the ('driven')documents, which are web-based(HTML and SVG). Bringing to life your data using HTML, SVG, and CSS. D3.js is developed by Mike Bostock and completely open source and free available at Github. With D3, you can make beautiful interactive visualizations, graphs of your data but also: a map!
+D3 is a open JavaScript library for manipulating documents based on data. D3 stands for Data Driven Documents. You provide the data yourself. D3 makes the connection between your data and the ('driven')documents, which are web-based(HTML and SVG). Bringing to life your data using HTML, SVG, and CSS. D3.js is developed by Mike Bostock and completely open source and free available at Github. With D3, you can make beautiful interactive visualizations, graphs of your data but also: a map!
 
 ![D3-logo](img/d3-logo.png)
 
