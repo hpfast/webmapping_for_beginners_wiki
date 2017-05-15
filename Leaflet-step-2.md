@@ -118,9 +118,9 @@ Your script should look like the following:
 
 :arrow_forward: Have a look in your browser to see if you see all your markers and circles are on the map! If not, adjust the zoom and/or centre settings or change your coordinates! 
 
-:arrow_forward: Also check the debugger in the browser if everything is correct: `F12`
+:arrow_forward: Also check the debugger in the browser to see if everything is correct: `F12`
 
-This is how my example looks like:
+This is what my example looks like:
 
 ![img](img/leaflet_step2.png)
 
