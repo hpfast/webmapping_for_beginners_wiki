@@ -9,7 +9,6 @@ Leaflet creates "Slippy" maps with raster tiled base layers, user interaction li
 > ### JavaScript Library 
 > Including a JavaScript library in your code is like copying and pasting someone else's code into yours. You have access to everything in that library. In our case, it's a bunch of cool tools to make web maps and give them familiar functionality.
 
-
 ### Web maps
 
 Web maps are made up of many small, square images called tiles. These tiles are typically 256x256 pixels and are placed side-by-side in order to create the illusion of a very large seamless image. A big advantage: All these little tiles load way faster than one big map! 
@@ -28,6 +27,10 @@ As you can see, map tiles are static raster images on the web. These tiles need 
 	/home/niene/Documents/MyFirstWebMap_Leaflet
 
 In these directories we save everything we make and download today. During this workshop it is referred to as `yourDirectory`.
+
+In [[Leaflet step 1]] we will set up the basics to show a standard background map with Leaflet.
+In [[Leaflet step 2]] we will add markers, circles and polygons to our map.
+In [[Leaflet step 3]] we will add a GeoJSON file containting geospatial data to our map.
 
 ### Let's start!  
 :arrow_right: If you are not that comfortable with HTML, CSS and JavaScript yet, this **[[Making a web page ]]** tutorial will help you along!

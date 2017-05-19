@@ -1,3 +1,6 @@
+In Leaflet step 1 we will set up the basics to show a standard background map with Leaflet.
+
+
 ### Setting up the basics 
 
  :arrow_forward: Open your text editor.

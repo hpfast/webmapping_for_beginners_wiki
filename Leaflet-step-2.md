@@ -1,3 +1,16 @@
+In Leaflet step 2 we will add markers, circles and polygons to our map.
+
+### Vector Data vs Raster data
+Our background map tiles are static raster images. In the next part we will add markers, cirles and polygons which are vector based data. In step 3 we will even add a GeoJSON file which is also vector based. (explained in step 3)
+
+**Raster** data is like a picture that you would take with a digital camera: at the lowest level of abstraction, it is a list of pixels with values. When you ‘zoom in’ and look closer at raster data, at some point you’ll see these discrete pixels, and it will look pixelated.
+
+![raster](img/raster_data.png)
+
+**Vector data** stores basic geometries rather than pixel data. No matter how much you ‘zoom in’ on vector data, you won’t see pixels: the data stored is composed of geometric points and lines, and only converted into an image when necessary.
+
+![vector](img/vector_data.png)
+
 ### Markers, circles and polygons
 Now we will add custom markers, circles and polygons to your map. (for example your home address). 
 

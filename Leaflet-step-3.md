@@ -1,3 +1,31 @@
+In Leaflet step 3 we will add a GeoJSON file containting geospatial data to our map.
+
+### GeoJSON
+GeoJSON is the standard data type to create web maps with. You can add this data as another map layer.
+The geodata that we want to add will be a GeoJSON file. JSON stands for JavaScript Object Notation. GeoJSON is a format for encoding a variety of geographic data structures.
+
+This is how it looks like:
+
+``` JSON
+{
+  "type": "Feature",
+  "geometry": {
+   "type": "Point",
+   "coordinates": [125.6, 10.1]
+  },
+  "properties": {
+   "name": "Dinagat Islands"
+  }
+}
+```
+
+GeoJSON supports the following geometry types: `Point, LineString, Polygon, MultiPoint, MultiLineString, and MultiPolygon`. Geometric objects with additional properties are Feature objects. Sets of features are contained by FeatureCollection objects.
+
+It uses the World Geodetic System 1984, and units of decimal degrees.
+
+More links and info can be found in [[Tips & Tricks]]
+
+
 ### Running a local server
 
 When developing a website, a web designer needs to be able to see his webpages the same way the end user would. Sometimes simply clicking on and viewing your HTML files in the web browser is enough, but if you want to test dynamic content, you will need to set up a local web server. Doing this is quite simple and can easily be accomplished on Windows, Mac, and Linux. There are many types of web servers available, but we will be using the Python's SimpleHTTPServer as it is very easy to set up.
@@ -28,58 +56,40 @@ If you have never done this before it might look a bit scary.. But don't worry. 
 
 :arrow_forward: Type `pwd` in the terminal and press enter! 
 
+Probably you are in your home directory. 
+
 :information_source: `ls` will LiSt all the files in your current directory. 
 
-:arrow_forward: Type `ls` in the terminal and press enter! Do you see all the files and folders?
+:arrow_forward: Type `ls` in the terminal and press enter! Do you see all the files and folders of your current working directory?
 
 :information_source: `cd [directory]` stands for Change Directory and will navigate you to the next directory you told it to. 
 
-:arrow_forward: If you have a folder named `Documents`, check with `ls` then type `cd Documents/` in the terminal and press enter! 
+:arrow_forward: If you have a folder named `Documents`, (check with `ls`) then type `cd Documents/` in the terminal and press enter! 
+
+If we would type 'pwd' again, you can see that you changed from your home directory to you Documents directory. 
+If you want to go back up the working tree we can use `cd ..` to move 1 folder up.
+
+:arrow_forward: Type `cd ..` and press enter. Check with `pwd` where you are now. 
+
+Using all this information we can browse to `YourDirectory` where the `index.html` file is.
+
+:arrow_forward: Using `cd` go to `Yourdirectory`. 
+
+This is where we will run our local server! 
+
+:arrow_forward: To start a HTTP server on port 8000 (which is the default port), simple type:
+
+```
+python -m SimpleHTTPServer [port]
+```
 
 
 
-This will now show the files and directories which are in the current working directory.
+
+
 
 
 We need to run a local server, if we want to add our own data to our map. Before this there will be a few concepts to explain: 
-
-
-### Vector Data vs Raster data
-Our background map tiles are static raster images. The markers, cirles and polygons that we added are vector based data. In the next step we will add a GeoJSON file which is also vector based. 
-
-
-**Raster** data is like a picture that you would take with a digital camera: at the lowest level of abstraction, it is a list of pixels with values. When you ‘zoom in’ and look closer at raster data, at some point you’ll see these discrete pixels, and it will look pixelated.
-
-![raster](img/raster_data.png)
-
-**Vector data** stores basic geometries rather than pixel data. No matter how much you ‘zoom in’ on vector data, you won’t see pixels: the data stored is composed of geometric points and lines, and only converted into an image when necessary.
-
-![vector](img/vector_data.png)
-
-### GeoJSON
-GeoJSON is the standard data type to create web maps with. You can add this data as another map layer.
-The geodata that we want to add will be a GeoJSON file. JSON stands for JavaScript Object Notation. GeoJSON is a format for encoding a variety of geographic data structures.
-
-This is how it looks like:
-
-``` JSON
-{
-  "type": "Feature",
-  "geometry": {
-   "type": "Point",
-   "coordinates": [125.6, 10.1]
-  },
-  "properties": {
-   "name": "Dinagat Islands"
-  }
-}
-```
-
-GeoJSON supports the following geometry types: `Point, LineString, Polygon, MultiPoint, MultiLineString, and MultiPolygon`. Geometric objects with additional properties are Feature objects. Sets of features are contained by FeatureCollection objects.
-
-It uses the World Geodetic System 1984, and units of decimal degrees.
-
-More links and info can be found in [[Tips & Tricks]]
 
 
 
