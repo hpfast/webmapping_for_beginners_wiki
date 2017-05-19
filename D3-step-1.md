@@ -1,3 +1,5 @@
+In D3 step 1 we will set up the basics to show a simple map with D3.
+
 ### Setting up the basics 
 
  :arrow_forward: Open your text editor.
@@ -58,7 +60,6 @@ Now your file will look like:
 </html>
 ```
 The basics are done! 
-
 
 ### Setting up the map canvas
 
@@ -148,12 +149,16 @@ var svg = d3.select("body")
   .attr("height", h);
 ``` 
 
-### Data
-To 'bind' your data to the DOM is the next step. With D3 you can connect data like .csv or in our case .json files.
 
- :arrow_forward: Place the file landen.json in `yourDirectory`.
+### Adding Data
+To 'bind' your data to the DOM is the next step. With D3 you can connect data like .csv or in our case a GeoJSON file. We will use the same Squatch Watch Data as the Leaflet workshop.
 
- :arrow_forward: Copy the following script, below the previous script (index.html).
+
+:arrow_forward: Download the dataset from https://github.com/NieneB/Webmapping_for_beginners/tree/gh-pages/data
+
+:arrow_forward: Place the BFRO_bigfootA.geojson or BFRO_bigfootb.geojson file in `yourDirectory`.
+
+:arrow_forward: Copy the following script, below the previous script (index.html).
 
 ``` js
 // create a new SVG group element

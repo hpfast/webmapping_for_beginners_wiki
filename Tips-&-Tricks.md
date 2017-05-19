@@ -51,6 +51,9 @@ CartoDB
 [D3 tutorial](https://github.com/d3/d3/wiki/Tutorials)
 [D3 for mere mortals](http://www.recursion.org/d3-for-mere-mortals/)
 
+* Book: interactive data visualization Scott Murray. Or on-line via http://alignedleft.com/tutorials/d3/about
+* follow tutorials on YouTube for example of D3.vienno
+
 http://maptime.io/anatomy-of-a-web-map/#0
 
 ## GeoJSON
@@ -63,3 +66,4 @@ Convert files here:
 [OGRE](http://ogre.adc4gis.com/)
 Or draw your own here:
 geojson.io
+

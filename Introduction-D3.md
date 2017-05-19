@@ -21,7 +21,6 @@ D3 is a open JavaScript library. D3 stands for Data Driven Documents. The data y
 A short explanation can be found here: http://alignedleft.com/tutorials/d3/fundamentals
 
 
-
 ### Preparation
 
 On your computer create a directory for yourself, where we can work in today. For example:
@@ -33,5 +32,6 @@ In these directories we save everything we make and download today. During this 
 ### Let's start!  
 If you are not that comfortable with HTML, CSS and JavaScript yet, this **[[Making a web page ]]** tutorial will help you along!
 
-If you already know some HTML, CSS and JavaScript, you can start immediately with the tutorial at **[[Leaflet step 1 ]]** and read through the HTML explanations. 
+If you already know some HTML, CSS and JavaScript, you can start immediately with the tutorial at **[[D3 step 1 ]]** and read through the HTML explanations. 
 
+In D3 step 1 we will set up the basics to show a simple map with D3.

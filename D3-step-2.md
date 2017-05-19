@@ -31,6 +31,4 @@ Now we will load the vd data and visualize it as circles. (from the leaflet star
 				   
 3. Change the colours and play around with the style attributes! 
 
-### Do you want to learn more?
-* Book: interactive data visualization Scott Murray. Or on-line via http://alignedleft.com/tutorials/d3/about
-* follow tutorials on YouTube for example of D3.vienno
+:arrow_right: Continue to [[Hosting on Github]] to put your maps online! Or do the [[D3 advanced]] turorial.
