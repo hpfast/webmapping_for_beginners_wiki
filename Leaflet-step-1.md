@@ -25,7 +25,7 @@
 ``` html
 <div id="map"></div>
 ```
-The `<div>` is a kind of frame where our map will come! 
+The `<div>` is a kind of frame where our map will come! This frame does not contain anything yet and it is not even there yet. We will have to give it some dimensions in order to show content. We will specify the width and height with CSS, so the `<div>` can be seen. Later, we will give content to the `<div>` with JavaScript.
 
  :arrow_forward: Open a new file and save this as `main.css` in `yourDirectory`.
 
@@ -110,7 +110,7 @@ For a real map you need a base layer. This is the background of your map made ou
 </script>
 ``` 
 
-:information_source: `var map =  L.map("map")` initializes the `map` variable and links it to our `<div id="map"></div>`.
+:information_source: `var map =  L.map("map")` initializes the `map` variable and links it to our `<div id="map"></div>`. This will link the map content to the `<div>` content.
 
 :information_source: `setView()` centres the map `([latitude, longitude], zoom level)`. The projection is Google Mercator. 
 
