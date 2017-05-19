@@ -1,5 +1,5 @@
 ### Markers, circles and polygons
-Add custom markers, circles and polygons to your map. (for example your home address). At least, choose coordinates which are on your map.
+Now we will add custom markers, circles and polygons to your map. (for example your home address). 
 
  :arrow_forward: Add the following to your map:
 
