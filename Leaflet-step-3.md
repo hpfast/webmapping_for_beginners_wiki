@@ -11,14 +11,34 @@ Easy ways of doing this include running Python's SimpleHTTPServer in your map di
 
 
 
-To start a HTTP server on port 8000 (which is the default port), simple type:
+:arrow_forward: To start a HTTP server on port 8000 (which is the default port), simple type:
 
 ```
 python -m SimpleHTTPServer [port]
 ```
 
-This will now show the files and directories which are in the current working
-directory.
+Oef! But where?! 
+Let's start from the beginning:
+
+ :arrow_forward: Open a Terminal. `Menu > Terminal`
+
+If you have never done this before it might look a bit scary.. But don't worry. There is nothing we will do that will ruin your computer! We will start with the 3 most important navigation tools for the Terminal. Just image the Terminal is like your File Browser, but then without the interface.
+
+:information_source: `pwd` means Print Working Directory. It will answer with the location that we are currently in. Try it:
+
+:arrow_forward: Type `pwd` in the terminal and press enter! 
+
+:information_source: `ls` will LiSt all the files in your current directory. 
+
+:arrow_forward: Type `ls` in the terminal and press enter! Do you see all the files and folders?
+
+:information_source: `cd [directory]` stands for Change Directory and will navigate you to the next directory you told it to. 
+
+:arrow_forward: If you have a folder named `Documents`, check with `ls` then type `cd Documents/` in the terminal and press enter! 
+
+
+
+This will now show the files and directories which are in the current working directory.
 
 
 We need to run a local server, if we want to add our own data to our map. Before this there will be a few concepts to explain: 
@@ -104,7 +124,7 @@ if (xhr.status === 200) {
 xhr.send();
 ```
 
-For your inspiration:
+The following map is was also made from this dataset. For inspiration:
 
 ![bigfoot](http://thumbnails.visually.netdna-cdn.com/SquatchWatch92YearsofBigfootSightingsintheUSandCanada_523b7482cc497.png)
 
