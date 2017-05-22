@@ -21,15 +21,7 @@ In D3 step 1 we will set up the basics to show a simple map with D3.
 </html>
 ```
 
- :arrow_forward: Open a new file and save this as `main.css` in `yourDirectory`. 
-
- :arrow_forward: Go back to your index.html file and put the link to your CSS file in the `<head>`.
-
-``` html
-<link rel="stylesheet" href="main.css"/>
-```
-
- :arrow_forward: Go to [d3js.org](https://d3js.org/). Scroll down and download the newest release (`d3.v4.min.js`). Or use the snippet provided below. 
+:arrow_forward: Go to [d3js.org](https://d3js.org/). Scroll down and download the newest release (`d3.v4.min.js`). Or use the snippet provided below. 
 
 > Because we already have utf-8 stated in the `<head>` we do not have to specify it in the script. (utf-8 makes sure all diacritical marks are placed right)
 
@@ -39,7 +31,7 @@ In D3 step 1 we will set up the basics to show a simple map with D3.
 
 > **JS** *JavaScript libraries are often placed in the head. Though, it is best to place them as far as possible to the bottom of the body. This is much quicker while loading!*
 
- :arrow_forward: Change the title to “My first map in D3”. 
+:arrow_forward: Change the title to “My first map in D3”. 
 
 Now your file will look like:
 
@@ -50,7 +42,6 @@ Now your file will look like:
   <head>
     <meta charset="utf-8">
     <title>My first map in D3</title> 
-    <link rel="stylesheet" href="main.css"/> 
   </head>
   <body>
     <H1>Example</H1>
@@ -63,7 +54,7 @@ The basics are done!
 
 ### Setting up the map canvas
 
- :arrow_forward: Replace “your code goes here” with:
+:arrow_forward: Replace “your code goes here” with:
 
 ``` js
 <script> 
@@ -149,25 +140,24 @@ var svg = d3.select("body")
   .attr("height", h);
 ``` 
 
-
 ### Adding Data
-To 'bind' your data to the DOM is the next step. With D3 you can connect data like .csv or in our case a GeoJSON file. We will use the same Squatch Watch Data as the Leaflet workshop.
+To 'bind' your data to the DOM is the next step. With D3 you can connect data like .csv or in our case a GeoJSON file. We will use a GeoJSON with the country shapes of the whole world!
 
 
-:arrow_forward: Download the dataset from https://github.com/NieneB/Webmapping_for_beginners/tree/gh-pages/data
+:arrow_forward: Download the world dataset from https://github.com/NieneB/Webmapping_for_beginners/tree/gh-pages/data
 
-:arrow_forward: Place the BFRO_bigfootA.geojson or BFRO_bigfootb.geojson file in `yourDirectory`.
+:arrow_forward: Place the world.geojson file in `yourDirectory`.
 
 :arrow_forward: Copy the following script, below the previous script (index.html).
 
 ``` js
 // create a new SVG group element
-var layerLanden = svg.append('g');
+var layerWorld = svg.append('g');
 
 //Load in GeoJSON data
-d3.json("landen.json", function(json) {
+d3.json("world.json", function(json) {
   //Bind data and create one path per GeoJSON feature
-  layerLanden.selectAll("path")
+  layerWorld.selectAll("path")
      .data(json.features)
      .enter()
      .append("path")
@@ -175,9 +165,27 @@ d3.json("landen.json", function(json) {
 }); 
 ```
 
- :arrow_forward: Check in your browser if you see a world map.
+:arrow_forward: Check in your browser if you see a world map.
 
- :arrow_forward: Have a look at https://github.com/d3/d3-3.x-api-reference/blob/master/Geo-Projections.md for different projections.
+> ###  :bangbang: you do not see a map? 
+> Open the debugger 
+>
+> * Click with your right mouse button, choose : `Inspect Element`
+> * Or Press F12
+> 
+> The debugger shows you the content of your page. But also logs any errors or comments! 
+> Go to the tab `Web Console` to see if it reports anything useful for you.
+> 
+> Do you get something like this:
+> 
+> `Uncaught SyntaxError: missing ) after argument list. index.html:19
+> 
+> Then something is wrong in your code! This specific error means a `)` bracket is missing on line 19 of our script! 
+> Try to fix your error and reload your page. 
+
+:arrow_forward: Play around with the projection, centre and zoom level.
+
+:arrow_forward: Have a look at https://github.com/d3/d3-3.x-api-reference/blob/master/Geo-Projections.md for different projections.
 
 > Projection
 > 
@@ -186,14 +194,12 @@ d3.json("landen.json", function(json) {
 > [projection](img/projections.jpg)
 >
 
- :arrow_forward: You can also play around with the projection, centre and zoom level.
-
- :arrow_forward: For example, try to zoom in on the Netherlands!
+:arrow_forward: For example, try to zoom in on the Netherlands!
 
 ``` js
 var projection = d3.geoMercator()
   .center([4, 52])
-  .translate([ w/2, h/2 ]
+  .translate([ w/2, h/2 ])
   .scale(1000);
 ```
 
