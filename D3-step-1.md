@@ -178,7 +178,7 @@ d3.json("world.json", function(json) {
 > 
 > Do you get something like this:
 > 
-> `Uncaught SyntaxError: missing ) after argument list. index.html:19
+> `Uncaught SyntaxError: missing ) after argument list. index.html:19`
 > 
 > Then something is wrong in your code! This specific error means a `)` bracket is missing on line 19 of our script! 
 > Try to fix your error and reload your page. 
