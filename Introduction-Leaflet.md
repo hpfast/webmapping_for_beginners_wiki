@@ -20,6 +20,10 @@ Each zoom level has its own set of tiles. Zoom level 0 has 1 tile for the world.
 
 As you can see, map tiles are static raster images on the web. These tiles need to live somewhere on the web page. They need to know when to load and they need to react when you click or drag. Leaflet is a JavaScript library that allows us to do just that.
 
+In [[Leaflet step 1]] we will set up the basics to show a standard background map with Leaflet.
+In [[Leaflet step 2]] we will add markers, circles and polygons to our map.
+In [[Leaflet step 3]] we will add a GeoJSON file containting geospatial data to our map.
+
 ### Preparation
 
  :arrow_forward: On your computer create a directory for yourself, where we can work in today. For example:
@@ -27,10 +31,6 @@ As you can see, map tiles are static raster images on the web. These tiles need 
 	/home/niene/Documents/MyFirstWebMap_Leaflet
 
 In these directories we save everything we make and download today. During this workshop it is referred to as `yourDirectory`.
-
-In [[Leaflet step 1]] we will set up the basics to show a standard background map with Leaflet.
-In [[Leaflet step 2]] we will add markers, circles and polygons to our map.
-In [[Leaflet step 3]] we will add a GeoJSON file containting geospatial data to our map.
 
 ### Let's start!  
 :arrow_right: If you are not that comfortable with HTML, CSS and JavaScript yet, this **[[Making a web page ]]** tutorial will help you along!
