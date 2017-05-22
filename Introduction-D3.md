@@ -10,7 +10,7 @@ In short, D3.js takes in some data and makes a graphic out of it, be it a chart 
 > ### SVG
 > SVG is a text-based vecotr image format for two-dimensional graphics. Meaning, you can specify what an SVG image should look like by writing simple markup code, sort of like HTML tags. In fact, SVG code can be included directly within any HTML document. This means that they can be searched, indexed, scripted, and compressed. SVG images can be created and edited with any text editor, as well as with drawing software.
 
-![img](/img/Bitmap_VS_SVG.png)
+![svg](img/Bitmap_VS_SVG.png)
 
 This can be quite convienient if your data changes. You can easily prepare your graphics with dummy data. So when the actual data arrives, D3.js re-creates the graphic as the data comes in. SVG is rendered in the browser. If many people try to access a item, the graphics don't weigh much into the IT infrastructure. Also SVG is scalable. Using mobile phones or tablest with all sorts of screen sizes. The graphics can easily scale up and down without losing their sharpness.
 
