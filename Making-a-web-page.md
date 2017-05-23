@@ -18,11 +18,11 @@ HTML stands for Hyper Text Markup Language. It is used to give websites structur
     <!DOCTYPE html>
     <html>
         <head>
-            <title> My First HTML </title>
+            <title> Title of My First HTML page </title>
         </head>
         <body>
-            <H1>Example</H1>
-            <p>This is a really interesting paragraph.</p>
+            <H1> Example Header </H1>
+            <p> This is a really interesting paragraph.</p>
         </body>
     </html>
 ```
@@ -155,7 +155,7 @@ On https://www.w3schools.com/css/ you can find a great overview of all the possi
 
 JavaScript is a dynamic scripting language that can instruct the browser to make changes to a page after it has already loaded.
 
-Scripts can be included directly in HTML, between two script tags:
+Scripts can be included directly in HTML body, between two script tags:
 
 ```html
     <body>
@@ -165,7 +165,7 @@ Scripts can be included directly in HTML, between two script tags:
     </body>
 ```
 
-Or stored in a separate file, and then referenced somewhere the HTML (commonly in the head):
+Or stored in a separate file, and then referenced somewhere the HTML head:
 
 ```html
     <head>

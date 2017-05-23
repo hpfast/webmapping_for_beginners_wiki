@@ -16,10 +16,10 @@ var legend = d3.select("body")
 :arrow_forward: Use the geoJson data for really creating the legend! After calling the GeoJson data with D3, put the following code in the function. Now check the console in the browser! 
 
 ``` js
-var unique_values = d3.map(data.features, function(d){return d.properties.styleUrl;}).keys()
-console.log(unique_values)
+var unique_values = d3.map(data.features, function(d){return d.properties.styleUrl;}).keys();
+console.log(unique_values);
 ``` 
-:info: The variable `unique_values` is an array containing all the unique classes that occur in the styleUrl property. 
+:information_source: The variable `unique_values` is an array containing all the unique classes that occur in the styleUrl property. 
 
 ![array](img/array.png)
 
@@ -49,11 +49,15 @@ legend.selectAll("text")
 		return "class " + d 
 	})
 	.attr("x", 30 )
-    .attr("y", function(d, i) { return i * 30 + 20;})
+	.attr("y", function(d, i) { return i * 30 + 20;})
 	.attr("fill", "#ffffff")
 	.style("text-align","left")
-    .style("font-size", "16px");
+	.style("font-size", "16px");
 ``` 
+
+As you can see there are more classes then just #a and #b. 
+
+:arrow_forward: Give all other classes their own color. The points on the map, as well as the circles in the legend!
 
 ### Adding a TimeScale graph
 

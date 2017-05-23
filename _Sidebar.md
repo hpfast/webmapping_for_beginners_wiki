@@ -14,7 +14,10 @@
 
 1. [[D3 step 1]]
 1. [[D3 step 2]]
+1. [[D3 step 3]]
 
 [[Hosting on Github]]
+
+[[Leaflet advanced]]
 
 [[Tips & Tricks]]

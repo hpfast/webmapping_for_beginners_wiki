@@ -14,8 +14,11 @@ In short, D3.js takes in some data and makes a graphic out of it, be it a chart 
 
 This can be quite convienient if your data changes. You can easily prepare your graphics with dummy data. So when the actual data arrives, D3.js re-creates the graphic as the data comes in. SVG is rendered in the browser. If many people try to access a item, the graphics don't weigh much into the IT infrastructure. Also SVG is scalable. Using mobile phones or tablest with all sorts of screen sizes. The graphics can easily scale up and down without losing their sharpness.
 
-In [[D3 step 1]] we will set up the basics to show a simple map with D3.
-In [[D3 step 2]] 
+In [[D3 step 1]] we will set up the basics to show a simple world map with D3.
+
+In [[D3 step 2]] we will add extra data from a GeoJSON file to our map and style it data-driven. 
+
+In [[D3 step 3]] we will add a data-drive legend to our webpage. 
 
 ### Preparation
 
