@@ -212,6 +212,9 @@ For example, change the background of your web page to black, and give the world
     body {
       background-color: #000000
     }
+    h1{ 
+      color: #ffffff
+    }
 </style>
 ``` 
 
@@ -223,5 +226,9 @@ This is for the countries:
 .style("fill", "#313030")
 .style("stroke", "#5a5959");
 ```
+
+It should look something like this now:
+
+![img](img/d3_step1.png)
 
 :arrow_right: Continue to [[D3 Step 2]]

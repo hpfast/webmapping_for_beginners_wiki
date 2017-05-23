@@ -1,4 +1,3 @@
-
 ### Extra data
 Now we will load the Squatch Watch Data and visualize it as circles on our map. (from the leaflet starter workshop)
 
@@ -31,7 +30,6 @@ d3.json("All_BFRO_Reports_points.geojson", function(data){
 		.style("opacity", 0.75);
 });
 ```
-
 :arrow_forward: Change the map location so we see all of the Squatch Watch Data in the US.
 
 ``` js
@@ -48,30 +46,9 @@ var projection = d3.geoMercator()
 	var h = 800;
 ```
 
-:arrow_forward: Change the colours and play around with the style attributes! 
-
-Really try to pimp your map here! For example, change the background of your web page to black, and give the world map another color, like dark grey:
-
-``` html
-<style type="text/css">
-		body {
-			background-color: #000000
-		}
-</style>
-``` 
-
-Do you remember where to put is? 
-
-This is for the countries:
-
-``` js
-.style("fill", "#313030")
-.style("stroke", "#5a5959");
-``` 
-
 ### Data Driven Styling
 
-The Squatch Watch data is categorized in classes. The sightings get a classification label for how trustworthy the sightning was! For example : Class A reports involve clear sightings in circumstances where misinterpretation or misidentification of other animals can be ruled out with greater confidence.Using the data for styling and effects. Incidents where a possible sasquatch was observed at a great distance or in poor lighting conditions and incidents in any other circumstance that did not afford a clear view of the subject are considered Class B reports.
+The Squatch Watch data is categorized in classes. The sightings get a classification label for how trustworthy the sightning was! For example : Class A reports involve clear sightings in circumstances where misinterpretation or misidentification of other animals can be ruled out with greater confidence. Incidents where a possible sasquatch was observed at a great distance or in poor lighting conditions and incidents in any other circumstance that did not afford a clear view of the subject are considered Class B reports.
 
 We can use these attributes for styling the data! To see what attributes are available in the data set we can do 2 things.
 
@@ -80,7 +57,7 @@ We can use these attributes for styling the data! To see what attributes are ava
 
 Let's try both!
 
-:arrow_forward: Open the GeoJSON file with your text editor. This might take a little while becuase the dataset is quite big. 
+:arrow_forward: 1. Open the GeoJSON file with your text editor. This might take a little while becuase the dataset is quite big. 
 This is what it looks like:
 
 ``` json
@@ -89,10 +66,13 @@ This is what it looks like:
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 { "type": "Feature", "properties": { "name": "June 2000", "styleUrl": "#a", "styleHash": "72e6f3ff", "styleMapHash": { "normal": "#anormal", "highlight": "#ahighlighted" }, "description": "\r\n          Report 637: Campers' encounter just after dark in the Wrangell - St. Elias National Park and PreserveClass A; Cordova-McCarthy CountyClick for details(Location look wrong?)", "timestamp": "2000\/06\/16 12:00:00", "stroke-width": null, "fill": null, "fill-opacity": null, "visibility": null }, "geometry": { "type": "Point", "coordinates": [ -142.9, 61.5, 100.0 ] } },
-{ "type": "Feature", "properties": { "name": " 1995", "styleUrl": "#a", "styleHash": "72e6f3ff", "styleMapHash": { "normal": "#anormal", "highlight": "#ahighlighted" }, "description": "\r\n          Report 2917: Family observes large biped from carClass A; Prince of Wales CountyClick for details(Location look wrong?)", "timestamp": "1995\/05\/15 12:00:00", "stroke-width": null, "fill": null, "fill-opacity": null, "visibility": null }, "geometry": { "type": "Point", "coordinates": [ -132.7982, 55.1872, 100.0 ] } },  ....
+{ "type": "Feature", "properties": { "name": " 1995", "styleUrl": "#a", "styleHash": "72e6f3ff", "styleMapHash": { "normal": "#anormal", "highlight": "#ahighlighted" }, "description": "\r\n          Report 2917: Family observes large biped from carClass A; Prince of Wales CountyClick for details(Location look wrong?)", "timestamp": "1995\/05\/15 12:00:00", "stroke-width": null, "fill": null, "fill-opacity": null, "visibility": null }, "geometry": { "type": "Point", "coordinates": [ -132.7982, 55.1872, 100.0 ] } },  
+....
+]
+}
 ``` 
 
-:arrow_forward: Put a `console.log(data);` line in your code after the call for the data. So you get:
+:arrow_forward: 2. Put a `console.log(data);` line in your code after the call for the data to view your dataset in the browser. So you get:
 
 ``` js
 d3.json("All_BFRO_Reports_points.geojson", function(data){  
@@ -105,9 +85,9 @@ console.log(data);
 > * Click with your right mouse button, choose : `Inspect Element`
 > * Or Press F12
 
-:arrow_forward: Click the object and go through the nice drop down view of your datset to explore what there all is! 
+:arrow_forward: Click the object and go through the nice drop down view of your dataset to explore what it contains! 
 
-The GeoJSON FeatureCollection containts Features which each exist out of properties and a geometry. 
+The GeoJSON FeatureCollection contains Features which each exist out of properties and a geometry. 
 In our case the properties contain:
 
 	- name
@@ -121,11 +101,11 @@ In our case the properties contain:
 	- fill-opacity
 	- visibility
 
-A lot of it is not useable, but is used by the BFRO themselfes. We will now focus on the styleUrl property, because these contain the classification labels! 
+A lot of it is not usable, but is used by the BFRO themselves. We will now focus on the styleUrl property, because these contain the classification labels! 
 
 Let's try to give each point a different colour according to their classification label.
 
-:arrow_forward: Replace the `.style("fill", "blue")` attirbute with the following code. 
+:arrow_forward: Replace the `.style("fill", "blue")` attribute with the following code. 
 
 ``` js
 .style("fill", function(d){
@@ -135,6 +115,6 @@ Let's try to give each point a different colour according to their classificatio
 })
 ```
 
-:info: What does this do? 
+:information_source: `function(d)`
 
-:arrow_right: Continue to [[Hosting on Github]] to put your maps online! Or do the [[D3 advanced]] turorial.
+:arrow_right: Continue to [[D3 step 3]] if you feel really confident! If you are almost running out of time it might be nice to spend the last bit of the workshop on putting your map on-line! Go to the [[Hosting on Github]] to learn how! 
