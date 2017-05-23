@@ -16,14 +16,26 @@ Webmapper is a cartographic development and consultancy company based in Utrecht
 JavaScript powers most on-line maps these days. During this workshop we'll cover the two primary mapping libraries D3.js and Leaflet.js. This workshop will start from the very beginning! Never written a line of code before? Don't worry! This workshop will help get you started. 
 Therefore we'll start off with a brief introduction into making web pages in general. To eventually spend most of our time on learning the tools of the trade.
 
-1. [[Introduction Leaflet]]
-1. HTML, CSS and JS [[Making a web page]]
-2. Leaflet.js Basics [[Leaflet step 1]] [[Leaflet step 2]]
-2. Leaflet.js Advanced [[Leaflet step 3]]
-2. [[Introduction D3]]
-2. D3.js Basics [[D3 step 1]]
-2. D3.js Advanced [[D3 step 2]]
-3. [[Hosting on Github]]
+
+First we will introduce Leaflet in the [[Introduction Leaflet]].
+
+When you are not comfortable with HTML and CSS the [[Making a Web Page]] tutorial will get you started.
+
+In [[Leaflet step 1]] we will set up the basics to show a standard background map with Leaflet.
+
+In [[Leaflet step 2]] we will add markers, circles and polygons to our map.
+
+In [[Leaflet step 3]] we will add a GeoJSON file containting geospatial data to our map.
+
+In [[D3 step 1]] we will set up the basics to show a simple world map with D3.
+
+In [[D3 step 2]] we will add extra data from a GeoJSON file to our map and style it data-driven. 
+
+In [[D3 step 3]] we will add a data-drive legend to our webpage. 
+
+Eventually we will put our maps online, with [[Hosting on Github]]
+
+Do you have time left? Have a look at the [[Leaflet Advanced]] or [[D3 Advanced]] excercises.
 
 ## Goal 
 
