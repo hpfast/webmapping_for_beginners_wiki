@@ -2,22 +2,22 @@ In D3 step 1 we will set up the basics to show a simple map with D3.
 
 ### Setting up the basics 
 
- :arrow_forward: Open your text editor.
+:arrow_forward: Open your text editor.
 
- :arrow_forward: Start with a basic HTML page.
+:arrow_forward: Start with a basic HTML page.
 
- :arrow_forward: Save the file in a `yourDirectory` and call the file `index.html`.
+:arrow_forward: Save the file in a `yourDirectory` and call the file `index.html`.
 
 ``` html
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>basic HTML</title> 
-  </head>
-  <body>
-    <h1>Example</h1>
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<title>basic HTML</title> 
+	</head>
+	<body>
+		<h1>Example</h1>
+	</body>
 </html>
 ```
 
@@ -39,15 +39,15 @@ Now your file will look like:
 <!doctype html>
 <html lang="nl">
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>My first map in D3</title> 
-  </head>
-  <body>
-    <H1>Example</H1>
-    <script src="//d3js.org/d3.v4.min.js"></script> 
-    <script> your code goes here </script>
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<title>My first map in D3</title> 
+	</head>
+	<body>
+		<H1>Example</H1>
+		<script src="//d3js.org/d3.v4.min.js"></script> 
+		<script> your code goes here </script>
+	</body>
 </html>
 ```
 The basics are done! 
@@ -58,25 +58,25 @@ The basics are done!
 
 ``` js
 <script> 
-  //Width and height
-  var w = 500;
-  var h = 300;
+	//Width and height
+	var w = 500;
+	var h = 300;
 
-  //Define map projection
-  var projection = d3.geoMercator()
-    .center([ 30, 40 ])
-    .translate([ w/2, h/2 ])
-    .scale([ w/4 ]);
+	//Define map projection
+	var projection = d3.geoMercator()
+		.center([ 30, 40 ])
+		.translate([ w/2, h/2 ])
+		.scale([ w/4 ]);
 
-  //Define path generator
-  var path = d3.geoPath()
-    .projection(projection);
+	//Define path generator
+	var path = d3.geoPath()
+		.projection(projection);
 
-  //Create SVG
-  var svg = d3.select("body")
-    .append("svg")
-    .attr("width", w)
-    .attr("height", h);
+	//Create SVG
+	var svg = d3.select("body")
+		.append("svg")
+		.attr("width", w)
+		.attr("height", h);
 </script>
 ```
 
@@ -109,17 +109,17 @@ var h = 300;
 ``` js
 //Define map projection
 var projection = d3.geoMercator()
-  .center([30, 40])
-  .translate([ w/2, h/2 ])
-  .scale([ w/7 ]);
+	.center([30, 40])
+	.translate([ w/2, h/2 ])
+	.scale([ w/7 ]);
 ```
 
 :information_source: When the projection is created we can transform our geographic data to SVG with the help of `D3.geoPath` 
-  
+	
 ``` js
 //Define path generator
 var path = d3.geoPath()
-  .projection(projection);
+	.projection(projection);
 ``` 
 
 :information_source:  Next, we create our 'canvas' where we will display our map. You create a variable and give it a name, for example *svg*. 
@@ -131,13 +131,13 @@ var path = d3.geoPath()
 :information_source: `append`, appends a SVG to the 'canvas' called *svg* 
 
 :information_source:  next we also provide the `attr` (attributes), width and height.
-  
+	
 ``` js
 //Create SVG
 var svg = d3.select("body")
-  .append("svg")
-  .attr("width", w)
-  .attr("height", h);
+	.append("svg")
+	.attr("width", w)
+	.attr("height", h);
 ``` 
 
 ### Adding Data
@@ -156,12 +156,12 @@ var layerWorld = svg.append('g');
 
 //Load in GeoJSON data
 d3.json("world.json", function(json) {
-  //Bind data and create one path per GeoJSON feature
-  layerWorld.selectAll("path")
-     .data(json.features)
-     .enter()
-     .append("path")
-     .attr("d", path);
+	//Bind data and create one path per GeoJSON feature
+	layerWorld.selectAll("path")
+		.data(json.features)
+		.enter()
+		.append("path")
+		.attr("d", path);
 }); 
 ```
 
@@ -193,14 +193,13 @@ d3.json("world.json", function(json) {
 
 ![projection](img/projections.jpg)
 
-
 :arrow_forward: For example, try to zoom in on the Netherlands or the US!
 
 ``` js
 var projection = d3.geoMercator()
-  .center([4, 52])
-  .translate([ w/2, h/2 ])
-  .scale(1000);
+	.center([4, 52])
+	.translate([ w/2, h/2 ])
+	.scale(1000);
 ```
 
 :arrow_forward: Now really try to pimp your map here! Change the colours and play around with the style attributes! 
@@ -209,12 +208,12 @@ For example, change the background of your web page to black, and give the world
 
 ``` html
 <style type="text/css">
-    body {
-      background-color: #000000
-    }
-    h1{ 
-      color: #ffffff
-    }
+	body {
+		background-color: #000000
+	}
+	h1 { 
+		color: #ffffff
+	}
 </style>
 ``` 
 
@@ -226,9 +225,99 @@ This is for the countries:
 .style("fill", "#313030")
 .style("stroke", "#5a5959");
 ```
-
 It should look something like this now:
 
 ![img](img/d3_step1.png)
+
+And your code: 
+
+``` html
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>basic HTML</title> 
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<style type="text/css">
+			body {
+				background-color: #000000
+			}
+			h1 { 
+				color: #ffffff
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Example</h1>
+		<script> 
+			//Width and height
+			var w = 1000;
+			var h = 800;
+
+			//Define map projection
+			var projection = d3.geoMercator()
+				.center([ -100, 45 ])
+				.translate([ w/2, h/2 ])
+				.scale([ w/2 ]);
+
+			//Define path generator
+			var path = d3.geoPath()
+				.projection(projection);
+
+			//Create SVG
+			var svg = d3.select("body")
+				.append("svg")
+				.attr("width", w)
+				.attr("height", h);
+
+			// create a new SVG group element
+			var layerWorld = svg.append('g');
+
+			//Load in GeoJSON data
+			d3.json("world.geojson", function(json) {
+				//Bind data and create one path per GeoJSON feature
+				layerWorld.selectAll("path")
+					 .data(json.features)
+					 .enter()
+					 .append("path")
+					 .attr("d", path)
+					 .style("fill", "#313030")
+					 .style("stroke", "#5a5959");
+			}); 
+
+			// create a new SVG group element
+			var layerYeti = svg.append('g');
+
+			//Call the geojson data
+			d3.json("All_BFRO_Reports_points.geojson", function(data){
+				
+				//view the data
+				console.log(data);
+
+				//Create a circle for each city
+				layerYeti.selectAll("circle")
+					.data(data.features)
+					.enter()
+					.append("circle")
+					.attr("cx", function(d) {
+						//[0] returns the first coordinate (x) of the projected value
+						return projection(d.geometry.coordinates)[0];
+					})
+					.attr("cy", function(d) {
+						//[1] returns the second coordinate (y) of the projected value
+						return projection(d.geometry.coordinates)[1];
+					})
+					.attr("r", 3)
+					.style("fill", function(d){
+						if (d.properties.styleUrl == "#a") {return "red"}
+						else if (d.properties.styleUrl == "#b") {return "blue"}
+						else { return "yellow"}
+					})
+					.style("opacity", 0.5);
+			});
+		</script>
+	</body>
+</html>
+```
 
 :arrow_right: Continue to [[D3 Step 2]]

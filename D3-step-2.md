@@ -11,7 +11,7 @@ Now we will load the Squatch Watch Data and visualize it as circles on our map. 
 // create a new SVG group element
 var layerYeti = svg.append('g');
 
-d3.json("All_BFRO_Reports_points.geojson", function(data){                  
+d3.json("All_BFRO_Reports_points.geojson", function(data){
 	//Create a circle for each city
 	layerYeti.selectAll("circle")
 		.data(data.features)
@@ -34,9 +34,9 @@ d3.json("All_BFRO_Reports_points.geojson", function(data){
 
 ``` js
 var projection = d3.geoMercator()
-    .center([ -100, 45 ])
-    .translate([ w/2, h/2 ])
-    .scale([ w/2 ]);
+	.center([ -100, 45 ])
+	.translate([ w/2, h/2 ])
+	.scale([ w/2 ]);
 ```
 :arrow_forward: Maybe you want to make the map bigger now? 
 
@@ -70,14 +70,19 @@ This is what it looks like:
 ....
 ]
 }
-``` 
+```
 
 :arrow_forward: 2. Put a `console.log(data);` line in your code after the call for the data to view your dataset in the browser. So you get:
 
 ``` js
-d3.json("All_BFRO_Reports_points.geojson", function(data){  
-console.log(data);
-//Create a circle for each city
+//Call the geojson data
+d3.json("All_BFRO_Reports_points.geojson", function(data){
+	
+	//view the data
+	console.log(data);
+
+	//Create a circle for each city
+	layerYeti.selectAll("circle")
 ```
 
 :arrow_forward: Go to the browser, refresh and open the debugger. Go to the `Web console` tab. Here you will see your Object printed.

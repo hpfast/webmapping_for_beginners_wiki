@@ -17,25 +17,16 @@ JavaScript powers most on-line maps these days. During this workshop we'll cover
 Therefore we'll start off with a brief introduction into making web pages in general. To eventually spend most of our time on learning the tools of the trade.
 
 
-First we will introduce Leaflet in the [[Introduction Leaflet]].
-
-When you are not comfortable with HTML and CSS the [[Making a Web Page]] tutorial will get you started.
-
-In [[Leaflet step 1]] we will set up the basics to show a standard background map with Leaflet.
-
-In [[Leaflet step 2]] we will add markers, circles and polygons to our map.
-
-In [[Leaflet step 3]] we will add a GeoJSON file containting geospatial data to our map.
-
-In [[D3 step 1]] we will set up the basics to show a simple world map with D3.
-
-In [[D3 step 2]] we will add extra data from a GeoJSON file to our map and style it data-driven. 
-
-In [[D3 step 3]] we will add a data-drive legend to our webpage. 
-
-Eventually we will put our maps online, with [[Hosting on Github]]
-
-Do you have time left? Have a look at the [[Leaflet Advanced]] or [[D3 Advanced]] excercises.
+1. First we will introduce Leaflet in the [[Introduction Leaflet]].
+2. When you are not comfortable with HTML and CSS the [[Making a Web Page]] tutorial will get you started.
+3. In [[Leaflet step 1]] we will set up the basics to show a standard background map with Leaflet.
+4. In [[Leaflet step 2]] we will add markers, circles and polygons to our map.
+5. In [[Leaflet step 3]] we will add a GeoJSON file containting geospatial data to our map.
+6. In [[D3 step 1]] we will set up the basics to show a simple world map with D3.
+7. In [[D3 step 2]] we will add extra data from a GeoJSON file to our map and style it data-driven. 
+8. In [[D3 step 3]] we will add a data-drive legend to our webpage. 
+9. Eventually we will put our maps online, with [[Hosting on Github]]
+10. Do you have time left? Have a look at the [[Leaflet Advanced]] or [[D3 Advanced]] excercises.
 
 ## Goal 
 

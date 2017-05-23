@@ -8,14 +8,14 @@ This is how it looks like:
 
 ``` JSON
 {
-  "type": "Feature",
-  "geometry": {
-   "type": "Point",
-   "coordinates": [125.6, 10.1]
-  },
-  "properties": {
-   "name": "Dinagat Islands"
-  }
+	"type": "Feature",
+	"geometry": {
+		"type": "Point",
+		"coordinates": [125.6, 10.1]
+	},
+	"properties": {
+		"name": "Dinagat Islands"
+	}
 }
 ```
 
@@ -37,19 +37,19 @@ More links and info can be found in [[Tips & Tricks]]
 ``` js
 // Create a marker first
 var geojsonMarkerOptions = {
-    radius: 8,
-    fillColor: "#ff7800",
-    color: "#000",
-    weight: 1,
-    opacity: 1,
-    fillOpacity: 0.8
+	radius: 8,
+	fillColor: "#ff7800",
+	color: "#000",
+	weight: 1,
+	opacity: 1,
+	fillOpacity: 0.8
 };
 
 //create the geojson layer
 var geojson = L.geoJson(geojsonFeature,{
-  pointToLayer: function (feature, latlng) {
-    return L.circleMarker(latlng, geojsonMarkerOptions);
-  }
+	pointToLayer: function (feature, latlng) {
+		return L.circleMarker(latlng, geojsonMarkerOptions);
+	}
 }).addTo(map);
 
 //add your geojson data to the layer
@@ -57,10 +57,10 @@ var xhr = new XMLHttpRequest();
 xhr.open('GET', encodeURI("All_BFRO_Reports_points.geojson"));
 xhr.onload = function() {
 if (xhr.status === 200) {
-    geojson.addData(JSON.parse(xhr.responseText));
-  } else {
-    alert('Request failed.  Returned status of ' + xhr.status);
-  }
+		geojson.addData(JSON.parse(xhr.responseText));
+	} else {
+		alert('Request failed.  Returned status of ' + xhr.status);
+	}
 };
 xhr.send();
 ```
@@ -73,7 +73,6 @@ When developing a website, a web designer needs to be able to see his webpages t
 
 http://www.pythonforbeginners.com/modules-in-python/how-to-use-simplehttpserver/
 https://www.maketecheasier.com/setup-local-web-server-all-platforms/
-
 
 
 Easy ways of doing this include running Python's SimpleHTTPServer in your map directory, installing MAMP (for Mac), or installing WampServer (for Windows). 

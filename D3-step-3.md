@@ -19,6 +19,7 @@ var legend = d3.select("body")
 var unique_values = d3.map(data.features, function(d){return d.properties.styleUrl;}).keys();
 console.log(unique_values);
 ``` 
+
 :information_source: The variable `unique_values` is an array containing all the unique classes that occur in the styleUrl property. 
 
 ![array](img/array.png)
