@@ -194,13 +194,34 @@ d3.json("world.json", function(json) {
 ![projection](img/projections.jpg)
 
 
-:arrow_forward: For example, try to zoom in on the Netherlands!
+:arrow_forward: For example, try to zoom in on the Netherlands or the US!
 
 ``` js
 var projection = d3.geoMercator()
   .center([4, 52])
   .translate([ w/2, h/2 ])
   .scale(1000);
+```
+
+:arrow_forward: Now really try to pimp your map here! Change the colours and play around with the style attributes! 
+
+For example, change the background of your web page to black, and give the world map another color, like dark grey:
+
+``` html
+<style type="text/css">
+    body {
+      background-color: #000000
+    }
+</style>
+``` 
+
+Do you remember where to put is? 
+
+This is for the countries:
+
+``` js
+.style("fill", "#313030")
+.style("stroke", "#5a5959");
 ```
 
 :arrow_right: Continue to [[D3 Step 2]]
