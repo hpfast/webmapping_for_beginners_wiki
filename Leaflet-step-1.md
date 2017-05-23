@@ -23,18 +23,18 @@ In Leaflet step 1 we will set up the basics to show a standard background map wi
 
  :arrow_forward: Change the title to “My first Leaflet map".
 
- :arrow_forward: Place a ‘div’ in the `<body>` 
+ :arrow_forward: Place a `<div>` in the `<body>` 
 
 ``` html
 <div id="map"></div>
 ```
-The `<div>` is a kind of frame where our map will come! This frame does not contain anything yet and it is not even there yet. We will have to give it some dimensions in order to show content. We will specify the width and height with CSS, so the `<div>` can be seen. Later, we will give content to the `<div>` with JavaScript.
+The `<div>` is a kind of frame where our map will come! This frame does not contain anything yet and it is not even there yet. We will have to give it some dimensions in order to show content. We will specify the width and height with CSS, so the `<div>` can be seen. Later, we will give content to the `<div>` with JavaScript and reference to it by using it's **id**.
 
- :arrow_forward: Open a new file and save this as `main.css` in `yourDirectory`.
+:arrow_forward: Open a new file and save this as `main.css` in `yourDirectory`.
 
-With CSS we will style our `<div>` object. In the `main.css` we will provide our "#map" selector with the rule height(and optional width).
+With CSS we will style our `<div>` object. In the `main.css` we will reference to the `<div>` with a "#map" selector which idicates a object with the `id="map"` in the HTML. Now set the rule height(and optional width). 
 
- :arrow_forward: Copy this in your CSS file:
+:arrow_forward: Copy this in your CSS file:
 
 ``` css
 #map { 
@@ -163,4 +163,5 @@ Another free tile provider is [maps.stamen.com](maps.stamen.com). These even pro
 
 Or have a look at https://leaflet-extras.github.io/leaflet-providers/preview/ 
 
+Did you find yourself a nice background map? Then: 
 :arrow_right: Continue to [[Leaflet Step 2]]

@@ -12,4 +12,4 @@ In random order:
 - Maptime Amsterdam
 - Maptime Utrecht
 - Code Academy
-- 
+- tutorials of Scott Murray

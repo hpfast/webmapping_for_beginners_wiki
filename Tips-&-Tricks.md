@@ -23,6 +23,8 @@ CartoDB
 ## To learn HTML, DOM and CSS
 
 [Maptime PDX HTML CSS Crashcourse](https://github.com/mattsayler/Maptime_HTML_CSS_Basics)
+http://alignedleft.com/tutorials/d3/fundamentals
+
 
 ### Web-Based Resources
 

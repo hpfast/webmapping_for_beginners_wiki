@@ -30,7 +30,7 @@ More links and info can be found in [[Tips & Tricks]]
 
 :arrow_forward: Download the dataset from https://github.com/NieneB/Webmapping_for_beginners/tree/gh-pages/data
 
-:arrow_forward: Place the BFRO_bigfootA.geojson or BFRO_bigfootb.geojson file in `yourDirectory`.
+:arrow_forward: Place the All_BFRO_Reports_points.geojson file in `yourDirectory`.
 
 :arrow_forward: Copy the following script and have a look at your map.
 
@@ -54,7 +54,7 @@ var geojson = L.geoJson(geojsonFeature,{
 
 //add your geojson data to the layer
 var xhr = new XMLHttpRequest();
-xhr.open('GET', encodeURI("BFRO_bigfootA.geojson"));
+xhr.open('GET', encodeURI("All_BFRO_Reports_points.geojson"));
 xhr.onload = function() {
 if (xhr.status === 200) {
     geojson.addData(JSON.parse(xhr.responseText));
