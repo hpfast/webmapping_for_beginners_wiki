@@ -98,7 +98,7 @@ var w = 500;
 var h = 300;
 ```
 
-:information_source: Next we created a variable projection which contains the projection specifications of the map. D3 procides a range of projections. We use Mercator here which is the most common.
+:information_source: Next we created a variable projection which contains the projection specifications of the map. D3 provides a range of projections. We use Mercator here which is the most common.
 
 :information_source: The `.centre` property we set with longitude and latitude. 
 
@@ -175,7 +175,7 @@ var svg = d3.select("body")
 >
 > ``` js
 > myCar.model;
-> 	'Ford'
+> 	'Mustang'
 > ```
 > We also do this in our code! You will see this happening in the next parts. 
 
@@ -213,7 +213,7 @@ What did you do?
 :information_source: Now we select all "paths" in the layerWorld and create paths for every feature that we find in our data. `enter()` and `append()` will take care for this.
 :information_source: The `.attr()` option creates the svg paths. 
 
-If you open the console and look at the DOM instector you will see a `<path>` object is created per country! It wasn't in our HTML file first but D3 took care of that.
+If you open the console and look at the DOM inspector you will see a `<path>` object is created per country! It wasn't in our HTML file first but D3 took care of that.
 
 
 ![img](img/html_svg_path.png)

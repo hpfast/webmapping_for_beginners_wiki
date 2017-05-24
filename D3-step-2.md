@@ -30,6 +30,42 @@ d3.json("All_BFRO_Reports_points.geojson", function(data){
 		.style("opacity", 0.75);
 });
 ```
+What did we do?
+
+:information_source: First we added an extra layer called layerYeti to our svg and group all its paths in 'g'.
+
+:information_source: Then, we call the GeoJSON file and put it through the function. Creating a circle for every feature in the data.
+
+```js
+d3.json("All_BFRO_Reports_points.geojson", function(data){
+	//Create a circle for each city
+	layerYeti.selectAll("circle")
+		.data(data.features)
+		.enter()
+		.append("circle")
+```
+:information_source: The circles need a location, so assigning it a "cx" and "cy" attribute is required. We use the geometry coordinates for that of course, and our projection object, which we created before and also used for our world map! the function takes all the features, calls is 'd' and by accessing d.geometry.coordinates[0] we will get the x coordinate of each point! The same is done for the y coordinate of course. 
+
+```js
+.attr("cx", function(d) {
+	//[0] returns the first coordinate (x) of the projected value
+	return projection(d.geometry.coordinates)[0];
+})
+.attr("cy", function(d) {
+	//[1] returns the second coordinate (y) of the projected value
+	return projection(d.geometry.coordinates)[1];
+})
+```
+
+:information_source: The circles will have a radius of 2 pixels and styled with a fill color blue and a opacity of 75%.
+```js
+.attr("r", 2)
+.style("fill", "blue")
+.style("opacity", 0.75);
+```
+
+Now work on our map a bit:
+
 :arrow_forward: Change the map location so we see all of the Squatch Watch Data in the US.
 
 ``` js
@@ -48,7 +84,7 @@ var projection = d3.geoMercator()
 
 ### Data Driven Styling
 
-The Squatch Watch data is categorized in classes. The sightings get a classification label for how trustworthy the sightning was! For example : Class A reports involve clear sightings in circumstances where misinterpretation or misidentification of other animals can be ruled out with greater confidence. Incidents where a possible sasquatch was observed at a great distance or in poor lighting conditions and incidents in any other circumstance that did not afford a clear view of the subject are considered Class B reports.
+The Squatch Watch data is categorized in classes. The sightings get a classification label for how trustworthy the sighting was! For example : Class A reports involve clear sightings in circumstances where misinterpretation or misidentification of other animals can be ruled out with greater confidence. Incidents where a possible Squatch was observed at a great distance or in poor lighting conditions and incidents in any other circumstance that did not afford a clear view of the subject are considered Class B reports.
 
 We can use these attributes for styling the data! To see what attributes are available in the data set we can do 2 things.
 
@@ -57,7 +93,7 @@ We can use these attributes for styling the data! To see what attributes are ava
 
 Let's try both!
 
-:arrow_forward: 1. Open the GeoJSON file with your text editor. This might take a little while becuase the dataset is quite big. 
+:arrow_forward: 1. Open the GeoJSON file with your text editor. This might take a little while because the dataset is quite big. 
 This is what it looks like:
 
 ``` json
