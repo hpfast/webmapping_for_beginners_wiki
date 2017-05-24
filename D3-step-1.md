@@ -145,35 +145,38 @@ var svg = d3.select("body")
 > 
 > JavaScript is an object based language. What we did here is creating several objects with properties and a property is an association between a name (or key) and a value. We can create objects and access their properties in the code.
 > Objects in JavaScript, just as in many other programming languages, can be compared to objects in real life. The concept of objects in JavaScript can be understood with real life, tangible objects.
-
-> For example, let's create an object named myCar and give it properties named make, model, and year as follows:
-``` js
-var myCar = new Object();
-myCar.make = 'Ford';
-myCar.model = 'Mustang';
-myCar.year = 1969;
-```
+>
+> For example, let's create an object named myCar and give it properties named make, model, and year as follows:> 
+>
+> ``` js
+> var myCar = new Object();
+> myCar.make = 'Ford';
+> myCar.model = 'Mustang';
+> myCar.year = 1969;
+> ```
 > It can also be written like this:
-
-var myCar = new Object()
-	.make = 'Ford'
-	.model = 'Mustang'
-	.year = 1969;
-
+>
+> ``` js
+> var myCar = new Object()
+> 	.make = 'Ford'
+> 	.model = 'Mustang'
+> 	.year = 1969;
+> ```
+>
 > Do you see the similarities with our code? Instead of creating an Object, we created a d3.geoMercator object!
-
-``` js
-var projection = d3.geoMercator()
-	.center([30, 40])
-	.translate([ w/2, h/2 ])
-	.scale([ w/7 ]);
-```
+>
+> ``` js
+> var projection = d3.geoMercator()
+> 	.center([30, 40])
+> 	.translate([ w/2, h/2 ])
+> 	.scale([ w/7 ]);
+> ```
 > You access the properties of an object with a simple dot-notation: ` objectName.propertyName`. So requesting the cars model would be:
-
-```
-myCar.model;
+>
+> ``` js
+> myCar.model;
 > 	'Ford'
-```
+> ```
 > We also do this in our code! You will see this happening in the next parts. 
 
 
