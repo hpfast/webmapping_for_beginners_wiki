@@ -100,11 +100,11 @@ var h = 300;
 
 :information_source: Next we created a variable projection which contains the projection specifications of the map. D3 procides a range of projections. We use Mercator here which is the most common.
 
-:information_source: The `centre` property we set with longitude and latitude. 
+:information_source: The `.centre` property we set with longitude and latitude. 
 
-:information_source: `translate`, in this way, takes care that our map is in the centre of the area.
+:information_source: `.translate`, in this way, takes care that our map is in the centre of the area.
 
-:information_source: `scale` is the zoom-level  
+:information_source: `.scale` is the zoom-level  
 
 ``` js
 //Define map projection
@@ -140,7 +140,42 @@ var svg = d3.select("body")
 	.attr("height", h);
 ``` 
 
-Actually we do not have anything yet here. Only an empty svg box with a width and hight. It needs data to create something in it! 
+
+> Some JavaScript explanation:
+> 
+> JavaScript is an object based language. What we did here is creating several objects with properties and a property is an association between a name (or key) and a value. We can create objects and access their properties in the code.
+> Objects in JavaScript, just as in many other programming languages, can be compared to objects in real life. The concept of objects in JavaScript can be understood with real life, tangible objects.
+
+> For example, let's create an object named myCar and give it properties named make, model, and year as follows:
+``` js
+var myCar = new Object();
+myCar.make = 'Ford';
+myCar.model = 'Mustang';
+myCar.year = 1969;
+```
+> It can also be written like this:
+
+var myCar = new Object()
+	.make = 'Ford'
+	.model = 'Mustang'
+	.year = 1969;
+
+> Do you see the similarities with our code? Instead of creating an Object, we created a d3.geoMercator object!
+
+``` js
+var projection = d3.geoMercator()
+	.center([30, 40])
+	.translate([ w/2, h/2 ])
+	.scale([ w/7 ]);
+```
+> You access the properties of an object with a simple dot-notation: ` objectName.propertyName`. So requesting the cars model would be:
+
+```
+myCar.model;
+> 	'Ford'
+```
+> We also do this in our code! You will see this happening in the next parts. 
+
 
 ### Adding Data
 To 'bind' your data to the DOM is the next step. With D3 you can connect data like .csv or in our case a GeoJSON file. We will use a GeoJSON with the country shapes of the whole world!
@@ -177,7 +212,8 @@ What did you do?
 
 If you open the console and look at the DOM instector you will see a `<path>` object is created per country! It wasn't in our HTML file first but D3 took care of that.
 
- ![img](img/html_svg_path.png)
+
+![img](img/html_svg_path.png)
 
 
 > ###  :bangbang: you do not see a map? 
@@ -242,7 +278,7 @@ It should look something like this now:
 
 ![img](img/d3_step1.png)
 
-And your code: 
+This should be your code now: 
 
 ``` html
 <!doctype html>
