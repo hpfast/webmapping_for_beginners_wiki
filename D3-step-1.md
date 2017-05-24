@@ -50,7 +50,7 @@ Now your file will look like:
 	</body>
 </html>
 ```
-The basics are done! 
+The basics are done! Let's start the code!
 
 ### Setting up the map canvas
 
@@ -90,7 +90,7 @@ The basics are done!
 
 What did you do?
 
-:information_source: First you created to variables with the width and height of your map (named w and h) for your browser screen(in pixels)
+:information_source: First you created to variables with the width and height of your map (named w and h) for your browser screen(in pixels). We need dimensions for the map, for we did not specify those in our css. 
 
 ``` js
 //Width and height
@@ -98,9 +98,9 @@ var w = 500;
 var h = 300;
 ```
 
-:information_source: Next we chose our projection of the map. Mercator is the most common.
+:information_source: Next we created a variable projection which contains the projection specifications of the map. D3 procides a range of projections. We use Mercator here which is the most common.
 
-:information_source: The `centre` we set with longitude and latitude. 
+:information_source: The `centre` property we set with longitude and latitude. 
 
 :information_source: `translate`, in this way, takes care that our map is in the centre of the area.
 
@@ -114,8 +114,8 @@ var projection = d3.geoMercator()
 	.scale([ w/7 ]);
 ```
 
-:information_source: When the projection is created we can transform our geographic data to SVG with the help of `D3.geoPath` 
-	
+:information_source: When the projection is created we can use it to transform our geographic data to SVG with the help of `D3.geoPath` 
+
 ``` js
 //Define path generator
 var path = d3.geoPath()
@@ -140,9 +140,10 @@ var svg = d3.select("body")
 	.attr("height", h);
 ``` 
 
+Actually we do not have anything yet here. Only an empty svg box with a width and hight. It needs data to create something in it! 
+
 ### Adding Data
 To 'bind' your data to the DOM is the next step. With D3 you can connect data like .csv or in our case a GeoJSON file. We will use a GeoJSON with the country shapes of the whole world!
-
 
 :arrow_forward: Download the world dataset from https://github.com/NieneB/Webmapping_for_beginners/tree/gh-pages/data
 
@@ -155,7 +156,7 @@ To 'bind' your data to the DOM is the next step. With D3 you can connect data li
 var layerWorld = svg.append('g');
 
 //Load in GeoJSON data
-d3.json("world.json", function(json) {
+d3.json("world.geojson", function(json) {
 	//Bind data and create one path per GeoJSON feature
 	layerWorld.selectAll("path")
 		.data(json.features)
@@ -164,8 +165,20 @@ d3.json("world.json", function(json) {
 		.attr("d", path);
 }); 
 ```
-
 :arrow_forward: Check in your browser if you see a world map.
+
+
+What did you do?
+
+:information_source: First we created a new variable called layerWorld which will keep all our data paths together in a group called 'g'.
+:information_source: `d3.json( "world.geojson", function(json))` opens the GeoJSON file and puts the data through a function, the data will be called `json` inside the function.
+:information_source: Now we select all "paths" in the layerWorld and create paths for every feature that we find in our data. `enter()` and `append()` will take care for this.
+:information_source: The `.attr()` option creates the svg paths. 
+
+If you open the console and look at the DOM instector you will see a `<path>` object is created per country! It wasn't in our HTML file first but D3 took care of that.
+
+ ![img](img/html_svg_path.png)
+
 
 > ###  :bangbang: you do not see a map? 
 > Open the debugger 
