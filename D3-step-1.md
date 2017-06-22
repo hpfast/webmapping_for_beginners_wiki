@@ -183,7 +183,9 @@ var svg = d3.select("body")
 ### Adding Data
 To 'bind' your data to the DOM is the next step. With D3 you can connect data like .csv or in our case a GeoJSON file. We will use a GeoJSON with the country shapes of the whole world!
 
-:arrow_forward: Download the world dataset from https://github.com/NieneB/Webmapping_for_beginners/tree/gh-pages/data
+:arrow_forward: Download [this dataset](https://raw.githubusercontent.com/NieneB/Webmapping_for_beginners/gh-pages/data/world.geojson) with the all the countries of the world. 
+
+:arrow_forward: Right click: `Save Page As...`
 
 :arrow_forward: Place the world.geojson file in `yourDirectory`.
 
@@ -209,12 +211,17 @@ d3.json("world.geojson", function(json) {
 What did you do?
 
 :information_source: First we created a new variable called layerWorld which will keep all our data paths together in a group called 'g'.
+
 :information_source: `d3.json( "world.geojson", function(json))` opens the GeoJSON file and puts the data through a function, the data will be called `json` inside the function.
+
 :information_source: Now we select all "paths" in the layerWorld and create paths for every feature that we find in our data. `enter()` and `append()` will take care for this.
+
 :information_source: The `.attr()` option creates the svg paths. 
 
 If you open the console and look at the DOM inspector you will see a `<path>` object is created per country! It wasn't in our HTML file first but D3 took care of that.
 
+> * Click with your right mouse button, choose : `Inspect Element`
+> * Or Press F12
 
 ![img](img/html_svg_path.png)
 
@@ -246,6 +253,8 @@ If you open the console and look at the DOM inspector you will see a `<path>` ob
 ![projection](img/projections.jpg)
 
 :arrow_forward: For example, try to zoom in on the Netherlands or the US!
+
+You can find lat long coordinates with [this website](http://www.latlong.net/) easily. 	
 
 ``` js
 var projection = d3.geoMercator()
