@@ -24,6 +24,7 @@ python -m http.server [port]
 Oef! But where?! 
 Let's start from the beginning. There are 2 parts: one for Linux and Mac, and one for Windows. 
 
+----------------------------
 
 ## Linux
 
@@ -61,8 +62,12 @@ python -m SimpleHTTPServer [port]
 
 :arrow_forward: Now you can go to `localhost:8000/index.html` in your browser. 
 
+:arrow_right: Return to [[Leaflet step 3]]
 
-### Windows.
+
+---------------------------------------------
+
+## Windows.
 
 :arrow_forward: On Windows open a Cmnd terminal. `Menu > cmnd.exe`
 
@@ -101,10 +106,4 @@ python -m http.server [port]
 
 :arrow_forward: Now you can go to `localhost:8000/index.html` in your browser. 
 
-
-### Useful stuff:
-
-installing MAMP (for Mac), or installing WampServer (for Windows). 
-
-http://www.pythonforbeginners.com/modules-in-python/how-to-use-simplehttpserver/
-https://www.maketecheasier.com/setup-local-web-server-all-platforms/
+:arrow_right: Return to [[Leaflet step 3]].

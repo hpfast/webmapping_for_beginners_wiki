@@ -28,7 +28,7 @@ The GeoJSON format specification can be found [here](http://geojson.org/) and [h
 
 ### Let's add the Bigfoot Sightings Data to our map!
 
-We prepared a dataset for you that contains the viewing sites of bigfoot! The dataset is downloaded on the 3th of May 2017 from the [BFRO](https://www.bfro.net/) database. The BFRO is the only scientific research organization exploring the bigfoot mystery. Data is collected from 1995 till now. We pre-processed their data and exported it to a geojson file. If you want to know more about the Database history or the classification of the data have a look at the [BRFO documentation](https://www.bfro.net/GDB/classify.asp).
+We prepared a dataset for you that contains the viewing sites of bigfoot! The dataset is downloaded on the 3th of May 2017 from the BFRO database. The [BFRO](https://www.bfro.net/) is the only scientific research organization exploring the bigfoot mystery. Data is collected from 1995 till now. We pre-processed their data and exported it to a geojson file. If you want to know more about the Database history or the classification of the data have a look at the [BRFO documentation](https://www.bfro.net/GDB/classify.asp).
 
 
 For inspiration: the following map is was also made from this dataset.
@@ -36,7 +36,7 @@ For inspiration: the following map is was also made from this dataset.
 ![bigfoot](http://thumbnails.visually.netdna-cdn.com/SquatchWatch92YearsofBigfootSightingsintheUSandCanada_523b7482cc497.png)
 
 
-:arrow_forward: Download this [dataset](https://github.com/NieneB/Webmapping_for_beginners/blob/gh-pages/data/All_BFRO_Reports_points.geojson). 
+:arrow_forward: Download the [dataset](https://github.com/NieneB/Webmapping_for_beginners/blob/gh-pages/data/All_BFRO_Reports_points.geojson). 
 
 :arrow_forward: Have a look at the file in your browser. Do you see how it is build up?
 
@@ -104,15 +104,24 @@ For inspiration: the following map is was also made from this dataset.
 :information_source: All the geometries are in the `features` array. You see 2 point features in this code snippet. But the whole file contains many many more! 
 
 
-## Local server
+## Running a local server
 
+When developing a website, a web designer needs to be able to see his webpages the same way the end user would. Sometimes simply clicking on and viewing your HTML files in the web browser is enough, but if you want to test dynamic content, you will need to set up a local web server. Doing this is quite simple and can easily be accomplished on Windows, Mac, and Linux. There are many types of web servers available, but we will be using the Python's SimpleHTTPServer as it is very easy to set up.
 
-If we want to add our own spatial data to our map, we need to run a local server.
+If we want to add the Bigfoot data to our own map, we need to run a local server.
 
+```
+python -m SimpleHTTPServer [port]
+```
+If you do not know how to do this then follow the [[Running a local server]] first!
+
+Is the server running? Then we can add the code.
 
 ## The code 
 
-:arrow_forward: Copy the following script and have a look at your map.
+:arrow_forward: Copy the following code between your `<script>` tags and after your previous code.
+
+:arrow_forward: Refresh your localhost:8000/index.html page. Do you see your data?
 
 ``` js
 // Create a marker first
@@ -145,11 +154,7 @@ if (xhr.status === 200) {
 xhr.send();
 ```
 
-
-### Running a local server
-
-
-
+Explain code here! 
 
 :arrow_right: Continue to [[Introduction D3]] or do the [[Leaflet Advanced assignments]]
 
