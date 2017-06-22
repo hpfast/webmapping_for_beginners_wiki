@@ -28,7 +28,6 @@ In [[Leaflet step 2]] we will add markers, circles and polygons to our map.
 
 In [[Leaflet step 3]] we will add a GeoJSON file containing geo-spatial data to our map.
 
-![Anatomy of a web map](http://maptime.io/anatomy-of-a-web-map/images/anatomy-of-a-web-map.png)
 
 ## Preparation
 

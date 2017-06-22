@@ -1,7 +1,7 @@
-In Leaflet step 2 we will add markers, circles and polygons to our map.
+In [[Leaflet step 2]] we will add markers, circles and polygons to our map.
 
 ### Vector Data vs Raster data
-Our background map tiles are static raster images. In the next part we will add markers, cirles and polygons which are vector based data. In step 3 we will even add a GeoJSON file which is also vector based. (explained in step 3)
+Our background map tiles are static raster images. In the next part we will add markers, circles and polygons which are vector based data. In [[Leaflet step 3]] we will even add a GeoJSON file which is also vector based. 
 
 **Raster** data is like a picture that you would take with a digital camera: at the lowest level of abstraction, it is a list of pixels with values. When you ‘zoom in’ and look closer at raster data, at some point you’ll see these discrete pixels, and it will look pixelated.
 
@@ -20,7 +20,7 @@ Now we will add custom markers, circles and polygons to your map. (for example y
 var marker = L.marker([42.349239, -71.041342]).addTo(map);
 ```
 > **JS** *`var` stands for variable. Variables store data so that they can be used later on in the program.
-> Here the keyword `var` creates a new variable named `marker`. The value stored is a Leaflet marker which is immediatly added to our map.*
+> Here the keyword `var` creates a new variable named `marker`. The value stored is a Leaflet marker which is immediately added to our map.*
 
 :arrow_forward: Add another 4 markers. (friends, places you lived or visited?). **Note: give the `var` another name every time.** Example:
 

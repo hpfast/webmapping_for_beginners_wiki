@@ -59,13 +59,33 @@ http://alignedleft.com/tutorials/d3/fundamentals
 http://maptime.io/anatomy-of-a-web-map/#0
 
 ## GeoJSON
-Do you want to know more about geojson have a look at https://en.wikipedia.org/wiki/GeoJSON
+Do you want to know more about geojson have a look at:
+https://en.wikipedia.org/wiki/GeoJSON
+
+The format specifications:
+http://geojson.org/
+
+Eleborate specification:
+https://tools.ietf.org/html/rfc7946
+
+### How to make a GeoJSON
+
+Convert files here:
+[OGRE](http://ogre.adc4gis.com/)
+
+Or draw your own here:
+
+geojson.io
+
+
 * ! geoJson mostly works on a 'local webserver', check: https://github.com/mrdoob/three.js/wiki/How-to-run-things-locally
 http://www.macwright.org/2015/03/23/geojson-second-bite.html 
 
-### How to make a GeoJSON
-Convert files here:
-[OGRE](http://ogre.adc4gis.com/)
-Or draw your own here:
-geojson.io
 
+
+### Useful stuff:
+
+installing MAMP (for Mac), or installing WampServer (for Windows). 
+
+http://www.pythonforbeginners.com/modules-in-python/how-to-use-simplehttpserver/
+https://www.maketecheasier.com/setup-local-web-server-all-platforms/
