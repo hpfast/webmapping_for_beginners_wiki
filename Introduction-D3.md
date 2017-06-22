@@ -8,11 +8,11 @@ On the website of D3 you can find beautiful examples. Be inspired and have a loo
 In short, D3.js takes in some data and makes a graphic out of it, be it a chart or a map, using [Scalable Vector Graphics](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics). 
 
 > ### SVG
-> SVG is a text-based vecotr image format for two-dimensional graphics. Meaning, you can specify what an SVG image should look like by writing simple markup code, sort of like HTML tags. In fact, SVG code can be included directly within any HTML document. This means that they can be searched, indexed, scripted, and compressed. SVG images can be created and edited with any text editor, as well as with drawing software.
+> SVG is a text-based vector image format for two-dimensional graphics. Meaning, you can specify what an SVG image should look like by writing simple markup code, sort of like HTML tags. In fact, SVG code can be included directly within any HTML document. This means that they can be searched, indexed, scripted, and compressed. SVG images can be created and edited with any text editor, as well as with drawing software.
 
 ![svg](img/Bitmap_VS_SVG.png)
 
-This can be quite convienient if your data changes. You can easily prepare your graphics with dummy data. So when the actual data arrives, D3.js re-creates the graphic as the data comes in. SVG is rendered in the browser. If many people try to access a item, the graphics don't weigh much into the IT infrastructure. Also SVG is scalable. Using mobile phones or tablest with all sorts of screen sizes. The graphics can easily scale up and down without losing their sharpness.
+This can be quite convenient if your data changes. You can easily prepare your graphics with dummy data. So when the actual data arrives, D3.js re-creates the graphic as the data comes in. SVG is rendered in the browser. If many people try to access a item, the graphics don't weigh much into the IT infrastructure. Also SVG is scalable. Using mobile phones or tablets with all sorts of screen sizes. The graphics can easily scale up and down without losing their sharpness.
 
 In [[D3 step 1]] we will set up the basics to show a simple world map with D3.
 
