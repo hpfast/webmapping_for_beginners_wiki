@@ -8,25 +8,27 @@ The team from [Webmapper](http://webmapper.net/) developed this workshop in the 
 
 <p align="center"> <img align="center" src="https://raw.githubusercontent.com/wiki/NieneB/Webmapping_for_beginners/img/webmapper_logo_tekst.png" alt="webmapper"> </p>
 
+Webmapper is a cartographic development and consultancy company based in Utrecht, the Netherlands. They make geographic applications for the web with special attention for web-cartography. 
 
-Webmapper is a cartographic development and consultancy company based in Utrecht, the Netherlands. -They make geographic applications for the web with special attention for web-cartography. 
+## Presentation
 
-## Short outline
+This workshop will start with a [presentation]() to introduce the basic concepts that are needed to do this workshop. 
+
+## Short outline of the workshop
 
 JavaScript powers most on-line maps these days. During this workshop we'll cover the two primary mapping libraries D3.js and Leaflet.js. This workshop will start from the very beginning! Never written a line of code before? Don't worry! This workshop will help get you started. 
 Therefore we'll start off with a brief introduction into making web pages in general. To eventually spend most of our time on learning the tools of the trade.
-
 
 1. First we will introduce Leaflet in the [[Introduction Leaflet]].
 2. When you are not comfortable with HTML and CSS the [[Making a Web Page]] tutorial will get you started.
 3. In [[Leaflet step 1]] we will set up the basics to show a standard background map with Leaflet.
 4. In [[Leaflet step 2]] we will add markers, circles and polygons to our map.
-5. In [[Leaflet step 3]] we will add a GeoJSON file containting geospatial data to our map.
+5. In [[Leaflet step 3]] we will add a GeoJSON file containing geo-spatial data to our map.
 6. In [[D3 step 1]] we will set up the basics to show a simple world map with D3.
 7. In [[D3 step 2]] we will add extra data from a GeoJSON file to our map and style it data-driven. 
 8. In [[D3 step 3]] we will add a data-drive legend to our webpage. 
 9. Eventually we will put our maps online, with [[Hosting on Github]]
-10. Do you have time left? Have a look at the [[Leaflet Advanced]] or [[D3 Advanced]] excercises.
+10. Do you have time left? Have a look at the [[Leaflet Advanced]] or [[D3 Advanced]] exercises.
 
 ## Goal 
 
@@ -46,7 +48,8 @@ Your laptop with:
 > Syntax highlighting is a feature of text editors that are used for programming, scripting, or mark-up languages, such as HTML. It displays text, especially source code, in different colours and fonts according to the category of terms to make them more visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.
 
 ## How does this tutorial work?
-Just follow the links. At the bottom of each step is the link to the next step.
+
+Just follow the links. At the bottom of each step is the link to the next step. All the steps can also be seen in the Table of Contents on the right. 
 
 :arrow_right: Takes you to the next step
 
