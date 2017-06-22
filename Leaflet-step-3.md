@@ -156,5 +156,7 @@ xhr.send();
 
 Explain code here! 
 
+:arrow_right: Put your map online with the [[Hosting on Github]] tutorial!
+
 :arrow_right: Continue to [[Introduction D3]] or do the [[Leaflet Advanced assignments]]
 

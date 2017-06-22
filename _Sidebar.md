@@ -19,6 +19,7 @@
 **In case you need it**
 
 [[Making a web page]]
+
 [[Running a local server]]
 
 [[Hosting on Github]]
@@ -26,6 +27,7 @@
 **Advanced**
 
 [[Leaflet advanced]]
+
 [[D3 advanced]]
 
 [[Interesting links]]
