@@ -14,7 +14,7 @@ Leaflet creates "Slippy" maps with raster tiled base layers, user interaction li
 Web maps are made up of many small, square images called tiles. These tiles are typically 256x256 pixels and are placed side-by-side in order to create the illusion of a very large seamless image. A big advantage: All these little tiles load way faster than one big map! 
 This kind of map is  called a "Slippy" map. 
 
-![slippy map](https://www.mapbox.com/help/img/screenshots/dynamic-ny-details.gif)
+![slippy map](http://maptime.io/anatomy-of-a-web-map/images/tiles-loading.gif)
 
 Each zoom level has its own set of tiles. Zoom level 0 has 1 tile for the world. With each additional zoom level, the number of tiles increases exponentially. So zoom level 1 has 4 tiles for the world. Zoom level 2 has 16 tiles for the world ect. 
 
@@ -27,6 +27,8 @@ In [[Leaflet step 1]] we will set up the basics to show a standard background ma
 In [[Leaflet step 2]] we will add markers, circles and polygons to our map.
 
 In [[Leaflet step 3]] we will add a GeoJSON file containing geo-spatial data to our map.
+
+![Anatomy of a web map](http://maptime.io/anatomy-of-a-web-map/images/anatomy-of-a-web-map.png)
 
 ## Preparation
 
