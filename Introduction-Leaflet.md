@@ -9,14 +9,16 @@ Leaflet creates "Slippy" maps with raster tiled base layers, user interaction li
 > ### JavaScript Library 
 > Including a JavaScript library in your code is like copying and pasting someone else's code into yours. You have access to everything in that library. In our case, it's a bunch of cool tools to make web maps and give them familiar functionality.
 
-### Web maps
+## Web maps
 
 Web maps are made up of many small, square images called tiles. These tiles are typically 256x256 pixels and are placed side-by-side in order to create the illusion of a very large seamless image. A big advantage: All these little tiles load way faster than one big map! 
 This kind of map is  called a "Slippy" map. 
 
+![slippy map](https://www.mapbox.com/help/img/screenshots/dynamic-ny-details.gif)
+
 Each zoom level has its own set of tiles. Zoom level 0 has 1 tile for the world. With each additional zoom level, the number of tiles increases exponentially. So zoom level 1 has 4 tiles for the world. Zoom level 2 has 16 tiles for the world ect. 
 
-![slippy-map](img/slippy_maps.jpeg)
+![Zoom levels](img/slippy_maps.jpeg)
 
 As you can see, map tiles are static raster images on the web. These tiles need to live somewhere on the web page. They need to know when to load and they need to react when you click or drag. Leaflet is a JavaScript library that allows us to do just that.
 
@@ -24,9 +26,9 @@ In [[Leaflet step 1]] we will set up the basics to show a standard background ma
 
 In [[Leaflet step 2]] we will add markers, circles and polygons to our map.
 
-In [[Leaflet step 3]] we will add a GeoJSON file containting geospatial data to our map.
+In [[Leaflet step 3]] we will add a GeoJSON file containing geo-spatial data to our map.
 
-### Preparation
+## Preparation
 
 :arrow_forward: On your computer create a directory for yourself, where we can work in today. For example:
 
@@ -34,7 +36,7 @@ In [[Leaflet step 3]] we will add a GeoJSON file containting geospatial data to 
 
 In these directories we save everything we make and download today. During this workshop it is referred to as `yourDirectory`.
 
-### Let's start!  
+## Let's start!
 :arrow_right: If you are not that comfortable with HTML, CSS and JavaScript yet, this **[[Making a web page ]]** tutorial will help you along!
 
 :arrow_right: If you already know some HTML, CSS and JavaScript, you can start immediately with the tutorial at **[[Leaflet step 1 ]]** and read through the HTML explanations. 
