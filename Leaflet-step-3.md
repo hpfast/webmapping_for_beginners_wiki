@@ -26,7 +26,15 @@ It uses the World Geodetic System 1984, and units of decimal degrees.
 
 The GeoJSON format specification can be found [here](http://geojson.org/) and [here](https://tools.ietf.org/html/rfc7946).
 
-### Let's add the Squatch Watch Data to our map!
+### Let's add the Bigfoot Sightings Data to our map!
+
+We prepared a dataset for you that contains the viewing sites of bigfoot! The dataset is downloaded on the 3th of May 2017 from the [BFRO](https://www.bfro.net/) database. The BFRO is the only scientific research organization exploring the bigfoot mystery. Data is collected from 1995 till now. We pre-processed their data and exported it to a geojson file. If you want to know more about the Database history or the classification of the data have a look at the [BRFO documentation](https://www.bfro.net/GDB/classify.asp).
+
+
+For inspiration: the following map is was also made from this dataset.
+
+![bigfoot](http://thumbnails.visually.netdna-cdn.com/SquatchWatch92YearsofBigfootSightingsintheUSandCanada_523b7482cc497.png)
+
 
 :arrow_forward: Download this [dataset](https://github.com/NieneB/Webmapping_for_beginners/blob/gh-pages/data/All_BFRO_Reports_points.geojson). 
 
@@ -93,7 +101,7 @@ The GeoJSON format specification can be found [here](http://geojson.org/) and [h
 
 :information_source: The `crs` is the geographical system the data is in. Here they use WGS84 or Web Mercator projection.
 
-:information_source: All the geometries are in the `features` array. You see 2 point features in this code snippet. But the whole file contains many more! 
+:information_source: All the geometries are in the `features` array. You see 2 point features in this code snippet. But the whole file contains many many more! 
 
 
 ## Local server
@@ -141,11 +149,6 @@ xhr.send();
 ### Running a local server
 
 
-
-
-The following map is was also made from this dataset. For inspiration:
-
-![bigfoot](http://thumbnails.visually.netdna-cdn.com/SquatchWatch92YearsofBigfootSightingsintheUSandCanada_523b7482cc497.png)
 
 
 :arrow_right: Continue to [[Introduction D3]] or do the [[Leaflet Advanced assignments]]
