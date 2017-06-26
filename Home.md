@@ -20,7 +20,7 @@ JavaScript powers most on-line maps these days. During this workshop we'll cover
 Therefore we'll start off with a brief introduction into making web pages in general. To eventually spend most of our time on learning the tools of the trade.
 
 1. First we will introduce Leaflet in the [[Introduction Leaflet]].
-2. When you are not comfortable with HTML and CSS the [[Making a Web Page]] tutorial will get you started.
+2. If you are not comfortable with HTML and CSS the [[Making a Web Page]] tutorial will get you started.
 3. In [[Leaflet step 1]] we will set up the basics to show a standard background map with Leaflet.
 4. In [[Leaflet step 2]] we will add markers, circles and polygons to our map.
 5. In [[Leaflet step 3]] we will add a GeoJSON file containing geo-spatial data to our map.
