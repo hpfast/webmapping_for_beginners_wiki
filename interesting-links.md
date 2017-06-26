@@ -49,6 +49,10 @@ http://alignedleft.com/tutorials/d3/fundamentals
 
 [Leaflet 101 for LuxembourgJS](http://luxembourgjs.github.io/leaflet-demo/#/)
 
+https://speakerdeck.com/mourner/future-of-leaflet
+
+https://vimeo.com/106112939
+
 ## D3
 [D3 tutorial](https://github.com/d3/d3/wiki/Tutorials)
 [D3 for mere mortals](http://www.recursion.org/d3-for-mere-mortals/)
