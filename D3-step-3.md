@@ -49,6 +49,7 @@ d3.json("All_BFRO_Reports_points.geojson", function(data){
     })
   .style("opacity", 0.75);
 });
+```
 
 and make sure you paste these snippets befor the final `});`.
 
