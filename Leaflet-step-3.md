@@ -136,7 +136,7 @@ var geojsonMarkerOptions = {
 };
 
 //create the geojson layer
-var geojson = L.geoJson(geojsonFeature,{
+var geojson = L.geoJson(null,{
 	pointToLayer: function (feature, latlng) {
 		return L.circleMarker(latlng, geojsonMarkerOptions);
 	}
