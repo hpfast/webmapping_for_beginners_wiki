@@ -15,10 +15,42 @@ var legend = d3.select("body")
 
 :arrow_forward: Use the geoJson data for really creating the legend! After calling the GeoJson data with D3, put the following code in the function. Now check the console in the browser! 
 
+
 ``` js
 var unique_values = d3.map(data.features, function(d){return d.properties.styleUrl;}).keys();
 console.log(unique_values);
 ``` 
+
+:exclamation: this code can't be appended to the bottom of your `<script>`. If you paste it there and load your website, you will get an error in the console: 'data is not defined'. This is because the variable `data` is only defined inside the callback for the `d3.json` function. You need to put this code (and the following blocks) somewhere inside this function. So look for the this part of your code:
+
+```js
+d3.json("All_BFRO_Reports_points.geojson", function(data){
+  var unique_values = d3.map(data.features, function(d){return d.properties.styleUrl;}).keys();
+  console.log(unique_values);
+  console.log(data);
+  //Create a circle for each city
+  layerYeti.selectAll("circle")
+    .data(data.features)
+    .enter()
+    .append("circle")
+    .attr("cx", function(d) {
+      //[0] returns the first coordinate (x) of the projected value
+      return projection(d.geometry.coordinates)[0];
+    })
+  .attr("cy", function(d) {
+    //[1] returns the second coordinate (y) of the projected value
+    return projection(d.geometry.coordinates)[1];
+  })
+  .attr("r", 2)
+    .style("fill", function(d){
+      if (d.properties.styleUrl == "#a") {return "red"}
+      else if (d.properties.styleUrl == "#b") {return "blue"}
+      else { return "yellow"}
+    })
+  .style("opacity", 0.75);
+});
+
+and make sure you paste these snippets befor the final `});`.
 
 :information_source: The variable `unique_values` is an array containing all the unique classes that occur in the styleUrl property. 
 

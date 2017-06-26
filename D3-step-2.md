@@ -156,6 +156,15 @@ Let's try to give each point a different colour according to their classificatio
 })
 ```
 
-:information_source: `function(d)`
+:information_source: `function(d)`: this is a common pattern you will see with D3 code. the pattern:
+
+```js
+.style("fill", function(d){
+   //do something with d 
+})
+```
+
+is an example of a 'callback function'. The `style` function gets two arguments, 'fill' and another function which the style will run (call) for every item that needs to be styled. D3 makes sure that this function gets the item in question every time. So this function will run for every item in our dataset, and we can use the item's properties to determine how this particular item's 'fill' property should be styled.
+
 
 :arrow_right: Continue to [[D3 step 3]] if you feel really confident! If you are almost running out of time it might be nice to spend the last bit of the workshop on putting your map on-line! Go to the [[Hosting on Github]] to learn how! 
