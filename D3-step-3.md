@@ -25,29 +25,7 @@ console.log(unique_values);
 
 ```js
 d3.json("All_BFRO_Reports_points.geojson", function(data){
-  var unique_values = d3.map(data.features, function(d){return d.properties.styleUrl;}).keys();
-  console.log(unique_values);
-  console.log(data);
-  //Create a circle for each city
-  layerYeti.selectAll("circle")
-    .data(data.features)
-    .enter()
-    .append("circle")
-    .attr("cx", function(d) {
-      //[0] returns the first coordinate (x) of the projected value
-      return projection(d.geometry.coordinates)[0];
-    })
-  .attr("cy", function(d) {
-    //[1] returns the second coordinate (y) of the projected value
-    return projection(d.geometry.coordinates)[1];
-  })
-  .attr("r", 2)
-    .style("fill", function(d){
-      if (d.properties.styleUrl == "#a") {return "red"}
-      else if (d.properties.styleUrl == "#b") {return "blue"}
-      else { return "yellow"}
-    })
-  .style("opacity", 0.75);
+  //... code that adds and styles the data points
 });
 ```
 
