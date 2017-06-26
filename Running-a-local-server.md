@@ -57,7 +57,7 @@ This is where we will run our local server!
 :arrow_forward: To start a HTTP server on port 8000 (which is the default port), simple type:
 
 ```
-python -m SimpleHTTPServer [port]
+python -m SimpleHTTPServer
 ```
 
 :arrow_forward: Now you can go to `localhost:8000/index.html` in your browser. 
@@ -101,7 +101,7 @@ This is where we will run our local server!
 :arrow_forward: To start a HTTP server on port 8000 (which is the default port), simple type:
 
 ```
-python -m http.server [port]
+python -m http.server
 ```
 
 :arrow_forward: Now you can go to `localhost:8000/index.html` in your browser. 
