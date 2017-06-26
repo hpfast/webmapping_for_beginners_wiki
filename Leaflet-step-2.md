@@ -14,7 +14,7 @@ Our background map tiles are static raster images. In the next part we will add 
 ### Markers, circles and polygons
 Now we will add custom markers, circles and polygons to your map. (for example your home address). 
 
-:arrow_forward: Add the following to your map:
+:arrow_forward: Add the following to your Javascript:
 
 ``` js
 var marker = L.marker([42.349239, -71.041342]).addTo(map);
