@@ -30,7 +30,7 @@ In Leaflet step 1 we will set up the basics to show a standard background map wi
 <div id="map"></div>
 ```
 
-The `<div>` is a kind of frame where our map will come! This frame does not contain anything yet and it is not even there yet. We will have to give it some dimensions in order to show content. We will specify the width and height with CSS, so the `<div>` can be seen. Later, we will give content to the `<div>` with JavaScript and reference to it by using it's **id**.
+The `<div>` is a kind of frame where our map will come! This frame does not contain anything yet. We will have to give it some dimensions in order to show content. We will specify the width and height with CSS, so the `<div>` can be seen. Later, we will give content to the `<div>` with JavaScript. To be able to do that, we will need its **id** to be able to reference it.
 
 :arrow_forward: Open a new file and save this as `main.css` in `yourDirectory`.
 
