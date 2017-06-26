@@ -12,13 +12,13 @@ Easy ways of doing this include running Python's SimpleHTTPServer in your map di
 On Linux & Mac:
 
 ```
-python -m SimpleHTTPServer [port]
+python -m SimpleHTTPServer
 ```
 
 On Windows:
 
 ```
-python -m http.server [port]
+python -m http.server
 ```
 
 Oef! But where?! 
