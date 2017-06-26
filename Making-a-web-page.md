@@ -1,4 +1,3 @@
-
 ### Why learn HTML, CSS and JavaScript?
 
 The 3 languages all web developers must learn:
@@ -105,7 +104,7 @@ or saved in an external file with a .css suffix, and then referenced in the docu
     </head>
 ```
 
-**We will try this!**
+**Let's try it!**
 
  :arrow_forward: Copy this style code into your index.html page.
 
