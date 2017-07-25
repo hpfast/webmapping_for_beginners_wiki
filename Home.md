@@ -71,4 +71,4 @@ Some background information, extra information or debug tips are shown in grey :
 
 So:
 
-:arrow_right: **Start with reading the [[Introduction Leaflet]]
+:arrow_right: Start with reading the [[Introduction Leaflet]]
