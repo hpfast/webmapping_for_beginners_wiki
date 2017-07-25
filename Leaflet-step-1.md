@@ -60,7 +60,7 @@ Now we will add the JavaScrip Library Leaflet.js.
 
  :arrow_forward: Go to http://leafletjs.com/download.html to use the Hosted Version of Leaflet.
 
- :arrow_forward: Scroll down and copy the link the newest leaflet library release:
+ :arrow_forward: Scroll down and copy the link of the newest leaflet library release:
 
 ``` html
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
