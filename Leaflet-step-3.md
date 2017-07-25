@@ -233,36 +233,38 @@ xhttp.send();
 The first line in the example above creates an new XMLHttpRequest object:
 
 ```js
-	var xhttp = new XMLHttpRequest();
+var xhttp = new XMLHttpRequest();
 ```
 
 The second line sets a open method which uses the `GET` method on the url on our own local server. 
 
 ```js
-	xhttp.open('GET', encodeURI("./All_BFRO_Reports_points.geojson"));
+xhttp.open('GET', encodeURI("./All_BFRO_Reports_points.geojson"));
 ```
 
 The third part sets what will be invoked on the onreadystatechange. readyState 4 means the HTTP response content has finished loading, the readyState property of the XMLHttpRequest object should be assigned a value of 4 (DONE). Now we can do something with the response! the responseText, is our geoJSON data set! So the geoJSON text from our file is parsed to our geojson layer which we created before!
 
 ```js
-	xhttp.onload = function() {
-		if (xhttp.readyState === 4) { 
-			geojson.addData(JSON.parse(xhttp.responseText));
-		} 
+xhttp.onload = function() {
+	if (xhttp.readyState === 4) { 
+		geojson.addData(JSON.parse(xhttp.responseText));
+	}
+	...
+}; 
 ```
 
 If the readyState is not done, the `else` statement will alert a warning with the xhttp.readyState it is in. 
 
 ```js
-	else {
-				alert('Request failed.  Returned status of ' + xhttp.readyState);
-			}
+else {
+	alert('Request failed.  Returned status of ' + xhttp.readyState);
+}
 ```
 
 Eventually we will have to send the request.
 
 ```js
-	xhttp.send();
+xhttp.send();
 ```
 
 So let's have a look if it worked:
