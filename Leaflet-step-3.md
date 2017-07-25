@@ -9,14 +9,14 @@ This is what it looks like:
 
 ``` JSON
 {
-	"type": "Feature",
-	"geometry": {
-		"type": "Point",
-		"coordinates": [125.6, 10.1]
-	},
-	"properties": {
-		"name": "Dinagat Islands"
-	}
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [125.6, 10.1]
+  },
+  "properties": {
+    "name": "Dinagat Islands"
+  }
 }
 ```
 
@@ -48,53 +48,53 @@ This is what it looks like:
 
 ```json
 {
-	"type": "FeatureCollection",
-	"crs": { 
-		"type": "name", 
-		"properties": { 
-			"name": "urn:ogc:def:crs:OGC:1.3:CRS84" }
-		},
-	"features": [
-		{
-			"type": "Feature",
-			"properties": { 
-				"name": "June 2000", 
-				"styleUrl": "#a", 
-				"styleHash": "72e6f3ff", 
-				"styleMapHash": { "normal": "#anormal", "highlight": "#ahighlighted" }, 
-				"description": "\r\n          Report 637: Campers' encounter just after dark in the Wrangell - St. Elias National Park and PreserveClass A; Cordova-McCarthy CountyClick for details(Location look wrong?)", 
-				"timestamp": "2000\/06\/16 12:00:00", 
-				"stroke-width": null, 
-				"fill": null, 
-				"fill-opacity": null, 
-				"visibility": null 
-			}, 
-			"geometry": { 
-				"type": "Point", 
-				"coordinates": [ -142.9, 61.5, 100.0 ] 
-			} 
-		},
-		{ 
-			"type": "Feature", 
-			"properties": { 
-				"name": " 1995", 
-				"styleUrl": "#a", 
-				"styleHash": "72e6f3ff", 
-				"styleMapHash": { "normal": "#anormal", "highlight": "#ahighlighted" }, 
-				"description": "\r\n          Report 2917: Family observes large biped from carClass A; Prince of Wales CountyClick for details(Location look wrong?)", 
-				"timestamp": "1995\/05\/15 12:00:00", 
-				"stroke-width": null, 
-				"fill": null, 
-				"fill-opacity": null, 
-				"visibility": null 
-			}, 
-			"geometry": { 
-				"type": "Point", 
-				"coordinates": [ -132.7982, 55.1872, 100.0 ] 
-			} 
-		},
-		{ .... }
-	]
+  "type": "FeatureCollection",
+  "crs": { 
+    "type": "name", 
+    "properties": { 
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84" }
+    },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { 
+        "name": "June 2000", 
+        "styleUrl": "#a", 
+        "styleHash": "72e6f3ff", 
+        "styleMapHash": { "normal": "#anormal", "highlight": "#ahighlighted" }, 
+        "description": "\r\n          Report 637: Campers' encounter just after dark in the Wrangell - St. Elias National Park and PreserveClass A; Cordova-McCarthy CountyClick for details(Location look wrong?)", 
+        "timestamp": "2000\/06\/16 12:00:00", 
+        "stroke-width": null, 
+        "fill": null, 
+        "fill-opacity": null, 
+        "visibility": null 
+      }, 
+      "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -142.9, 61.5, 100.0 ] 
+      } 
+    },
+    { 
+      "type": "Feature", 
+      "properties": { 
+        "name": " 1995", 
+        "styleUrl": "#a", 
+        "styleHash": "72e6f3ff", 
+        "styleMapHash": { "normal": "#anormal", "highlight": "#ahighlighted" }, 
+        "description": "\r\n          Report 2917: Family observes large biped from carClass A; Prince of Wales CountyClick for details(Location look wrong?)", 
+        "timestamp": "1995\/05\/15 12:00:00", 
+        "stroke-width": null, 
+        "fill": null, 
+        "fill-opacity": null, 
+        "visibility": null 
+      }, 
+      "geometry": { 
+        "type": "Point", 
+        "coordinates": [ -132.7982, 55.1872, 100.0 ] 
+      } 
+    },
+    { .... }
+  ]
 };
 ```
 
@@ -126,19 +126,19 @@ Is the server running? Then we can add the code.
 ``` js
 // Create a marker first
 var geojsonMarkerOptions = {
-	radius: 8,
-	fillColor: "#ff7800",
-	color: "#000",
-	weight: 1,
-	opacity: 1,
-	fillOpacity: 0.8
+  radius: 8,
+  fillColor: "#ff7800",
+  color: "#000",
+  weight: 1,
+  opacity: 1,
+  fillOpacity: 0.8
 };
 
 //create a empty geojson layer
 var geojson = L.geoJson(null,{
-	pointToLayer: function (feature, latlng) {
-		return L.circleMarker(latlng, geojsonMarkerOptions);
-	}
+  pointToLayer: function (feature, latlng) {
+    return L.circleMarker(latlng, geojsonMarkerOptions);
+  }
 }).addTo(map);
 ```
 
@@ -146,14 +146,14 @@ This bit of codes, will add a GeoJSON layer to the leaflet map, on top of our ba
 First we define a Marker style for our points that we add later.
 
 ``` js
-	var geojsonMarkerOptions = {
-		radius: 8,
-		fillColor: "#ff7800",
-		color: "#000",
-		weight: 1,
-		opacity: 1,
-		fillOpacity: 0.8
-	};
+var geojsonMarkerOptions = {
+  radius: 8,
+  fillColor: "#ff7800",
+  color: "#000",
+  weight: 1,
+  opacity: 1,
+  fillOpacity: 0.8
+};
 ```
 
 This creates a object `geojsonMarkerOptions` with the properties that define the marker style. The cirlce will be 8 pixels in radius and orange of color. 
@@ -161,33 +161,33 @@ This creates a object `geojsonMarkerOptions` with the properties that define the
 GeoJSON objects are added to the map through a GeoJSON layer. To create it and add it to a map, we use the following code:
 
 ``` js
-	L.geoJSON(geojsonFeature, properties).addTo(map);
+L.geoJSON(geojsonFeature, properties).addTo(map);
 ```
 
 Alternatively, we could create an empty GeoJSON layer and assign it to a variable so that we can add more features to it later.
 
 ``` js
-	var myLayer = L.geoJSON().addTo(map);
-	myLayer.addData(geojsonFeature);
+var myLayer = L.geoJSON().addTo(map);
+myLayer.addData(geojsonFeature);
 ```
 
 In our example we create a empty geoJSON layer but do define some properties for it already! 
 
 ``` js
-	//create a empty geojson layer
-	var geojson = L.geoJson(null,{
-		pointToLayer: function (geoJsonPoint, latlng) {
-			return L.circleMarker(latlng, geojsonMarkerOptions);
-		}
-	}).addTo(map);
+//create a empty geojson layer
+var geojson = L.geoJson(null,{
+  pointToLayer: function (geoJsonPoint, latlng) {
+    return L.circleMarker(latlng, geojsonMarkerOptions);
+  }
+}).addTo(map);
 ```
 
 The `pointToLayer` is a function defining how GeoJSON points spawn Leaflet layers. It is internally called when data is added, passing the GeoJSON point feature and its LatLng. The default is to spawn a default Marker: 
 
 ``` js
-	function(geoJsonPoint, latlng) {
-	    return L.marker(latlng);
-	}
+function(geoJsonPoint, latlng) {
+  return L.marker(latlng);
+}
 ```
 
 Instead of the default, we spawn a L.cirlcleMarker here with our predefined options that are stored in the `geojsonMarkerOptions` object.
@@ -208,12 +208,12 @@ xhttp.open('GET', encodeURI("All_BFRO_Reports_points.geojson"));
 
 //specify what must be done with the geojson data to the layer when request is succesfull
 xhttp.onload = function() {
-	if (xhttp.readyState === 4) {
-			// add the json data to the geojson layer we created before!
-			geojson.addData(JSON.parse(xhttp.responseText));
-		} else {
-			alert('Request failed.  Returned status of ' + xhttp.status);
-		}
+  if (xhttp.readyState === 4) {
+      // add the json data to the geojson layer we created before!
+      geojson.addData(JSON.parse(xhttp.responseText));
+    } else {
+      alert('Request failed.  Returned status of ' + xhttp.status);
+    }
 };
 
 // send the request
@@ -246,10 +246,10 @@ The third part sets what will be invoked on the onreadystatechange. readyState 4
 
 ```js
 xhttp.onload = function() {
-	if (xhttp.readyState === 4) { 
-		geojson.addData(JSON.parse(xhttp.responseText));
-	}
-	...
+  if (xhttp.readyState === 4) { 
+    geojson.addData(JSON.parse(xhttp.responseText));
+  }
+  ...
 }; 
 ```
 
@@ -257,7 +257,7 @@ If the readyState is not done, the `else` statement will alert a warning with th
 
 ```js
 else {
-	alert('Request failed.  Returned status of ' + xhttp.readyState);
+  alert('Request failed.  Returned status of ' + xhttp.readyState);
 }
 ```
 
