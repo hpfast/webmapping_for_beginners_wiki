@@ -190,7 +190,7 @@ The `pointToLayer` is a function defining how GeoJSON points spawn Leaflet layer
 	}
 ```
 
-Though we call a L.cirlcleMarker here with our predefined options that are stored in the `geojsonMarkerOptions` object.
+Instead of the default, we spawn a L.cirlcleMarker here with our predefined options that are stored in the `geojsonMarkerOptions` object.
 
 Now it is time to add the real data to our GeoJSON object, becuase there is nothing to see yet!
 
@@ -208,7 +208,7 @@ xhttp.open('GET', encodeURI("All_BFRO_Reports_points.geojson"));
 
 //specify what must be done with the geojson data to the layer when request is succesfull
 xhttp.onload = function() {
-	if (xhttp.status === 200) {
+	if (xhttp.readyState === 4) {
 			// add the json data to the geojson layer we created before!
 			geojson.addData(JSON.parse(xhttp.responseText));
 		} else {
@@ -220,44 +220,63 @@ xhttp.onload = function() {
 xhttp.send();
 ```
 
+> ### XMLHttpRequest
+> XMLHttpRequest (XHR) is an API in the form of an object whose methods transfer data between a web browser and a web server. The object is provided by the browser's JavaScript environment. 
+> All modern browsers have a built-in XMLHttpRequest object to request data from a server. The XMLHttpRequest object is a developers dream, because you can:
+>
+>    Update a web page without reloading the page
+>    Request data from a server - after the page has loaded
+>    Receive data from a server  - after the page has loaded
+>    Send data to a server - in the background
 
 
+The first line in the example above creates an new XMLHttpRequest object:
 
-All modern browsers have a built-in XMLHttpRequest object to request data from a server. 
-he XMLHttpRequest object is a developers dream, because you can:
-
-    Update a web page without reloading the page
-    Request data from a server - after the page has loaded
-    Receive data from a server  - after the page has loaded
-    Send data to a server - in the background
-
-
-The first line in the example above creates an XMLHttpRequest object:
-
+```js
 	var xhttp = new XMLHttpRequest();
+```
 
-The second opens our geoJSON file
+The second line sets a open method which uses the `GET` method on the url on our own local server. 
 
+```js
 	xhttp.open('GET', encodeURI("./All_BFRO_Reports_points.geojson"));
+```
 
+The third part sets what will be invoked on the onreadystatechange. readyState 4 means the HTTP response content has finished loading, the readyState property of the XMLHttpRequest object should be assigned a value of 4 (DONE). Now we can do something with the response! the responseText, is our geoJSON data set! So the geoJSON text from our file is parsed to our geojson layer which we created before!
 
-status 200 means ready
+```js
+	xhttp.onload = function() {
+		if (xhttp.readyState === 4) { 
+			geojson.addData(JSON.parse(xhttp.responseText));
+		} 
+```
 
+If the readyState is not done, the `else` statement will alert a warning with the xhttp.readyState it is in. 
 
+```js
+	else {
+				alert('Request failed.  Returned status of ' + xhttp.readyState);
+			}
+```
+
+Eventually we will have to send the request.
+
+```js
+	xhttp.send();
+```
+
+So let's have a look if it worked:
 
 :arrow_forward: Refresh your localhost:8000/index.html page. Do you see your data?
 
 
-
-
-After adding the base layer (we don't need the extra layer from the previous example), we use jQuery's getJSON() method to load the rodent file. We pass this method two things: 1) the path to the rodent file, which in this case is just the file name because it's in the same directory, and 2) a function that will run once the file has been loaded and parsed. The data argument in that function represents the JSON data that jQuery reads from our external file.
-Inside that function, we use L.geoJson() to create a vector layer from GeoJSON, passing it the same data, and again using addTo() to put the layer on the map.
-
-
+Try to fancy up the styling a bit!
 
 
 :arrow_right: Put your map online with the [[Hosting on Github]] tutorial!
 
 :arrow_right: Continue to [[Introduction D3]] or do the [[Leaflet Advanced assignments]]
+
+In the [[Leaflet Advanced assignments]] you can add your own custom markers or use a extension like drawing your own lines on the map.
 
 :arrow_right: Continue to [[Introduction D3]]
