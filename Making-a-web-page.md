@@ -106,7 +106,7 @@ or saved in an external file with a .css suffix, and then referenced in the docu
 
 **Let's try it!**
 
- :arrow_forward: Copy this style code into your index.html page.
+ :arrow_forward: Copy this style code into the `<head>` of your index.html page.
 
 ```html
     <style type="text/css">
