@@ -118,11 +118,10 @@ If you do not know how to do this then follow the [[Running a local server]] fir
 
 Is the server running? Then we can add the code.
 
-## The code 
+## Adding a GeoJSON layer to Leaflet.
 
 :arrow_forward: Copy the following code between your `<script>` tags and after your previous code.
 
-:arrow_forward: Refresh your localhost:8000/index.html page. Do you see your data?
 
 ``` js
 // Create a marker first
@@ -135,27 +134,127 @@ var geojsonMarkerOptions = {
 	fillOpacity: 0.8
 };
 
-//create the geojson layer
+//create a empty geojson layer
 var geojson = L.geoJson(null,{
 	pointToLayer: function (feature, latlng) {
 		return L.circleMarker(latlng, geojsonMarkerOptions);
 	}
 }).addTo(map);
-
-//add your geojson data to the layer
-var xhr = new XMLHttpRequest();
-xhr.open('GET', encodeURI("All_BFRO_Reports_points.geojson"));
-xhr.onload = function() {
-if (xhr.status === 200) {
-		geojson.addData(JSON.parse(xhr.responseText));
-	} else {
-		alert('Request failed.  Returned status of ' + xhr.status);
-	}
-};
-xhr.send();
 ```
 
-Explain code here! 
+This bit of codes, will add a GeoJSON layer to the leaflet map, on top of our background layer. 
+First we define a Marker style for our points that we add later.
+
+``` js
+	var geojsonMarkerOptions = {
+		radius: 8,
+		fillColor: "#ff7800",
+		color: "#000",
+		weight: 1,
+		opacity: 1,
+		fillOpacity: 0.8
+	};
+```
+
+This creates a object `geojsonMarkerOptions` with the properties that define the marker style. The cirlce will be 8 pixels in radius and orange of color. 
+
+GeoJSON objects are added to the map through a GeoJSON layer. To create it and add it to a map, we use the following code:
+
+``` js
+	L.geoJSON(geojsonFeature, properties).addTo(map);
+```
+
+Alternatively, we could create an empty GeoJSON layer and assign it to a variable so that we can add more features to it later.
+
+``` js
+	var myLayer = L.geoJSON().addTo(map);
+	myLayer.addData(geojsonFeature);
+```
+
+In our example we create a empty geoJSON layer but do define some properties for it already! 
+
+``` js
+	//create a empty geojson layer
+	var geojson = L.geoJson(null,{
+		pointToLayer: function (geoJsonPoint, latlng) {
+			return L.circleMarker(latlng, geojsonMarkerOptions);
+		}
+	}).addTo(map);
+```
+
+The `pointToLayer` is a function defining how GeoJSON points spawn Leaflet layers. It is internally called when data is added, passing the GeoJSON point feature and its LatLng. The default is to spawn a default Marker: 
+
+``` js
+	function(geoJsonPoint, latlng) {
+	    return L.marker(latlng);
+	}
+```
+
+Though we call a L.cirlcleMarker here with our predefined options that are stored in the `geojsonMarkerOptions` object.
+
+Now it is time to add the real data to our GeoJSON object, becuase there is nothing to see yet!
+
+
+## Get GeoJSON data with XMLHttpRequest 
+
+:arrow_forward: Copy the following code between your `<script>` tags and after your previous code.
+
+```js
+// new Http Request
+var xhttp = new XMLHttpRequest();
+
+// set the request method and data file
+xhttp.open('GET', encodeURI("All_BFRO_Reports_points.geojson"));
+
+//specify what must be done with the geojson data to the layer when request is succesfull
+xhttp.onload = function() {
+	if (xhttp.status === 200) {
+			// add the json data to the geojson layer we created before!
+			geojson.addData(JSON.parse(xhttp.responseText));
+		} else {
+			alert('Request failed.  Returned status of ' + xhttp.status);
+		}
+};
+
+// send the request
+xhttp.send();
+```
+
+
+
+
+All modern browsers have a built-in XMLHttpRequest object to request data from a server. 
+he XMLHttpRequest object is a developers dream, because you can:
+
+    Update a web page without reloading the page
+    Request data from a server - after the page has loaded
+    Receive data from a server  - after the page has loaded
+    Send data to a server - in the background
+
+
+The first line in the example above creates an XMLHttpRequest object:
+
+	var xhttp = new XMLHttpRequest();
+
+The second opens our geoJSON file
+
+	xhttp.open('GET', encodeURI("./All_BFRO_Reports_points.geojson"));
+
+
+status 200 means ready
+
+
+
+:arrow_forward: Refresh your localhost:8000/index.html page. Do you see your data?
+
+
+
+
+After adding the base layer (we don't need the extra layer from the previous example), we use jQuery's getJSON() method to load the rodent file. We pass this method two things: 1) the path to the rodent file, which in this case is just the file name because it's in the same directory, and 2) a function that will run once the file has been loaded and parsed. The data argument in that function represents the JSON data that jQuery reads from our external file.
+Inside that function, we use L.geoJson() to create a vector layer from GeoJSON, passing it the same data, and again using addTo() to put the layer on the map.
+
+
+
 
 :arrow_right: Put your map online with the [[Hosting on Github]] tutorial!
 
