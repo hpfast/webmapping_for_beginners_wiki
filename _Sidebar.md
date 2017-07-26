@@ -1,28 +1,28 @@
 # Table of Contents
 
-[[Home]]
+### [[Home]]
 
-##**Workshop**
+## **Workshop**
 
-###**[[Introduction Leaflet]]**
+### **[[Introduction Leaflet]]**
 
 1. [[Leaflet step 1]]
 1. [[Leaflet step 2]]
 1. [[Leaflet step 3]]
 
-###**[[Introduction D3]]**
+### **[[Introduction D3]]**
 
 1. [[D3 step 1]]
 1. [[D3 step 2]]
 1. [[D3 step 3]]
 
-##**In case you need it**
+## **In case you need it**
 
 * [[Making a web page]]
 * [[Running a local server]]
 * [[Hosting on Github]]
 
-##**Advanced**
+## **Advanced**
 
 * [[Leaflet advanced]]
 * [[D3 advanced]]
