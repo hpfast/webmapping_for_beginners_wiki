@@ -277,8 +277,8 @@ Try to fancy up the styling a bit!
 
 :arrow_right: Put your map online with the [[Hosting on Github]] tutorial!
 
-:arrow_right: Continue to [[Introduction D3]] or do the [[Leaflet Advanced assignments]]
+:arrow_right: Continue to [[Introduction D3]] or do the [[Leaflet Advanced]] assignments
 
-In the [[Leaflet Advanced assignments]] you can add your own custom markers or use a extension like drawing your own lines on the map.
+In the [[Leaflet Advanced]] assignments you can add your own custom markers or use a extension like drawing your own lines on the map.
 
 :arrow_right: Continue to [[Introduction D3]]
