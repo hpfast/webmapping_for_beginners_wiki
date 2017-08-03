@@ -35,7 +35,7 @@ GitHub has this awesome trick! If we change our main branch to a GitHub Pages br
 ![GitHub Pages Source Setting](img/source-setting.png)
 
 Fire up a browser and go to http://username.github.io/repository.
-Change the user-name in the link to your own GitHub user name and the repository to your repository name! 
+Change the user-name in the link to your own GitHub user name and the repository to your repository name! Note that every time you make changes, you may need to wait a minute before Github Pages picks up the changes.
 
 Read more about it here:  https://pages.github.com/
 
