@@ -5,7 +5,7 @@
 Instead of a simple circleMarker we can define our own markers! 
 Leaflet has a `L.icon()` function for this.
 
-:arrow_forward: Download the [big_foot_orange.png]() file and place it in `yourDirectory` next to the index.html file.
+:arrow_forward: Download the [big_foot_orange.png](https://raw.githubusercontent.com/NieneB/Webmapping_for_beginners/gh-pages/workshop/big_foot_orange.png) file and place it in `yourDirectory` next to the index.html file.
 
 :arrow_forward: Replace the previous code for the marker and geojson layer with the following code: 
 
